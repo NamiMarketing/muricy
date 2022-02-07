@@ -1,0 +1,22 @@
+{
+  "name": "bootstrapboilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-min": "sass --watch css/styles.scss css/styles.min.css --style=compressed",
+    "sass-min-home": "sass --watch css/stylesHome.scss css/stylesHome.min.css --style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cwebp-bin": "^5.1.0",
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^5.1.0",
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}

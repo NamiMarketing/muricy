@@ -1,0 +1,123 @@
+footer {
+  background-color: #01051e;
+  height: 408px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  place-items: center;
+  margin: auto;
+  padding: 0 5rem;
+  width: 100vw;
+  place-items: center;
+  margin: auto;
+  padding: 2rem 0;
+  position: relative;
+
+  ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    li a {
+      list-style: none;
+      margin-right: 10rem;
+      font-weight: 400;
+      transition: all 0.3s;
+      cursor: pointer;
+      color: #fff;
+      font-size: 1.6rem;
+
+      &:hover {
+        color: #919699;
+      }
+    }
+  }
+  .navbar-brand img {
+    height: 125px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+  }
+
+  .social-button img {
+    height: 35px;
+  }
+
+  .telegram {
+    width: 100%;
+
+    h4 {
+      font-size: 1.4rem;
+      margin-left: 10px;
+      font-weight: 400;
+      margin-top: 1rem;
+    }
+  }
+
+  .social-container {
+    width: 300px;
+    display: flex;
+    margin-top: 4rem;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    a {
+      z-index: 12;
+    }
+
+    .navbar-brand img {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    ul {
+      position: absolute;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #000;
+      width: 100vw;
+      top: 0;
+      z-index: 10;
+      place-items: flex-start;
+      padding-top: 6rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      transform: translateY(-1000px);
+      transition: all 1s;
+
+      li {
+        margin-bottom: 1rem;
+        border-bottom: 0.5px solid rgb(119, 119, 119);
+        width: 100%;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .social-container {
+      justify-content: center;
+    }
+
+    p {
+      padding: 2rem;
+    }
+  }
+}
+
+.on {
+  transform: translateY(0px);
+}
+
+.whatsapp {
+  position: fixed;
+  z-index: 10;
+  bottom: 30px;
+  right: 50px;
+
+  a img {
+    width: 45px;
+  }
+}

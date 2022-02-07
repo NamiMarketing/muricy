@@ -1,0 +1,140 @@
+$white: #fff;
+$font-family-roboto: "Prompt", sans-serif;
+
+strong {
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  @media (max-width: 1400px) {
+    html,
+    body,
+    #root {
+      font-size: 55.5%;
+    }
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: #01051e;
+  color: #fff;
+  -webkit-font-smoothing: antialised;
+  font-family: "Prompt", sans-serif;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: "Prompt", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Prompt", sans-serif;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 6.6rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 5.6rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 3.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    font-size: 1.6rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.only-mobile {
+  display: none;
+}
+
+@media (orientation: portrait) and (max-width: 500px) {
+  .only-mobile {
+    display: block;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+}
+
+.container {
+  max-width: 1536px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.main-button {
+  background: linear-gradient(to right, #ffc157, #ffa370);
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
