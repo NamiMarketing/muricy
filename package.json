@@ -1,14 +1,14 @@
 {
-  "name": "bootstrapboilerplate",
+  "name": "muricy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Site da clinica Muricy",
   "main": "index.js",
   "scripts": {
-    "sass-min": "sass --watch css/styles.scss css/styles.min.css --style=compressed",
-    "sass-min-home": "sass --watch css/stylesHome.scss css/stylesHome.min.css --style=compressed"
+    "dev": "eleventy --serve",
+    "build": "eleventy"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nami",
   "license": "ISC",
   "dependencies": {
     "cwebp-bin": "^5.1.0",
@@ -17,6 +17,8 @@
     "sass": "^1.32.8"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
     "prettier": "^1.19.1"
-  }
+  },
+  "repository": "git@github.com:NamiSites/muricy.git"
 }
