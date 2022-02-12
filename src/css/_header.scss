@@ -1,5 +1,5 @@
 nav {
-  background: linear-gradient(to left, #ffc157, #ffa370);
+  background: #ffa370;
   height: 67px;
   color: #1d2e51;
   display: flex;
@@ -105,11 +105,11 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  background: linear-gradient(to left, #ffc157, #ffa370);
+  background: #ffa370;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  top: 67px;
+  top: 64px;
 
   span {
     background: linear-gradient(to right, #1d2e51, transparent);
@@ -154,7 +154,7 @@ nav {
       position: absolute;
       flex-direction: column;
       height: 100vh;
-      background: linear-gradient(to left, #ffc157, #ffa370);
+      background: #ffa370;
       width: 100vw;
       top: 0;
       z-index: 10;

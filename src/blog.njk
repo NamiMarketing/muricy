@@ -1,9 +1,14 @@
+---
+title: blog
+layout: "base.njk"
+---
+
 <div>
   {%- for post in collections.post -%}
-    <li>
-      <h3>{{ post.data.title }}</h3>
-      <a href="{{ post.url }}">Read more</a>
-      <h4>{{ post.data.date | postDate}}</h4>
-    </li>
+  <li>
+    <h3>{{ post.data.title }}</h3>
+    <a href="{{ post.url }}">Read more</a>
+    <h4>{{ post.data.date | postDate }}</h4>
+  </li>
   {%- endfor %}
 </div>
