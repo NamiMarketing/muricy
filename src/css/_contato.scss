@@ -1,5 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .contato-muricy {
-  margin-left: 262px;
+  margin-left: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,7 +106,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 142px;
+      margin-left: 25rem;
       background-color: #7f6678;
       width: 588px;
       height: 402px;
@@ -168,7 +173,7 @@
 
 @media screen and (max-width: 600px) {
   .contato-muricy {
-    margin-left: 0px !important;
+    margin-left: 0px;
     justify-content: center;
     align-items: initial;
   }
@@ -180,8 +185,8 @@
   .forms-detalhes {
     margin-top: 40px;
     flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
+    align-items: center;
+    justify-content: center;
 
     .dados {
       width: 80vw !important;
