@@ -1,5 +1,4 @@
 .contato-muricy {
-  margin-bottom: 170px;
   margin-left: 262px;
   display: flex;
   flex-direction: column;
@@ -155,15 +154,15 @@
 .imagem-linhas {
   width: 100vw;
   z-index: -1;
-  position: absolute;
   top: 549px;
 
   .linhas-onduladas {
-    opacity: 0.25;
     width: 100%;
     overflow: hidden;
     transform: rotate(3.24deg);
-    object-fit: cover;
+    margin-left: -2rem;
+    opacity: 0.25;
+    margin-top: -11rem;
   }
 }
 
