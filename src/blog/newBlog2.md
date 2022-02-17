@@ -1,5 +1,5 @@
 ---
-title: Blog 2
+title: Blog 23
 author: Me
 date: 2021-06-01
 imageAlt: Hi
