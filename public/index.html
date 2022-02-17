@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/build/home.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -14,28 +17,45 @@
 
 <body>
   <nav>
+  <div class="logo">
+    <a href="/">
+      <img src="/img/logonav.svg" alt="Clínica Muricy">
+    </a>
+  </div>
   <ul class="nav-items">
     <li>
-      <a class="active" href="/">Home</a>
+      <a class="active" href="/">HOME</a>
     </li>
     <li>
-      <a class="" href="/blog">Blog</a>
+      <a class="" href="/nossa-historia">NOSSA HISTÓRIA</a>
     </li>
     <li class="dropdown">
-      <button class="dropbtn">CURSOS</button>
+      <button class="dropbtn">CLÍNICO</button>  
       <div class="dropdown-content">
+        <a href="/diagnostico">DIAGNÓSTICO</a>
         <span></span>
-        <a href="/aligner-talks">Aligner Talks</a>
+        <a href="/tratamentos">TRATAMENTOS</a>
         <span></span>
-        <a href="/first-class">FirstClass instituto 4.0</a>
-        <span></span>
-        <a href="/clincheck">Consultoria de clinCheck</a>
+        <a href="/tratamentos-associados">TRATAMENTOS ASSOCIADOS</a>
       </div>
     </li>
     <li>
+      <a class="" href="/cirurgico">CIRÚRGICO</a>
+    </li>
+    <li>
+      <a class="" href="/blog">BLOG E NOTÍCIAS</a>
+    </li>
+    <li>
       <a class="" href="/contato"
-        >Contato</a
+        >CONTATO</a
       >
+    </li>
+    <li class="dropdown">
+      <button class="dropbtn">CURITIBA</button>
+      <div class="dropdown-content">
+        <span></span>
+        <a href="/saopaulo">SÃO PAULO</a>
+      </div>
     </li>
   </ul>
 </nav>
@@ -43,7 +63,46 @@
 
   <main>
     
-<h1>Home</h1>
+<section>
+    <div class="bannerHome">
+        <img src="/img/bannerbg.svg" class="bannerbg" alt="">
+            <div class="degrade">
+                <img src="/img/bannerdgd.svg" class="bannerdgd" alt="">
+            </div>
+        <img src="/img/linhasbanner.png" class="linhasbanner" alt="">
+        <div class="bannerFlex">
+            <div class="bannerFlex1">
+                <h1 class="bannerText">CLÍNICA MURICY</h1>
+                <p class="bannerText2">São 30 anos de experiência e mais de 7 mil transplantes capilares, melhorando a autoestima de todos os nossos pacientes operados
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="equipeHome">
+        <div class="gallery">
+            <figure class=”gallery__item gallery__item--1">
+                <img src="/img/drmuricy.svg" class="gallery__img" alt="Dr. José Candido Muricy">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="/img/drraffaele.svg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="/img/draandrea.svg" class="gallery__img draandrea" alt="Dra. Andrea Buosi Fabre">
+            </figure>
+        </div>
+
+        <div class="equipeText">
+            <h2>EQUIPE</h2>
+            <p>
+            A sede em Curitiba -PR conta com grandes profissionais para cuidar da sua autoestima realizando a avaliação do seu caso com precisão e expertise nos melhores tratamentos e procedimentos para o seu caso.
+            <br><br>
+            Conheça os nossos profissionais:
+            </p>
+        </div>
+    </div>
+    <img src="/img/linhasequipe.svg" class="linhasequipe" alt="">
+</section>
 
   </main>
 

@@ -1,7 +1,9 @@
+@import "colors";
+
 nav {
-  background: #ffa370;
-  height: 67px;
-  color: #1d2e51;
+  background: $roxo_800;
+  height: 119px;
+  color: $white;
   display: flex;
   justify-content: space-around;
   place-items: center;
@@ -16,14 +18,16 @@ nav {
     display: flex;
     align-items: center;
     height: 100%;
+    margin-left: 12rem;
+    margin-right: -9rem;
 
     li a {
       list-style: none;
-      margin-right: 10rem;
+      margin-right: 7rem;
       font-weight: 400;
       transition: all 0.3s;
       cursor: pointer;
-      color: #1d2e51;
+      color: $white;
       font-size: 1.6rem;
 
       &:hover {
@@ -41,7 +45,7 @@ nav {
   .one,
   .two,
   .three {
-    background-color: #1d2e51;
+    background-color: $white;
     height: 2px;
     width: 100%;
     margin: 10px auto;
@@ -83,11 +87,16 @@ nav {
 
 .dropbtn {
   background-color: transparent;
-  color: #1d2e51;
+  color: $white;
   padding: 22px 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #919699;
+  }
 
   .active {
     border-bottom: 4px solid #7f7c65;
@@ -99,20 +108,23 @@ nav {
 .dropdown {
   position: relative;
   display: inline-block;
-  margin-right: 10rem;
+  margin-right: 8rem;
 }
 
 .dropdown-content {
-  display: none;
+  display: block;
   position: absolute;
-  background: #ffa370;
+  background: $white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   top: 64px;
+  opacity: 0;
+  transition: opacity 0.5s;
+ 
 
   span {
-    background: linear-gradient(to right, #1d2e51, transparent);
+    background: linear-gradient(to right, $roxo_800, transparent);
     height: 1px;
     width: auto;
     display: block;
@@ -122,7 +134,7 @@ nav {
 }
 
 .dropdown-content a {
-  color: #1d2e51;
+  color: $roxo_800;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -138,7 +150,7 @@ nav {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 600px) {
@@ -154,7 +166,7 @@ nav {
       position: absolute;
       flex-direction: column;
       height: 100vh;
-      background: #ffa370;
+      background: $roxo_800;
       width: 100vw;
       top: 0;
       z-index: 10;
