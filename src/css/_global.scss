@@ -1,5 +1,5 @@
 $white: #fff;
-$font-family-Prompt: "Prompt", sans-serif;
+$font-family: 'Montserrat', sans-serif;
 
 strong {
   font-weight: bold;
@@ -36,14 +36,14 @@ body {
   -webkit-font-smoothing: antialiased;
   background: $white;
   -webkit-font-smoothing: antialised;
-  font-family: $font-family-Prompt;
+  font-family: $font-family;
 }
 
 body,
 input,
 button,
 textarea {
-  font-family: $font-family-Prompt;
+  font-family: $font-family;
 }
 
 h1,
@@ -52,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-family-Prompt;
+  font-family: $font-family;
 }
 
 p {
