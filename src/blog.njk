@@ -1,11 +1,13 @@
 ---
-title: blog
+title: Blog
 layout: "base.njk"
+cssPath: "/css/build/blog.min.css"
 ---
 
-<h1>oe</h1>
-<h1>Conflito</h1>
-<div>
+<section class="blog-banner">
+
+</section>
+
   {%- for post in collections.post -%}
   <li>
     <h3>{{ post.data.title }}</h3>
