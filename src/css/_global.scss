@@ -39,6 +39,11 @@ body {
   font-family: $font-family;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 body,
 input,
 button,

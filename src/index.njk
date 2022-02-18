@@ -4,9 +4,8 @@ layout: "base.njk"
 cssPath: "/css/build/home.min.css"
 ---
 
-<section>
     <div class="bannerHome">
-        <img src="/img/bannerbg.svg" class="bannerbg" alt="">
+        <img src="/img/bannerbg.jpg" class="bannerbg" alt="">
             <div class="degrade">
                 <img src="/img/bannerdgd.svg" class="bannerdgd" alt="">
             </div>
@@ -21,13 +20,13 @@ cssPath: "/css/build/home.min.css"
     <div class="equipeHome">
         <div class="gallery">
             <figure class=”gallery__item gallery__item--1">
-                <img src="/img/drmuricy.svg" class="gallery__img" alt="Dr. José Candido Muricy">
+                <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
             </figure>
             <figure class="gallery__item gallery__item--2">
-                <img src="/img/drraffaele.svg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
+                <img src="/img/drraffaele.jpg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
             </figure>
             <figure class="gallery__item gallery__item--3">
-                <img src="/img/draandrea.svg" class="gallery__img draandrea" alt="Dra. Andrea Buosi Fabre">
+                <img src="/img/draandrea.jpg" class="gallery__img draandrea" alt="Dra. Andrea Buosi Fabre">
             </figure>
         </div>
 
@@ -40,5 +39,28 @@ cssPath: "/css/build/home.min.css"
             </p>
         </div>
     </div>
-    <img src="/img/linhasequipe.svg" class="linhasequipe" alt="">
-</section>
+
+    <div class="brownboxHome">
+        <h2>A SAÚDE E BELEZA PARA VOCÊ E SEUS CABELOS COM SERVIÇOS ESPECIALIZADOS
+        </h2>
+        <p>Atendimentos Clínicos para avaliar, investigar, tratar, cuidar e prevenir alopecias e eflúvios capilares acompanhados ou não de procedimentos cirúrgicos.
+        <br><br>
+        Cirurgias de Transplante Capilar com uma equipe especialista em técnicas inovadoras, tecnológicas e de alta precisão para um resultado mais natural (FUE). Realizamos megassessões utilizando a técnica BODY HAIR (com pelos do couro cabeludo e do corpo).
+        </p>
+    </div>
+
+    <div class="servicosHome">
+        <div class="servicosText">
+            <div class="servicosTextbox">
+                <h2>SERVIÇOS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nisl leo. Vestibulum id tellus id tortor finibus viverra quis vel massa. Morbi quis lectus a orci condimentum  nec ac purus.</p>
+            </div>
+            <div class="servicosBelowText">
+                <h4>ATENDIMENTOS CLÍNICOS</h4>
+                <h4>CIRURGIAS DE TRANSPLANTE CAPILAR</h4>
+            </div>
+        </div>
+        <img src="/img/servicoshome.jpg" alt="">
+    </div>
+
+  {% include 'contato.njk' %}
