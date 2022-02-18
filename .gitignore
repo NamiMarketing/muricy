@@ -2,3 +2,4 @@ webp.js
 yarn*
 /node_modules
 /public
+/css/build
