@@ -1,5 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .contato-muricy {
-  margin-left: 262px;
+  margin-left: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,15 +29,14 @@
   }
 
   .descricao-contato {
+    width: 35rem;
     margin-top: 25px;
     p {
-      width: 349px;
       height: 12.4rem;
       font-weight: 300;
       font-size: 2.2rem;
       line-height: 30px;
       color: #495057;
-      text-align: justify;
     }
   }
 
@@ -40,12 +45,11 @@
     align-items: center;
 
     form {
+      width: 455px;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
 
       .dados {
-        width: 455px;
         padding-left: 15px;
       }
 
@@ -87,21 +91,25 @@
         line-height: 20px;
         font-weight: 500;
       }
-    }
-
-    .linha2 {
-      margin-top: 2px;
-      margin-right: 3px;
-      width: 59px;
-      background-color: #7f6678;
-      height: 2px;
+      .enviar-botao {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        .linha2 {
+          margin-top: 2px;
+          width: 59px;
+          background-color: #7f6678;
+          height: 2px;
+        }
+      }
     }
 
     .detalhes-contatos {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 142px;
+      margin-left: 25rem;
       background-color: #7f6678;
       width: 588px;
       height: 402px;
@@ -168,33 +176,40 @@
 
 @media screen and (max-width: 600px) {
   .contato-muricy {
-    margin-left: 0px !important;
+    margin-left: 0px;
     justify-content: center;
     align-items: initial;
   }
 
   .titulo-pagina {
+    margin-left: 3rem;
     width: 80vw;
+  }
+
+  .descricao-contato {
+    margin-left: 3rem;
+    p {
+    }
   }
 
   .forms-detalhes {
     margin-top: 40px;
     flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
-
-    .dados {
-      width: 80vw !important;
+    align-items: initial !important;
+    justify-content: center;
+    form {
+      width: 90vw !important;
+      .dados {
+        margin-left: 3rem;
+      }
     }
 
     .detalhes-contatos {
-      height: 60vw !important;
       width: 100vw !important;
-      margin-left: 0px !important;
+      margin-left: 0 !important;
       margin-top: 40px;
 
       .informacoes-contatos {
-        width: 100% !important;
         font-size: 1.4rem !important;
       }
 
