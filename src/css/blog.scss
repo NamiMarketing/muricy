@@ -32,3 +32,21 @@
     bottom: 0;
   }
 }
+
+.nav-blog {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    p {
+      margin-left: 1rem;
+    }
+  }
+}
