@@ -1,0 +1,177 @@
+.bannerHome {
+  object-fit: cover;
+  width: 100vw;
+  z-index: 0;
+  position: relative;
+
+  .bannerbg {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bannerdgd {
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .linhasbanner {
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 1rem;
+  }
+}
+
+.bannerFlex {
+  position: absolute;
+  padding: 28rem 0 0 30rem;
+  margin: auto;
+  width: 85vw;
+  z-index: 2;
+  top: 0;
+
+  h1 {
+    color: $roxo_800;
+    width: 20vw;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    color: #495057;
+    font-weight: 300;
+    width: 27vw;
+  }
+}
+
+.equipeHome {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25rem;
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 22vw);
+    grid-gap: 25px;
+    width: 39vw;
+    margin-top: 5rem;
+    margin-left: 23rem;
+
+    .gallery__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .drraffaele {
+      margin-top: 22rem;
+      margin-left: 7rem;
+    }
+
+    .draandrea {
+      margin-top: 8rem;
+    }
+  }
+
+  .equipeText {
+    width: 30vw;
+
+    h2 {
+      color: $roxo_800;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 51px;
+      text-align: right;
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      color: $cinza_800;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: right;
+    }
+  }
+}
+
+.brownboxHome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+    background-color: $bege;
+    padding: 10rem;
+    margin-bottom: 15rem;
+
+    h2 {
+        font-weight: 400;
+        color: #282828;
+    }
+
+    p {
+        font-weight: 600;
+        color: #282828;
+        text-align: justify;
+        line-height: 26px;
+    }
+}
+
+.servicosHome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    margin-left: auto;
+
+    .servicosText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 45vh;
+        width: 35vw;
+
+        .servicosTextbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h2 {
+                color: $roxo_800;
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+                letter-spacing: 0.2rem;
+            }
+
+            p {
+                color: $cinza_800;
+                font-weight: 300;
+                line-height: 2.6rem;
+            }
+        }
+
+        .servicosBelowText {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            h4 {
+                color: $roxo_800;
+                font-weight: 500;
+                line-height: 2.6rem;
+            }
+        }
+    }
+}

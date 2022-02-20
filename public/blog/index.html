@@ -5,37 +5,57 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/build/home.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="stylesheet" href="/css/build/blog.min.css"/>
 
-  <title>blog</title>
+  <title>Blog</title>
 </head>
 
 <body>
   <nav>
+  <div class="logo">
+    <a href="/">
+      <img src="/img/logonav.svg" alt="Clínica Muricy">
+    </a>
+  </div>
   <ul class="nav-items">
     <li>
-      <a class="active" href="/">Home</a>
+      <a class="active" href="/">HOME</a>
     </li>
     <li>
-      <a class="active" href="/blog">Blog</a>
+      <a class="" href="/nossa-historia">NOSSA HISTÓRIA</a>
     </li>
     <li class="dropdown">
-      <button class="dropbtn">CURSOS</button>
+      <button class="dropbtn">CLÍNICO</button>  
       <div class="dropdown-content">
+        <a href="/diagnostico">DIAGNÓSTICO</a>
         <span></span>
-        <a href="/aligner-talks">Aligner Talks</a>
+        <a href="/tratamentos">TRATAMENTOS</a>
         <span></span>
-        <a href="/first-class">FirstClass instituto 4.0</a>
-        <span></span>
-        <a href="/clincheck">Consultoria de clinCheck</a>
+        <a href="/tratamentos-associados">TRATAMENTOS ASSOCIADOS</a>
       </div>
     </li>
     <li>
+      <a class="" href="/cirurgico">CIRÚRGICO</a>
+    </li>
+    <li>
+      <a class="active" href="/blog">BLOG E NOTÍCIAS</a>
+    </li>
+    <li>
       <a class="" href="/contato"
-        >Contato</a
+        >CONTATO</a
       >
+    </li>
+    <li class="dropdown">
+      <button class="dropbtn">CURITIBA</button>
+      <div class="dropdown-content">
+        <span></span>
+        <a href="/saopaulo">SÃO PAULO</a>
+      </div>
     </li>
   </ul>
 </nav>
@@ -43,9 +63,21 @@
 
   <main>
     
-<h1>Catu noob</h1>
-<h2>Oieeee</h2>
-<div><li>
+<section class="banner">
+  <div>
+    <h2>BLOG E <br/> NOTÍCIAS</h2>
+    <h5>Confira as últimas atualizações sobre os cuidados, dicas, curiosidades, informações e orientações a respeito de saúde capilar.</h5>
+  </div>
+
+  <img src="/img/blog/blog-lines.png" alt="">
+</section>
+
+<section class="nav-blog">
+  <a href="">QUEDA <p>(Eflúvio)</p></a>
+  <a href="">CALVÍCIE <p>(Alopécia)</p></a>
+  <a href="">TRATAMENTOS E PROCEDIMENTOS</a>
+  <a href="">VÍDEOS</a>
+</section><li>
     <h3>Blog 343</h3>
     <a href="/blog/newBlog/">Read more</a>
     <h4>31 de mai. de 2021</h4>

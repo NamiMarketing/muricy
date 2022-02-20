@@ -1,26 +1,43 @@
 <nav>
+  <div class="logo">
+    <a href="/">
+      <img src="/img/logonav.svg" alt="Clínica Muricy">
+    </a>
+  </div>
   <ul class="nav-items">
     <li>
-      <a class="{{ 'active' if '' in page.url }}" href="/">Home</a>
+      <a class="{{ 'active' if '' in page.url }}" href="/">HOME</a>
     </li>
     <li>
-      <a class="{{ 'active' if '/blog' in page.url }}" href="/blog">Blog</a>
+      <a class="{{ 'active' if '/nossahistoria' in page.url }}" href="/nossa-historia">NOSSA HISTÓRIA</a>
     </li>
     <li class="dropdown">
-      <button class="dropbtn">CURSOS</button>
+      <button class="dropbtn">CLÍNICO</button>  
       <div class="dropdown-content">
+        <a href="/diagnostico">DIAGNÓSTICO</a>
         <span></span>
-        <a href="/aligner-talks">Aligner Talks</a>
+        <a href="/tratamentos">TRATAMENTOS</a>
         <span></span>
-        <a href="/first-class">FirstClass instituto 4.0</a>
-        <span></span>
-        <a href="/clincheck">Consultoria de clinCheck</a>
+        <a href="/tratamentos-associados">TRATAMENTOS ASSOCIADOS</a>
       </div>
     </li>
     <li>
+      <a class="{{ 'active' if '/cirurgico' in page.url }}" href="/cirurgico">CIRÚRGICO</a>
+    </li>
+    <li>
+      <a class="{{ 'active' if '/blog' in page.url }}" href="/blog">BLOG E NOTÍCIAS</a>
+    </li>
+    <li>
       <a class="{{ 'active' if '/contato' in page.url }}" href="/contato"
-        >Contato</a
+        >CONTATO</a
       >
+    </li>
+    <li class="dropdown">
+      <button class="dropbtn">CURITIBA</button>
+      <div class="dropdown-content">
+        <span></span>
+        <a href="/saopaulo">SÃO PAULO</a>
+      </div>
     </li>
   </ul>
 </nav>
