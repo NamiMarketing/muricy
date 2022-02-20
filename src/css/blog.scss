@@ -1,0 +1,52 @@
+@import "global";
+@import "header";
+@import "footer";
+@import "contato";
+@import "colors";
+
+.banner {
+  height: 60vh;
+  display: flex;
+  place-items: center;
+  position: relative;
+  z-index: -1;
+
+  > div {
+    max-width: 400px;
+    z-index: 1;
+    margin-left: 10vw;
+  }
+
+  h2 {
+    color: $roxo_800;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $cinza_900;
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.nav-blog {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    p {
+      margin-left: 1rem;
+    }
+  }
+}

@@ -1,9 +1,25 @@
 ---
-title: blog
+title: Blog
 layout: "base.njk"
+cssPath: "/css/build/blog.min.css"
 ---
 
-<div>
+<section class="banner">
+  <div>
+    <h2>BLOG E <br/> NOTÍCIAS</h2>
+    <h5>Confira as últimas atualizações sobre os cuidados, dicas, curiosidades, informações e orientações a respeito de saúde capilar.</h5>
+  </div>
+
+  <img src="/img/blog/blog-lines.png" alt="">
+</section>
+
+<section class="nav-blog">
+  <a href="">QUEDA <p>(Eflúvio)</p></a>
+  <a href="">CALVÍCIE <p>(Alopécia)</p></a>
+  <a href="">TRATAMENTOS E PROCEDIMENTOS</a>
+  <a href="">VÍDEOS</a>
+</section>
+
   {%- for post in collections.post -%}
   <li>
     <h3>{{ post.data.title }}</h3>

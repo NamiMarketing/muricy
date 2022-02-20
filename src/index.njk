@@ -1,6 +1,66 @@
 ---
 title: Home
 layout: "base.njk"
+cssPath: "/css/build/home.min.css"
 ---
 
-<h1>{{ title }}</h1>
+    <div class="bannerHome">
+        <img src="/img/bannerbg.jpg" class="bannerbg" alt="">
+            <div class="degrade">
+                <img src="/img/bannerdgd.svg" class="bannerdgd" alt="">
+            </div>
+        <img src="/img/linhasbanner.png" class="linhasbanner" alt="">
+        <div class="bannerFlex">
+            <h1>CLÍNICA MURICY</h1>
+            <h4>São 30 anos de experiência e mais de 7 mil transplantes capilares, melhorando a autoestima de todos os nossos pacientes operados
+            </h4>
+        </div>
+    </div>
+
+    <div class="equipeHome">
+        <div class="gallery">
+            <figure class=”gallery__item gallery__item--1">
+                <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="/img/drraffaele.jpg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="/img/draandrea.jpg" class="gallery__img draandrea" alt="Dra. Andrea Buosi Fabre">
+            </figure>
+        </div>
+
+        <div class="equipeText">
+            <h2>EQUIPE</h2>
+            <p>
+            A sede em Curitiba -PR conta com grandes profissionais para cuidar da sua autoestima realizando a avaliação do seu caso com precisão e expertise nos melhores tratamentos e procedimentos para o seu caso.
+            <br><br>
+            Conheça os nossos profissionais:
+            </p>
+        </div>
+    </div>
+
+    <div class="brownboxHome">
+        <h2>A SAÚDE E BELEZA PARA VOCÊ E SEUS CABELOS COM SERVIÇOS ESPECIALIZADOS
+        </h2>
+        <p>Atendimentos Clínicos para avaliar, investigar, tratar, cuidar e prevenir alopecias e eflúvios capilares acompanhados ou não de procedimentos cirúrgicos.
+        <br><br>
+        Cirurgias de Transplante Capilar com uma equipe especialista em técnicas inovadoras, tecnológicas e de alta precisão para um resultado mais natural (FUE). Realizamos megassessões utilizando a técnica BODY HAIR (com pelos do couro cabeludo e do corpo).
+        </p>
+    </div>
+
+    <div class="servicosHome">
+        <div class="servicosText">
+            <div class="servicosTextbox">
+                <h2>SERVIÇOS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nisl leo. Vestibulum id tellus id tortor finibus viverra quis vel massa. Morbi quis lectus a orci condimentum  nec ac purus.</p>
+            </div>
+            <div class="servicosBelowText">
+                <h4>ATENDIMENTOS CLÍNICOS</h4>
+                <h4>CIRURGIAS DE TRANSPLANTE CAPILAR</h4>
+            </div>
+        </div>
+        <img src="/img/servicoshome.jpg" alt="">
+    </div>
+
+  {% include 'contato.njk' %}
