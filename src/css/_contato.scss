@@ -1,8 +1,19 @@
+<<<<<<< HEAD
 @import "colors";
 
 .contato-muricy {
   margin-top: 15rem;
   margin-left: 262px;
+=======
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contato-muricy {
+  margin-left: 25rem;
+>>>>>>> 14d62ab45a374c0f681fae5dc6ef6596be8928f3
   display: flex;
   justify-content: center;
 
@@ -19,13 +30,23 @@
       letter-spacing: 0.1em;
     }
 
+<<<<<<< HEAD
     .descricao-contato {
+=======
+  .descricao-contato {
+    width: 35rem;
+    margin-top: 25px;
+    p {
+>>>>>>> 14d62ab45a374c0f681fae5dc6ef6596be8928f3
       height: 12.4rem;
       font-weight: 300;
       line-height: 30px;
       color: #495057;
+<<<<<<< HEAD
       text-align: justify;
       margin-top: 0.5rem;
+=======
+>>>>>>> 14d62ab45a374c0f681fae5dc6ef6596be8928f3
     }
   }
 
@@ -43,6 +64,7 @@
     width: 100%;
     margin-top: 4rem;
 
+<<<<<<< HEAD
     input,
     textarea {
       width: 100%;
@@ -51,6 +73,16 @@
     .dados {
       padding-left: 15px;
     }
+=======
+    form {
+      width: 455px;
+      display: flex;
+      flex-direction: column;
+
+      .dados {
+        padding-left: 15px;
+      }
+>>>>>>> 14d62ab45a374c0f681fae5dc6ef6596be8928f3
 
     #form-nome {
       font-size: 1.2rem;
@@ -81,6 +113,7 @@
       color: #bcbcbc;
     }
 
+<<<<<<< HEAD
     .enviar {
       align-items: end;
       font-size: 1.6rem;
@@ -122,6 +155,39 @@
       font-weight: 300;
       margin: 0;
     }
+=======
+      .enviar {
+        align-items: end;
+        font-size: 1.6rem;
+        color: #541e43;
+        border: none;
+        background-color: #ffffff;
+        line-height: 20px;
+        font-weight: 500;
+      }
+      .enviar-botao {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        .linha2 {
+          margin-top: 2px;
+          width: 59px;
+          background-color: #7f6678;
+          height: 2px;
+        }
+      }
+    }
+
+    .detalhes-contatos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 25rem;
+      background-color: #7f6678;
+      width: 588px;
+      height: 402px;
+>>>>>>> 14d62ab45a374c0f681fae5dc6ef6596be8928f3
 
     .informacoes-contatos {
       display: flex;
@@ -154,33 +220,40 @@
 
 @media screen and (max-width: 600px) {
   .contato-muricy {
-    margin-left: 0px !important;
+    margin-left: 0px;
     justify-content: center;
     align-items: initial;
   }
 
   .titulo-pagina {
+    margin-left: 3rem;
     width: 80vw;
+  }
+
+  .descricao-contato {
+    margin-left: 3rem;
+    p {
+    }
   }
 
   .forms-detalhes {
     margin-top: 40px;
     flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
-
-    .dados {
-      width: 80vw !important;
+    align-items: initial !important;
+    justify-content: center;
+    form {
+      width: 90vw !important;
+      .dados {
+        margin-left: 3rem;
+      }
     }
 
     .detalhes-contatos {
-      height: 60vw !important;
       width: 100vw !important;
-      margin-left: 0px !important;
+      margin-left: 0 !important;
       margin-top: 40px;
 
       .informacoes-contatos {
-        width: 100% !important;
         font-size: 1.4rem !important;
       }
     }
