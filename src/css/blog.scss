@@ -4,6 +4,11 @@
 @import "contato";
 @import "colors";
 
+.blog-container {
+  width: 80vw;
+  margin: auto;
+}
+
 .banner {
   height: 60vh;
   display: flex;
@@ -13,7 +18,7 @@
 
   > div {
     max-width: 400px;
-    z-index: 1;
+    z-index: 2;
     margin-left: 10vw;
   }
 
@@ -37,6 +42,7 @@
   display: flex;
   gap: 80px;
   justify-content: center;
+  margin-bottom: 4rem;
 
   a {
     display: flex;
@@ -48,5 +54,65 @@
     p {
       margin-left: 1rem;
     }
+  }
+}
+
+.first-blog {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    max-width: 512px;
+  }
+
+  > div {
+    margin-left: 4.8rem;
+
+    p {
+      color: $cinza_500;
+      padding-top: 10rem;
+    }
+
+    h3 {
+      max-width: 60%;
+    }
+  }
+}
+
+.posts-container {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin-top: 12.8rem;
+  gap: 3.8rem;
+  margin-bottom: 13rem;
+  justify-content: center;
+
+  li {
+    width: 300px;
+    padding-bottom: 7rem;
+    border-bottom: 1px solid $cinza_400;
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      font-size: 1.8rem;
+      color: $roxo_800;
+      font-weight: 500;
+    }
+  }
+}
+
+.pagination-container {
+  display: flex;
+  margin-bottom: 9rem;
+
+  .pagination {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
   }
 }

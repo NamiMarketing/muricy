@@ -2,29 +2,91 @@
 title: Blog
 layout: "base.njk"
 cssPath: "/css/build/blog.css"
+pagination:
+  data: collections.post
+  size: 7
 ---
 
 <section class="banner">
   <div>
-    <h2>BLOG E <br/> NOTÍCIAS</h2>
-    <h5>Confira as últimas atualizações sobre os cuidados, dicas, curiosidades, informações e orientações a respeito de saúde capilar.</h5>
+    <h2>BLOG E <br /> NOTÍCIAS</h2>
+    <h5>Confira as últimas atualizações sobre os cuidados, dicas, curiosidades, informações e orientações a respeito de
+      saúde capilar.</h5>
   </div>
-
   <img src="/img/blog/blog-lines.png" alt="">
 </section>
 
-<section class="nav-blog">
-  <a href="">QUEDA <p>(Eflúvio)</p></a>
-  <a href="">CALVÍCIE <p>(Alopécia)</p></a>
-  <a href="">TRATAMENTOS E PROCEDIMENTOS</a>
-  <a href="">VÍDEOS</a>
-</section>
+<div class="blog-container">
 
-  {%- for post in collections.post -%}
-  <li>
-    <h3>{{ post.data.title }}</h3>
-    <a href="{{ post.url }}">Read more</a>
-    <h4>{{ post.data.date | postDate }}</h4>
-  </li>
-  {%- endfor %}
+  <section class="nav-blog">
+    <a href="">QUEDA <p>(Eflúvio)</p></a>
+    <a href="">CALVÍCIE <p>(Alopécia)</p></a>
+    <a href="">TRATAMENTOS E PROCEDIMENTOS</a>
+    <a href="">VÍDEOS</a>
+  </section>
+  
+  {%- for item  in pagination.items | reverse -%}
+    {% if loop.index == 1 %}
+      <section class="first-blog">
+        <img src="{{ item.data.thumbnail }}" alt="">
+        <div>
+          <p>
+            {% for tag in item.data.tags -%}
+              {% if tag !== 'item' %}
+                {{ tag }},  
+              {% endif %}
+            {%- endfor %}
+            {{ item.data.date | postDate }}
+          </p>
+          <a href="{{ item.url }}">
+            <h3>{{ item.data.title }}</h3>
+          </a>
+        </div>
+      </section>
+    
+  <ul class="posts-container">
+    {% else %}
+      <li>
+        <img src="{{ item.data.thumbnail }}" alt="">
+        <p>
+          {% for tag in item.data.tags -%}
+            {% if tag !== 'post' %}
+              {{ tag }},  
+            {% endif %}
+          {%- endfor %}
+          {{ item.data.date | postDate }}
+        </p>
+        <a href="{{ item.url }}">
+          {{item.data.title}}
+        </a>
+      </li>
+    {% endif %}
+  {%- endfor %}    
+  </ul>  
+
+  <div class="pagination-container">
+    <ul class="pagination">
+        <li>{% if pagination.href.previous %}
+          <a href="{{ pagination.href.previous }}">
+            <img src="/img/svg/left-arrow.svg" alt="">
+          </a>{% endif %}
+        </li>
+        {%- for pageEntry in pagination.pages %}
+            <li>
+              <a href="{{ pagination.hrefs[ loop.index0 ] }}">
+                {{ loop.index }}
+              </a>
+            </li>
+        {%- endfor %}
+        <li>
+          {% if pagination.href.next %}
+            <a href="{{ pagination.href.next }}">
+              <img src="/img/svg/right-arrow.svg" alt="">
+            </a>
+          {% endif %}
+        </li>
+    </ul>
+  </div>
+
+  </div>
 </div>

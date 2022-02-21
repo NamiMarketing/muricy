@@ -1,0 +1,56 @@
+@import "global";
+@import "header";
+@import "footer";
+@import "contato";
+@import "colors";
+
+.info-container {
+  margin-top: 7.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+
+  h3 {
+    font-weight: 700;
+  }
+
+  p {
+    color: $cinza_500;
+    font-size: 1.4rem;
+  }
+
+  .tags-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    a {
+      text-decoration: underline;
+      color: $roxo_400;
+    }
+  }
+
+  img {
+    margin-top: 7rem;
+  }
+}
+
+.content-container {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 9rem;
+
+  h6 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $cinza_800;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+}

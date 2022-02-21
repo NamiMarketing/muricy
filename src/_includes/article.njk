@@ -1,5 +1,40 @@
 ---
-  layout: 'base.njk'
+title: Blog
+layout: "base.njk"
+cssPath: "/css/build/article.css"
 ---
 
-  {{ title }} oi
+<article>
+  <section class="info-container">
+    <p>{{ date | postDate }}</p>
+    <h3>{{ title }}</h3>
+
+    <div class="tags-container">
+      {% for tag in tags -%} {% if tag !== 'post' %}
+      <a href="">{{ tag }}</a>
+      {% endif %} {%- endfor %}
+    </div>
+
+    <img src="{{ thumbnail }}" alt="" />
+  </section>
+
+  <div class="content-container">
+    {{ content | safe }}
+  </div>
+</article>
+
+{%- for item in pagination.items | reverse -%}
+<ul class="posts-container">
+  <li>
+    <img src="{{ item.data.thumbnail }}" alt="" />
+    <p>
+      {% for tag in item.data.tags -%} {% if tag !== 'post' %}
+      {{ tag }}, {% endif %} {%- endfor %}
+      {{ item.data.date | postDate }}
+    </p>
+    <a href="{{ item.url }}">
+      {{ item.data.title }}
+    </a>
+  </li>
+  {%- endfor %}
+</ul>
