@@ -170,6 +170,13 @@
   background-color: $roxo_800;
 }
 
+.horizontal-line__white {
+  display: block;
+  height: 2px;
+  width: 4rem;
+  background-color: $white;
+}
+
 .full-horizontal-line {
   display: block;
   height: 2px;
@@ -189,4 +196,123 @@
 
 #androgenetica {
   margin-top: 13rem;
+}
+
+.tratamentos-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  .left-container {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 6rem;
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      color: $roxo_800;
+      margin-bottom: 1rem;
+
+      h4 {
+        margin-right: 2rem;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+
+    p {
+      line-height: 2.6rem;
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+  }
+
+  .right-container {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 6rem;
+    position: relative;
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      color: $roxo_800;
+      margin-bottom: 1rem;
+      justify-content: flex-end;
+
+      h4 {
+        margin-left: 2rem;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+
+    p {
+      line-height: 2.6rem;
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+  }
+}
+
+.purple-background-right {
+  background-color: $roxo_400;
+  width: 100vw;
+  margin: auto;
+  margin-bottom: 6rem;
+  position: relative;
+  margin-left: 6vw;
+  color: $white;
+  padding: 5rem 10vw 5rem 10rem;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: flex-end;
+    margin-right: 6vw;
+
+    h4 {
+      margin-left: 2rem;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  p {
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    margin-right: 6vw;
+  }
+}
+
+.purple-background-left {
+  background-color: $roxo_400;
+  margin: auto;
+  margin-bottom: 6rem;
+  position: relative;
+  margin-right: 6vw;
+  color: $white;
+  padding: 5rem 10rem 5rem 10vw;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+
+    h4 {
+      margin-right: 2rem;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  p {
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
 }
