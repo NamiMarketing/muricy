@@ -3,7 +3,7 @@ title: Blog
 layout: "base.njk"
 cssPath: "/css/build/blog.css"
 pagination:
-  data: collections.post
+  data: collections.videos
   size: 7
 ---
 
@@ -17,17 +17,18 @@ pagination:
 </section>
 
 <section class="nav-blog">
-  <a href="">QUEDA <p>(Eflúvio)</p></a>
-  <a href="">CALVÍCIE <p>(Alopécia)</p></a>
-  <a href="">TRATAMENTOS E PROCEDIMENTOS</a>
-  <a href="">VÍDEOS</a>
+  <a href="/blog/efluvio">QUEDA <p>(Eflúvio)</p></a>
+  <a href="/blog/alopecia">CALVÍCIE <p>(Alopécia)</p></a>
+  <a href="/blog/procedimentos">TRATAMENTOS E PROCEDIMENTOS</a>
+  <a href="/blog/videos"  class="nav-blog__active">VÍDEOS</a>
 </section>
 
-<div class="blog-container">  
+<div class="blog-container" id="video-blog-container">  
   {%- for item  in pagination.items | reverse -%}
     {% if loop.index == 1 %}
       <section class="first-blog">
-        <img src="{{ item.data.thumbnail }}" alt="">
+        <iframe width="545" height="303" src="https://www.youtube.com/embed/{{ item.data.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         <div>
           <p>
             {% for tag in item.data.tags -%}
@@ -43,10 +44,12 @@ pagination:
         </div>
       </section>
     
+
     <ul class="posts-container">
       {% else %}
         <li>
-          <img src="{{ item.data.thumbnail }}" alt="">
+          <iframe width="300" height="170" src="https://www.youtube.com/embed/{{ item.data.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
           <p>
             {% for tag in item.data.tags -%}
               {% if tag !== 'post' %}
@@ -61,7 +64,8 @@ pagination:
         </li>
       {% endif %}
     {%- endfor %}    
-    </ul>  
+    </ul> 
+ 
 
     <div class="pagination-container">
       <ul class="pagination">

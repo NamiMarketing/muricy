@@ -17,3 +17,9 @@ collections:
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Youtube ID",
+          name: "video",
+          widget: "string",
+          required: false,
+        }
