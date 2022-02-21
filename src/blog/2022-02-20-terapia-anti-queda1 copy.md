@@ -1,0 +1,17 @@
+---
+title: Terapia Anti-Queda 1
+description: Sem descrição?
+date: 2022-02-20T14:27:36.279Z
+tags:
+  - Capilar
+  - Geral
+  - Tratamentos
+thumbnail: /img/blog-hair-care-03-2.jpg
+rating: 3
+---
+
+Mais saúde e equilíbrio para a sua estrutura capilar.\
+\
+Até recentemente, a maneira da abordagem das terapias para a queda de cabelos estava focada em um tratamento domiciliar após consulta médica. Cada paciente fazia uso dos produtos farmacêuticos, cosméticos e vitaminas por determinado tempo. Mas o que propomos hoje vai muito mais além, com a preocupação de tratarmos a pele e os fios da região do couro cabeludo como tratamos a pele da face e do corpo.\
+\
+De nada adianta aplicarmos uma loção para ativar o crescimento em um couro cabeludo oleoso, com restos celulares e poros obstruídos. Também temos que tratar os fios para que permaneçam sedosos e com brilho, mesmo após química.

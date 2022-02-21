@@ -4,6 +4,11 @@
 @import "contato";
 @import "colors";
 
+.blog-container {
+  width: 80vw;
+  margin: auto;
+}
+
 .banner {
   height: 60vh;
   display: flex;
@@ -13,7 +18,7 @@
 
   > div {
     max-width: 400px;
-    z-index: 1;
+    z-index: 2;
     margin-left: 10vw;
   }
 
@@ -37,16 +42,277 @@
   display: flex;
   gap: 80px;
   justify-content: center;
+  margin-bottom: 4rem;
 
   a {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 500;
+    color: $roxo_800;
 
     p {
       margin-left: 1rem;
     }
+
+    &:hover {
+      border-bottom: 1px solid $roxo_800;
+      padding-bottom: 0.4rem;
+      margin-bottom: -0.4rem;
+    }
+  }
+}
+
+.first-blog {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    max-width: 512px;
+  }
+
+  > div {
+    margin-left: 4.8rem;
+
+    p {
+      color: $cinza_500;
+      padding-top: 10rem;
+    }
+
+    h3 {
+      max-width: 60%;
+    }
+  }
+}
+
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  grid-gap: 3.8rem;
+  list-style-type: none;
+  margin-top: 12.8rem;
+  margin-bottom: 13rem;
+  justify-content: center;
+  width: 100%;
+
+  li {
+    width: 300px;
+    padding-bottom: 7rem;
+    border-bottom: 1px solid $cinza_400;
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      font-size: 1.8rem;
+      color: $roxo_800;
+      font-weight: 500;
+    }
+  }
+}
+
+.pagination-container {
+  display: flex;
+  margin-bottom: 9rem;
+
+  .pagination {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+  }
+}
+
+#video-blog-container {
+  margin-top: 6rem;
+}
+
+.nav-blog__active {
+  border-bottom: 1px solid $roxo_800;
+  padding-bottom: 0.4rem;
+  margin-bottom: -0.4rem;
+}
+
+#efluvio-container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-bottom: 17rem;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    color: $roxo_800;
+    justify-content: center;
+    margin-bottom: 4.7rem;
+
+    h4 {
+      margin-right: 2rem;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  p {
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+}
+
+.horizontal-line {
+  display: block;
+  height: 2px;
+  width: 4rem;
+  background-color: $roxo_800;
+}
+
+.horizontal-line__white {
+  display: block;
+  height: 2px;
+  width: 4rem;
+  background-color: $white;
+}
+
+.full-horizontal-line {
+  display: block;
+  height: 2px;
+  width: 4rem;
+  background-color: $roxo_800;
+  width: 60vw;
+  margin-right: -60vw;
+}
+
+.vertical-line {
+  display: block;
+  height: 7rem;
+  width: 2px;
+  background-color: $roxo_800;
+  margin-top: 5rem;
+}
+
+#androgenetica {
+  margin-top: 13rem;
+}
+
+.tratamentos-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  .left-container {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 6rem;
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      color: $roxo_800;
+      margin-bottom: 1rem;
+
+      h4 {
+        margin-right: 2rem;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+
+    p {
+      line-height: 2.6rem;
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+  }
+
+  .right-container {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 6rem;
+    position: relative;
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      color: $roxo_800;
+      margin-bottom: 1rem;
+      justify-content: flex-end;
+
+      h4 {
+        margin-left: 2rem;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+
+    p {
+      line-height: 2.6rem;
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+  }
+}
+
+.purple-background-right {
+  background-color: $roxo_400;
+  width: 100vw;
+  margin: auto;
+  margin-bottom: 6rem;
+  position: relative;
+  margin-left: 6vw;
+  color: $white;
+  padding: 5rem 10vw 5rem 10rem;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: flex-end;
+    margin-right: 6vw;
+
+    h4 {
+      margin-left: 2rem;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  p {
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    margin-right: 6vw;
+  }
+}
+
+.purple-background-left {
+  background-color: $roxo_400;
+  margin: auto;
+  margin-bottom: 6rem;
+  position: relative;
+  margin-right: 6vw;
+  color: $white;
+  padding: 5rem 10rem 5rem 10vw;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+
+    h4 {
+      margin-right: 2rem;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  p {
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+    text-align: justify;
   }
 }
