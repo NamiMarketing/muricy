@@ -11,6 +11,7 @@
 
   .atendimento-clinico {
     display: flex;
+
     .atendimento-titulo {
       margin-top: 25.6rem;
       margin-bottom: 15.1rem;
@@ -21,6 +22,7 @@
       font-weight: 400;
       line-height: 68px;
     }
+
     img {
       opacity: 0.3;
       overflow: hidden;
@@ -39,7 +41,7 @@
       align-items: center;
 
       p {
-        width: 71.5rem;
+        max-width: 71.5rem;
         font-weight: 300;
         font-size: 18px;
         line-height: 26px;
@@ -48,8 +50,6 @@
 
       h2 {
         margin-left: 2.5rem;
-        font-weight: 500;
-        font-size: 4.2rem;
         line-height: 51px;
         letter-spacing: 0.1em;
       }
@@ -58,19 +58,24 @@
     .doencas-cabelo {
       margin-top: 4.8rem;
       display: flex;
+      align-items: center;
+
       div {
         margin-left: 3.7rem;
         display: flex;
-        align-items: initial;
+        align-items: center;
       }
+
       h3 {
         font-weight: 700;
         font-size: 1.4rem;
         line-height: 1.7rem;
       }
+
       p {
         font-size: 1.4rem;
         font-weight: 300;
+        margin-left: 0.5rem;
       }
     }
 
@@ -78,17 +83,17 @@
       margin-top: 13rem;
       display: flex;
       flex-direction: column;
+      width: 90%;
+
       h1 {
-        width: 56rem;
+        max-width: 56rem;
         font-weight: 500;
         font-size: 4.2rem;
         line-height: 51px;
         letter-spacing: 0.1em;
+        margin-bottom: 15px;
       }
-    }
-    .texto-dermatologista {
-      margin-top: 15px;
-      width: 109.1rem;
+
       p {
         font-size: 1.8rem;
         font-weight: 300;
@@ -98,46 +103,58 @@
       }
     }
   }
-  .tratamentos {
-    margin-top: 22.9rem;
+}
+
+.tratamentos {
+  margin-top: 22.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .texto-tratamentos {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .texto-tratamentos {
+    flex-direction: column;
+    max-width: 65.1rem;
+
+    h1 {
+      color: $roxo_800;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 51px;
+      letter-spacing: 0.1em;
+    }
+
+    p {
+      margin-top: 23px;
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 26px;
+      color: $cinza_900;
+    }
+
+    ul {
+      margin-top: 20px;
       display: flex;
-      flex-direction: column;
-      width: 65.1rem;
-      h1 {
+      justify-content: space-between;
+
+      a {
+        font-weight: 600;
+        font-size: 1.8rem;
         color: $roxo_800;
-        font-weight: 500;
-        font-size: 42px;
-        line-height: 51px;
-        letter-spacing: 0.1em;
+        padding-bottom: 5px;
       }
-      p {
-        margin-top: 23px;
-        font-size: 1.6rem;
-        font-weight: 300;
-        line-height: 26px;
-        color: $cinza_900;
-      }
-      ul {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        a {
-          font-weight: 600;
-          font-size: 1.8rem;
-          color: $roxo_800;
-          padding-bottom: 5px;
-        }
-        a:hover {
-          border-bottom: 1px solid $roxo_800;
-        }
+
+      a:hover {
+        border-bottom: 1px solid $roxo_800;
       }
     }
   }
+
+  img {
+    margin-left: 2rem;
+  }
 }
+
 .container-verde {
   display: flex;
   justify-content: space-between;
@@ -149,16 +166,15 @@
   align-items: center;
   padding: 0 5.7rem 0 24.4rem;
   color: #ffffff;
-  .titulo-tratamento-associados {
-    h1 {
-      width: 36.9rem;
-      font-weight: 500;
-      font-size: 4.2rem;
-      line-height: 51px;
-      letter-spacing: 0.1em;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+
+  h2 {
+    width: 36.9rem;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0.1em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
   .texto-tratamento-associados {
     width: 40.5rem;
     display: flex;
@@ -216,5 +232,43 @@
     position: absolute;
     opacity: 0.3;
     transform: rotate(3.24deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .informacoes-iniciais {
+    margin-left: 0;
+
+    .container-rosa {
+      padding: 9.6rem 2rem 5.5rem 2rem;
+
+      .diagnostico {
+        flex-direction: column-reverse;
+      }
+
+      .informacoes-cabelo {
+        width: 100%;
+      }
+    }
+  }
+
+  .tratamentos {
+    flex-direction: column;
+    padding: 2rem;
+
+    .texto-tratamentos {
+      place-items: center;
+
+      ul {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 8vw);
+      }
+
+      p {
+        text-align: justify;
+      }
+    }
   }
 }
