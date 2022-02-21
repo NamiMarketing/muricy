@@ -28,8 +28,11 @@ cssPath: "/css/build/article.css"
   <li>
     <img src="{{ item.data.thumbnail }}" alt="" />
     <p>
-      {% for tag in item.data.tags -%} {% if tag !== 'post' %}
-      {{ tag }}, {% endif %} {%- endfor %}
+      {% for tag in item.data.tags -%} 
+        {% if tag !== 'post' %}
+          {{ tag }}, 
+        {% endif %} 
+      {%- endfor %}
       {{ item.data.date | postDate }}
     </p>
     <a href="{{ item.url }}">
@@ -38,3 +41,28 @@ cssPath: "/css/build/article.css"
   </li>
   {%- endfor %}
 </ul>
+
+<img class="article-lines" src="/img/blog/article-lines.svg" alt="" />
+
+<div class="artigos-relacionados">
+  <h5>Artigos relacionados</h5>
+  {% set postsFiltered = collections.post | reverse | limit(3)  %} 
+  <ul>
+    {%- for post in postsFiltered -%}
+      <li>
+        <img src="{{ post.data.thumbnail }}" alt="" />
+        <p>
+          {% for tag in post.data.tags -%}
+            {% if tag !== 'post' %}
+              {{ tag }},  
+            {% endif %}
+          {%- endfor %}
+          {{ post.data.date | postDate }}
+        </p>
+        <a href="{{ post.url }}">
+          {{ post.data.title }}
+        </a>
+      </li>
+    {%- endfor %}
+  </ul>
+</div>

@@ -32,7 +32,7 @@ pagination:
         <div>
           <p>
             {% for tag in item.data.tags -%}
-              {% if tag !== 'item' %}
+              {% if tag !== 'post' %}
                 {{ tag }},  
               {% endif %}
             {%- endfor %}
