@@ -77,8 +77,10 @@
   <h2>PERGUNTAS FREQUENTES</h2>
   <div class="pfsidebox">
     <div class="pftextbox">
-      <button type="button" class="collapsible active">O que é megatransplante de cabelos?<img src="/img/seta.png"
-          alt=""></button>
+      <button type="button" class="collapsible active">
+        O que é megatransplante de cabelos?
+        <img src="/img/seta.png" alt="" style="transform: rotate(0)">
+      </button>
       <div class="collapsiblecontent" style="display: block;">
         <p>Megatransplante é o mais eficiente procedimento cirúrgico para o tratamento da calvície. É o transplante de
           unidades foliculares, denominados folículos capilares que são extraídos da região doadora na parte posterior
@@ -172,10 +174,14 @@
     coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var collapsiblecontent = this.nextElementSibling;
+      var img = this.getElementsByTagName('img');
+      console.log(img[0])
       if (collapsiblecontent.style.display === "block") {
         collapsiblecontent.style.display = "none";
+        img[0].style.transform = "rotate(-180deg)";
       } else {
         collapsiblecontent.style.display = "block";
+        img[0].style.transform = "rotate(0)";
       }
     });
   }

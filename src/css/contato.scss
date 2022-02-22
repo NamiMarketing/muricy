@@ -40,7 +40,7 @@
       border-radius: 5px;
       width: 424px;
       padding: 1rem;
-      transition-duration: 0.2s;
+      transition: all 0.3s;
 
       &:hover {
         color: $white;
@@ -88,6 +88,11 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+
+        img {
+          transform: rotate(180deg);
+          transition: transform 0.2s;
+        }
       }
 
       .collapsiblecontent {
