@@ -18,7 +18,6 @@
       letter-spacing: 0.1rem;
       color: $roxo_800;
       max-width: 52.1rem;
-      font-size: 5.6rem;
       font-weight: 400;
       line-height: 68px;
     }
@@ -43,7 +42,7 @@
       p {
         max-width: 71.5rem;
         font-weight: 300;
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: 26px;
         letter-spacing: 0.1em;
       }
@@ -66,9 +65,8 @@
         align-items: center;
       }
 
-      h3 {
+      h6 {
         font-weight: 700;
-        font-size: 1.4rem;
         line-height: 1.7rem;
       }
 
@@ -85,10 +83,9 @@
       flex-direction: column;
       width: 90%;
 
-      h1 {
+      h2 {
         max-width: 56rem;
         font-weight: 500;
-        font-size: 4.2rem;
         line-height: 51px;
         letter-spacing: 0.1em;
         margin-bottom: 15px;
@@ -116,17 +113,15 @@
     flex-direction: column;
     max-width: 65.1rem;
 
-    h1 {
+    h2 {
       color: $roxo_800;
       font-weight: 500;
-      font-size: 42px;
       line-height: 51px;
       letter-spacing: 0.1em;
     }
 
     p {
       margin-top: 23px;
-      font-size: 1.6rem;
       font-weight: 300;
       line-height: 26px;
       color: $cinza_900;
@@ -180,7 +175,6 @@
     display: flex;
     flex-direction: column;
     p {
-      font-size: 1.6rem;
       line-height: 26px;
       text-align: right;
       margin-bottom: 3.5rem;
@@ -219,7 +213,7 @@
     box-sizing: border-box;
     border-radius: 5px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 20px;
     align-items: center;
     justify-content: center;
@@ -236,88 +230,100 @@
 }
 
 @media screen and (max-width: 600px) {
-  .informacoes-iniciais {
-    margin-left: 0;
+  html {
+    font-size: 55%;
+    .informacoes-iniciais {
+      margin-left: 0;
 
-    .atendimento-clinico {
-      justify-content: center;
-      .atendimento-titulo {
-        text-align: center;
-        margin: 11rem 0;
-      }
-      img {
-        display: none;
-      }
-    }
-
-    .container-rosa {
-      padding: 9.6rem 2rem 5.5rem 2rem;
-
-      .diagnostico {
-        flex-direction: column-reverse;
-        p {
-          margin-top: 20px;
+      .atendimento-clinico {
+        justify-content: center;
+        .atendimento-titulo {
+          font-size: 4.5rem;
+          text-align: center;
+          margin: 11rem 0;
+        }
+        img {
+          display: none;
         }
       }
 
-      .informacoes-cabelo {
-        margin-top: 10rem;
-        width: 100%;
+      .container-rosa {
+        padding: 9.6rem 2rem 5.5rem 2rem;
+
+        .diagnostico {
+          flex-direction: column-reverse;
+          p {
+            margin-top: 20px;
+          }
+        }
+        .doencas-cabelo {
+          div {
+            flex-direction: column;
+          }
+        }
+
+        .informacoes-cabelo {
+          margin-top: 10rem;
+          width: 100%;
+          h2 {
+            font-size: 3.4rem;
+          }
+        }
       }
     }
-  }
 
-  .tratamentos {
-    flex-direction: column;
-    padding: 2rem;
-    margin-top: 7rem;
+    .tratamentos {
+      flex-direction: column;
+      padding: 2rem;
+      margin-top: 7rem;
 
-    .texto-tratamentos {
-      place-items: center;
+      .texto-tratamentos {
+        place-items: center;
 
-      ul {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 8vw);
+        ul {
+          display: grid;
+          gap: 1rem;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 8vw);
+        }
+
+        p {
+          text-align: justify;
+        }
       }
-
-      p {
-        text-align: justify;
+      img {
+        margin-top: 2rem;
       }
     }
-    img {
-      margin-top: 2rem;
-    }
-  }
-  .container-verde {
-    margin-top: 9rem;
-    width: 100%;
-    padding: 2rem;
-    flex-direction: column;
-    justify-content: center;
-    h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .texto-tratamento-associados {
-      p {
+    .container-verde {
+      margin-top: 9rem;
+      width: 100%;
+      padding: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
         text-align: center;
         margin-bottom: 2rem;
       }
-      ul {
-        justify-content: space-around;
-        li {
-          margin: 0;
+
+      .texto-tratamento-associados {
+        p {
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        ul {
+          justify-content: space-around;
+          li {
+            margin: 0;
+          }
         }
       }
     }
-  }
-  .agende-consulta {
-    a {
-      width: 80%;
-      margin: 11rem 0;
+    .agende-consulta {
+      a {
+        width: 80%;
+        margin: 11rem 0;
+      }
     }
   }
 }
