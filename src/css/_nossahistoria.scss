@@ -1,20 +1,130 @@
-.institucionalFlex {
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.institucionalFlexbox {
+    width: 85vw;
+    margin-left: auto;
+
+  .institucionalFlex {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    float: right;
+    justify-content: space-between;
     margin-top: 18rem;
+    margin-left: auto;
+
+    h2 {
+      color: $roxo_800;
+      font-weight: 500;
+      line-height: 51px;
+      letter-spacing: 0.1em;
+    }
+
+    img {
+      width: 45vw;
+    }
+  }
+
+  .purpleBox {
+    margin-left: auto;
+    background-color: $roxo_400;
+    color: $white;
+    padding: 7rem 10rem;
+
+    p {
+      text-align: justify;
+      line-height: 26px;
+    }
+  }
+}
+
+.estrutura {
+    width: 100%;
+    margin-bottom: 23rem;
 
     h2 {
         color: $roxo_800;
-        font-weight: 500;
         line-height: 51px;
+        text-align: center;
         letter-spacing: 0.1em;
+        margin: 9rem 0;
+    }
+
+    .estruturaBanner {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+
+        .estrutura1, .estrutura2, .estrutura3 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 100%;
+            }
+
+            h4 {
+                font-weight: 500;
+                color: $white;
+                margin-top: -10rem;
+            }
+        }
     }
 }
 
-.purpleBox {
-    background-color: $roxo_400;
-    color: $white;
-}
+.equipeNossaHistoria {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+  
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 22vw);
+      grid-gap: 25px;
+      width: 39vw;
+      margin-top: 5rem;
+      margin-left: 25rem;
+  
+      .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .drraffaele {
+        margin-top: 22rem;
+        margin-left: 7rem;
+      }
+  
+      .drapriscila {
+        margin-top: 8rem;
+      }
+    }
+  
+    .equipeText {
+      width: 30vw;
+  
+      h2 {
+        color: $roxo_800;
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 51px;
+        text-align: right;
+        letter-spacing: 0.1em;
+        margin-bottom: 2rem;
+      }
+  
+      p {
+        color: $cinza_800;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: right;
+      }
+    }
+  }
