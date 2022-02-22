@@ -1,0 +1,102 @@
+@import "global";
+@import "header";
+@import "footer";
+@import "colors";
+@import "includecontato";
+
+.contatoBanner {
+  margin: 13rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+
+  h2 {
+    color: $roxo_800;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+
+  h4 {
+    color: $cinza_900;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .contatoButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    .btn {
+      color: $roxo_800;
+      text-align: center;
+      font-weight: 500;
+      background-color: $white;
+      border: 2px solid $roxo_400;
+      box-sizing: border-box;
+      border-radius: 5px;
+      width: 424px;
+      padding: 1rem;
+      transition-duration: 0.2s;
+
+      &:hover {
+        color: $white;
+        border: 2px solid $roxo_800;
+        background-color: $roxo_800;
+      }
+    }
+  }
+}
+
+.perguntasFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80vw;
+  margin: auto;
+  margin-top: 5rem;
+  gap: 7rem;
+
+  h2 {
+    color: $roxo_800;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    width: 374px;
+  }
+
+  .pfsidebox {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+
+    .pftextbox {
+      border-bottom: 0.5px solid $cinza_400;
+
+      .collapsible {
+        color: $roxo_800;
+        font-size: 1.8rem;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .collapsiblecontent {
+        p {
+          color: $cinza_900;
+          margin-bottom: 1rem;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

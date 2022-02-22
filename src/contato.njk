@@ -1,80 +1,92 @@
 ---
 title: Contato
 layout: "base.njk"
+cssPath: "/css/build/contato.css"
 ---
 
-<section class="contato-muricy">
-  <div class="titulo-pagina">
-    <h1>ENTRE EM CONTATO</h1>
-    <span class="linha"></span>
+<div class="contatoBanner">
+  <h2>ENTRE EM CONTATO</h2>
+  <h4>Confira as nossas Redes Sociais ou preencha os seus dados para nos enviar uma mensagem.
+    <br>Queremos saber quem você é.</h4>
+  <div class="contatoButtons">
+    <a href="" class="btn">AVALIAÇÃO PARA TRANSPLANTE CAPILAR</a>
+    <a href="" class="btn">AGENDE A SUA CONSULTA</a>
   </div>
-  <span class="descricao-contato">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie ipsum
-      nibh, et facilisis risus molestie nec.
-    </p>
-  </span>
-  <div class="forms-detalhes">
-    <form>
-      <input
-        type="text"
-        name="nome"
-        class="dados"
-        id="form-nome"
-        placeholder="Nome"
-        required
-      />
-      <br />
-      <input
-        type="email"
-        name="email"
-        class="dados"
-        id="form-nome"
-        placeholder="E-mail"
-        required
-      />
-      <br />
-      <textarea
-        type="text"
-        name="ajuda"
-        class="dados"
-        id="form-ajuda"
-        placeholder="Como podemos te ajudar?"
-        cols="50"
-        rows="5"
-        required
-      ></textarea>
-      <br />
-      <div class="enviar-botao">
-        <input type="submit" value="ENVIAR" class="enviar" />
-        <span class="linha2"></span>
+</div>
+
+<div class="perguntasFlex">
+  <h2>PERGUNTAS FREQUENTES</h2>
+  <div class="pfsidebox">
+    <div class="pftextbox">
+      <button type="button" class="collapsible active">O que é megatransplante de cabelos?<img src="/img/seta.png"
+          alt=""></button>
+      <div class="collapsiblecontent" style="display: block;">
+        <p>Megatransplante é o mais eficiente procedimento cirúrgico para o tratamento da calvície. É o transplante de
+          unidades foliculares, denominados folículos capilares que são extraídos da região doadora na parte posterior
+          da cabeça e transplantados para a área calva. A cada procedimento cirúrgico são transplantados cerca de 2.600
+          a 3.500 ou mais enxertos, dependendo da quantidade de fios da área doadora de cada paciente, que correspondem
+          de 7.000 a 10.000 mil fios, aproximadamente. Após duas sessões os resultados são cabelos naturais e
+          permanentes.</p>
       </div>
-    </form>
-    <div class="detalhes-contatos">
-      <div class="informacoes-contatos">
-        <div class="telefone-container">
-          <img class="icones" src="/img/svg/phone.svg" alt="Icone Telefone" />
-          <p class="telefone-contato">(41) 3242-8371</p>
-        </div>
-        <div class="telefone-container">
-          <img class="icones" src="/img/svg/phone.svg" alt="Icone Telefone" />
-          <p class="telefone-contato">(41) 9 8495-8022 | (41) 98495-8510</p>
-        </div>
-        <div class="endereco-container">
-          <img class="icones" src="/img/svg/map-pin.svg" alt="Icone Mapa" />
-          <p class="endereco-contato">
-            Rua Pedro Collere, Nº 35 | Esquina com Avenida Presidente Getúlio
-            Vargas
-          </p>
-        </div>
-        <div class="email-container">
-          <img class="icones" src="/img/svg/mail.svg" alt="Icone Email" />
-          <p class="email-contato">drmuricy@clinicamuricy.com.br</p>
-        </div>
+    </div>
+    <div class="pftextbox">
+      <button type="button" class="collapsible">O que pode ser feito em relação ao padrão masculino de
+        calvície?<img src="/img/seta.png" alt=""></button>
+      <div class="collapsiblecontent" style="display: none;">
+        <p>Pessoas que sofrem com a miniaturização capilar têm quatro opções para lidar com o problema. A melhor delas é
+          partir para uma cirurgia de restauração capilar, a única solução natural e permanente para a calvície. Pode-se
+          também, nos casos iniciais, optar por tratamentos clínicos como comprimidos, loções ,shampoos, laser de baixa
+          potência, ou utilizar cosméticos em forma de cremes, sprays que, quando aplicados na área calva, ajudam a
+          disfarçar o problema, desde que ainda haja um pouco de cabelo no local.</p>
+      </div>
+    </div>
+    <div class="pftextbox">
+      <button type="button" class="collapsible">Há algum remédio ou loção que faça meus cabelos crescer novamente?<img
+          src="/img/seta.png" alt=""></button>
+      <div class="collapsiblecontent" style="display: none;">
+        <p>Depende do grau da calvície. Se bem inicial, os resultados são bons. Porém em graus mais avançados, o melhor
+          tratamento é o cirúrgico. Remédios podem retardar a evolução da calvície, mas não fazem nascer novos fios onde
+          já houve a morte da raiz. A solução permanente para a calvície é mesmo o megatransplante de unidades
+          foliculares.</p>
+      </div>
+    </div>
+    <div class="pftextbox">
+      <button type="button" class="collapsible">Quem pode fazer uma cirurgia de restauração capilar?<img
+          src="/img/seta.png" alt=""></button>
+      <div class="collapsiblecontent" style="display: none;">
+        <p>Esse tipo de cirurgia é uma solução definitiva para homens e mulheres acometidos pela Alopecia Androgênica
+          (AAG). Locais cicatrizados com falta de cabelos também podem receber cirurgia.</p>
+      </div>
+    </div>
+    <div class="pftextbox">
+      <button type="button" class="collapsible">Sou um bom candidato?<img src="/img/seta.png" alt=""></button>
+      <div class="collapsiblecontent" style="display: none;">
+        <p>Qualquer pessoa com boa densidade capilar e couro cabeludo saudável é imediatamente um bom candidato para o
+          megatransplante. Um paciente com cabelos e pele claros – em oposição a um paciente com cabelos escuros e pele
+          clara – normalmente tem uma maior densidade capilar, o que facilita o procedimento cirúrgico. Pacientes com
+          cabelos enrolados ou encaracolados precisarão de menos sessões do que alguém com cabelos lisos. Apesar de
+          naturais, os resultados variam de paciente para paciente e podem não alcançar a densidade total ou cobertura
+          que você tinha quando adolescente.</p>
       </div>
     </div>
   </div>
-</section>
-<div class="imagem-linhas">
-  <img class="linhas-onduladas" src="/img/linhas.png" alt="Linhas onduladas" />
 </div>
+
+{% include 'includecontato.njk' %}
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var collapsiblecontent = this.nextElementSibling;
+      if (collapsiblecontent.style.display === "block") {
+        collapsiblecontent.style.display = "none";
+      } else {
+        collapsiblecontent.style.display = "block";
+      }
+    });
+  }
+</script>
