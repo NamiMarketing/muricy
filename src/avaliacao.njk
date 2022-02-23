@@ -1,0 +1,176 @@
+---
+title: Avaliação
+layout: "base.njk"
+cssPath: "/css/build/avaliacao.css"
+---
+
+<section class="banner">
+  <img src="/img/svg/avaliacao-lines.svg" alt="">
+  <div>
+    <h2>faça sua  <br /> avaliação</h2>
+    <h5>A avaliação do médico é fundamental para um diagnóstico preciso do seu tratamento clínico ou cirúrgico.</h5>
+  </div>
+</section>
+
+<section class="info-container">
+  <h5>Contate-nos para obter informações preliminares.</h5>
+  <div>
+    <p>Clínica Muricy Curitiba: 41 3242-8371   |   drmuricy@clinicamuricy.com.br</p>
+    <p>Clinica Muricy São Paulo: 11 2309-0210   |   dramuricy@clinicamuricy.com.br</p>
+  </div>
+</section>
+
+<form class="avaliacao-form" name="avaliacao" method="POST">
+  <div class="half">
+    <input type="text" name="nome" placeholder="Em qual cidade você reside?" required />
+    <div class="radio-container">
+      <p>Em qual cidade fará a avaliação?</p>
+      <div>
+        <div>
+          <input type="radio" id="curitiba" name="cidade" value="curitiba">
+          <label for="curitiba">Curitiba</label>
+        </div>
+        <div>
+          <input type="radio" id="sp" name="cidade" value="sp">
+          <label for="sp">São Paulo</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <input type="text" name="nome" placeholder="Qual seu nome completo?" required />
+
+  <div class="half">
+    <input type="email" name="email" placeholder="E-mail para contato:" required />
+    <input type="date" name="nascimento" placeholder="Data de nascimento:" required />
+  </div>
+
+  <div class="half">
+    <input type="phone" name="celphone" placeholder="Telefone Celular:" required />
+    <input type="phone" name="phone" placeholder="Telefone Fixo:" required />
+  </div>
+
+  <div class="half">
+    <div class="radio-container">
+      <p>Já fez cirurgia de transplante capilar?</p>
+      <div>
+        <div>
+          <input type="radio" id="yes" name="transplante-capilar" value="yes">
+          <label for="yes">Sim</label>
+        </div>
+        <div>
+          <input type="radio" id="no" name="transplante-capilar" value="no">
+          <label for="no">Não</label>
+        </div>
+      </div>
+    </div>
+    <input type="text" name="tc-tempo" placeholder="Se afirmativo, há quanto tempo?"  />
+  </div>
+
+  <div class="half">
+    <div class="radio-container">
+      <p>Já fez ou ainda faz tratamento para a queda de cabelo?</p>
+      <div>
+        <div>
+          <input type="radio" id="yes" name="queda-cabelo" value="yes">
+          <label for="yes">Sim</label>
+        </div>
+        <div>
+          <input type="radio" id="no" name="queda-cabelo" value="no">
+          <label for="no">Não</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="radio-container">
+      <p>Faz uso de algum medicamento para a queda de cabelo?</p>
+      <div>
+        <div>
+          <input type="radio" id="yes" name="med-queda-cabelo" value="yes">
+          <label for="yes">Sim</label>
+        </div>
+        <div>
+          <input type="radio" id="no" name="med-queda-cabelo" value="no">
+          <label for="no">Não</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="half">
+    <input type="text" name="tempo-medicamento" placeholder="Se afirmativo, há quanto tempo e qual é o medicamento?"/>
+    <div class="radio-container">
+      <p>Como descreveria o seu cabelo?</p>
+      <div>
+        <div>
+          <input type="radio" id="fino" name="tipo-cabelo" value="fino">
+          <label for="fino">Fino</label>
+        </div>
+        <div>
+          <input type="radio" id="medio" name="tipo-cabelo" value="medio">
+          <label for="medio">Médio</label>
+        </div>
+        <div>
+          <input type="radio" id="grosso" name="tipo-cabelo" value="grosso">
+          <label for="grosso">Grosso</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="half">
+    <div class="radio-container">
+      <p>Tem histórico de calvície na família? </p>
+      <div>
+        <div>
+          <input type="radio" id="yes" name="historico-familiar" value="yes">
+          <label for="yes">Sim</label>
+        </div>
+        <div>
+          <input type="radio" id="no" name="historico-familiar" value="no">
+          <label for="no">Não</label>
+        </div>
+      </div>
+    </div>
+    <input type="text" name="parentesco" placeholder="Se afirmativo, qual o parentesco?" />
+  </div>
+  <h5>Anexar fotos</h5>
+  <input type="file" name="arquivos" />
+  
+  <input type="submit" value="ENVIAR" class="enviar" /> 
+</form>
+
+<section class="orientacoes">
+  <h2>orientações para as fotos</h2>
+
+  <div class="explicacao">
+    <img src="/img/svg/nao-operado.svg" alt="">
+    <div>
+      <h5>Se <b>não</b> operado</h5>
+      <p>Fotos: frente, lateral, posterior e superior do couro cabeludo (queixo encostado no peito)</p>
+    </div>
+  </div>
+
+  <div class="explicacao">
+    <img src="/img/svg/operado.svg" alt="">
+    <div>
+      <h5>Se <b>já</b> operado</h5>
+      <p>Enviar todas as fotos conforme modelo abaixo (a foto da área doadora deve aparecer a cicatriz).</p>
+      <div class="fotos-avaliacao">
+        <img src="/img/avaliacao/foto-operado-1.jpg" alt="">
+        <img src="/img/avaliacao/foto-operado-2.jpg" alt="">
+        <img src="/img/avaliacao/foto-operado-3.jpg" alt="">
+        <img src="/img/avaliacao/foto-operado-4.jpg" alt="">
+        <img src="/img/avaliacao/foto-operado-5.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="explicacao">
+    <img src="/img/svg/fotos.svg" alt="">
+    <div>
+      <h5>Fotos</h5>
+      <p>Fotos: frente, lateral, posterior e superior do couro cabeludo (queixo encostado no peito)</p>
+    </div>
+  </div>
+</section>
