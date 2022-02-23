@@ -38,11 +38,16 @@
   justify-content: center;
   margin-top: -5vh;
   gap: 10rem;
+  z-index: 2;
 
-  a {
+  button {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
   }
 
   .active {
@@ -78,6 +83,7 @@
     display: flex;
     flex-direction: column;
     max-width: 70vw;
+    margin-top: 10rem;
 
     > div {
       display: flex;
@@ -92,6 +98,38 @@
     .text-bottom {
       margin-top: 6rem;
       line-height: 2.6rem;
+    }
+  }
+
+  .gray-box {
+    display: flex;
+    background-color: $cinza_500;
+    color: $roxo_800;
+    padding: 4.5rem;
+    justify-content: center;
+    place-items: center;
+    gap: 10rem;
+    width: 90vw;
+    margin: auto;
+    margin-top: 10rem;
+
+    > div {
+      display: flex;
+      justify-content: center;
+      place-items: center;
+
+      span {
+        margin-left: 2rem;
+      }
+    }
+
+    ul {
+      max-width: 600px;
+
+      li {
+        line-height: 2.6rem;
+        list-style-type: initial;
+      }
     }
   }
 }
@@ -112,21 +150,125 @@
   background-color: $roxo_800;
 }
 
-.gray-box {
-  display: flex;
-  background-color: $cinza_500;
-  color: $roxo_800;
-  padding: 4.5rem;
-  justify-content: center;
-  place-items: center;
-  gap: 10rem;
-  width: 90vw;
+.vertical-line {
+  display: block;
+  height: 7rem;
+  width: 2px;
+  background-color: $roxo_800;
+  margin-top: 14rem;
+}
 
-  ul {
-    max-width: 600px;
-    li {
+.pos-operatorio {
+  display: none;
+  flex-direction: column;
+  place-items: center;
+  margin-bottom: 17rem;
+  width: 100vw;
+  margin-top: 14rem;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    color: $roxo_800;
+    justify-content: center;
+    margin-bottom: 4.7rem;
+
+    h2 {
+      margin-right: 2rem;
+      font-size: 4rem;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    margin-top: 10rem;
+
+    > div {
+      display: flex;
+      gap: 2rem;
+
+      p {
+        line-height: 2.6rem;
+        margin-right: 6rem;
+      }
+    }
+
+    .text-bottom {
+      margin-top: 6rem;
       line-height: 2.6rem;
-      list-style-type: dotted;
+    }
+  }
+
+  .gray-box {
+    display: flex;
+    background-color: $cinza_500;
+    color: $roxo_800;
+    padding: 4.5rem;
+    justify-content: center;
+    place-items: center;
+    width: 90vw;
+    margin: auto;
+    margin-top: 10rem;
+    flex-direction: row;
+
+    .left-side {
+      > div {
+        display: flex;
+        place-items: center;
+        margin-right: auto;
+
+        span {
+          margin-left: 2rem;
+        }
+      }
+
+      img {
+        margin-right: 3rem;
+        margin-top: 2rem;
+      }
+    }
+
+    .right-side {
+      display: flex;
+      justify-content: center;
+      place-items: center;
+
+      p {
+        max-width: 636px;
+        line-height: 2.6rem;
+        margin-top: 5rem;
+      }
+    }
+  }
+
+  .outras-recomendacoes {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    margin-top: 10rem;
+
+    > div {
+      display: flex;
+      place-items: center;
+      margin-right: auto;
+      margin-bottom: 2rem;
+
+      p {
+        color: $roxo_800;
+      }
+
+      span {
+        margin-left: 2rem;
+      }
+    }
+
+    p {
+      line-height: 2.6rem;
     }
   }
 }
