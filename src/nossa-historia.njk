@@ -5,21 +5,72 @@ cssPath: "/css/build/home.css"
 ---
 
 <section>
-  <div class="institucionalFlex">
-    <h2>INSTITUCIONAL</h2>
-    <img src="/img/institucional.jpg" alt="">
+  <div class="institucionalFlexbox">
+    <div class="institucionalFlex">
+      <h2>INSTITUCIONAL</h2>
+      <img src="/img/institucional.jpg" alt="">
+    </div>
+    <div class="purpleBox">
+      <p class="purpleText">
+        Somos especialistas em transplante capilar (termo também conhecido como transplante de cabelo, implante capilar
+        ou
+        implante de cabelo) e tratamento clínico da queda dos cabelos, para homens e mulheres, utilizando técnicas
+        modernas e avançadas. Com mais de três décadas de especialização, nossos serviços conferem credibilidade,
+        confiabilidade e segurança.
+        São milhares de pacientes atendidos e tratados cirurgicamente, vindos do Brasil e do exterior.
+        <br><br>
+        A Clínica Muricy foi fundada pelo cirurgião plástico Dr. José Candido Muricy, o primeiro cirurgião a se
+        especializar em megassessão no Brasil e um dos primeiros a realizar a técnica de transplante capilar no Paraná.
+        É
+        reconhecido mundialmente entre seus pares.
+        <br>
+        A Clínica Muricy possui 2 unidades: em Curitiba, sob a responsabilidade do Dr. José Candido Muricy, e em São
+        Paulo, dirigida pela Dra. Maria Angélica Muricy Sanseverino.
+      </p>
+    </div>
   </div>
-  <div class="purpleBox">
-    <p class="purpleText">
-      Somos especialistas em transplante capilar (termo também conhecido como transplante de cabelo, implante capilar ou
-      implante de cabelo) e tratamento clínico da queda dos cabelos, para homens e mulheres, utilizando técnicas
-      modernas e avançadas. Com mais de três décadas de especialização, nossos serviços conferem credibilidade, confiabilidade e segurança.
-      São milhares de pacientes atendidos e tratados cirurgicamente, vindos do Brasil e do exterior.
-    <br><br>
-      A Clínica Muricy foi fundada pelo cirurgião plástico Dr. José Candido Muricy, o primeiro cirurgião a se
-      especializar em megassessão no Brasil e um dos primeiros a realizar a técnica de transplante capilar no Paraná. É
-      reconhecido mundialmente entre seus pares. A Clínica Muricy possui 2 unidades: em Curitiba, sob a responsabilidade do Dr. José Candido Muricy, e em São
-      Paulo, dirigida pela Dra. Maria Angélica Muricy Sanseverino.
-    </p>
+
+  <div class="estrutura">
+    <h2>ESTRUTURA</h2>
+
+    <div class="estruturaBanner">
+      <div class="estrutura1">
+        <img src="/img/estrutura1.jpg" alt="">
+        <h4>CLÍNICA MURICY</h4>
+      </div>
+      <div class="estrutura2">
+        <img src="/img/estrutura2.jpg" alt="">
+        <h4>HAIR CARE</h4>
+      </div>
+      <div class="estrutura3">
+        <img src="/img/estrutura3.jpg" alt="">
+        <h4>HOSPITAL DR MURICY</h4>
+      </div>
+    </div>
   </div>
+
+  <div class="equipeNossaHistoria">
+    <div class="gallery">
+        <figure class=”gallery__item gallery__item--1">
+            <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+            <img src="/img/drraffaele.jpg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+            <img src="/img/drapriscila.jpg" class="gallery__img drapriscila" alt="Dra. Priscila Rebellato">
+        </figure>
+    </div>
+
+    <div class="equipeText">
+        <h2>EQUIPE</h2>
+        <p>
+        A sede em Curitiba -PR conta com grandes profissionais para cuidar da sua autoestima realizando a avaliação do seu caso com precisão e expertise nos melhores tratamentos e procedimentos para o seu caso.
+        <br><br>
+        Conheça os nossos profissionais:
+        </p>
+    </div>
+</div>
 </section>
+
+{% include 'includecontato.njk' %}
