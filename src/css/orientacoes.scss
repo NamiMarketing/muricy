@@ -104,3 +104,29 @@
   width: 60vw;
   margin-right: -60vw;
 }
+
+.horizontal-line {
+  display: block;
+  height: 2px;
+  width: 4rem;
+  background-color: $roxo_800;
+}
+
+.gray-box {
+  display: flex;
+  background-color: $cinza_500;
+  color: $roxo_800;
+  padding: 4.5rem;
+  justify-content: center;
+  place-items: center;
+  gap: 10rem;
+  width: 90vw;
+
+  ul {
+    max-width: 600px;
+    li {
+      line-height: 2.6rem;
+      list-style-type: dotted;
+    }
+  }
+}
