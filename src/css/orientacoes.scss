@@ -1,0 +1,132 @@
+@import "global";
+@import "header";
+@import "footer";
+@import "contato";
+@import "colors";
+
+.orientacoes-banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 80vh;
+  justify-content: center;
+  place-items: center;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-weight: 300;
+    color: $cinza_800;
+    text-align: center;
+    margin-top: 9rem;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
+
+.banner-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: -5vh;
+  gap: 10rem;
+
+  a {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .active {
+    border-bottom: 1px solid $roxo_800;
+  }
+}
+
+.pre-operatorio {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-bottom: 17rem;
+  width: 100vw;
+  margin-top: 14rem;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    color: $roxo_800;
+    justify-content: center;
+    margin-bottom: 4.7rem;
+
+    h2 {
+      margin-right: 2rem;
+      font-size: 4rem;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+
+    > div {
+      display: flex;
+      gap: 2rem;
+
+      p {
+        line-height: 2.6rem;
+        margin-right: 6rem;
+      }
+    }
+
+    .text-bottom {
+      margin-top: 6rem;
+      line-height: 2.6rem;
+    }
+  }
+}
+
+.full-horizontal-line {
+  display: block;
+  height: 2px;
+  width: 4rem;
+  background-color: $roxo_800;
+  width: 60vw;
+  margin-right: -60vw;
+}
+
+.horizontal-line {
+  display: block;
+  height: 2px;
+  width: 4rem;
+  background-color: $roxo_800;
+}
+
+.gray-box {
+  display: flex;
+  background-color: $cinza_500;
+  color: $roxo_800;
+  padding: 4.5rem;
+  justify-content: center;
+  place-items: center;
+  gap: 10rem;
+  width: 90vw;
+
+  ul {
+    max-width: 600px;
+    li {
+      line-height: 2.6rem;
+      list-style-type: dotted;
+    }
+  }
+}

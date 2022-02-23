@@ -11,6 +11,7 @@
 
   .atendimento-clinico {
     display: flex;
+    position: relative;
 
     .atendimento-titulo {
       margin-top: 25.6rem;
@@ -20,98 +21,68 @@
       max-width: 52.1rem;
       font-weight: 400;
       line-height: 68px;
+      z-index: 1;
     }
 
     img {
-      opacity: 0.3;
-      overflow: hidden;
+      position: absolute;
+      right: 0;
+      bottom: 0;
     }
   }
 
-  .container-rosa {
+  .container-bege {
     color: #ffffff;
     display: flex;
-    flex-direction: column;
-    padding: 20.6rem 8rem 8.5rem 10rem;
-    background-color: $roxo_400;
+    height: 40vh;
+    background-color: $bege;
+    justify-content: space-around;
+    place-items: center;
 
-    .diagnostico {
-      display: flex;
-      align-items: center;
-
-      p {
-        max-width: 71.5rem;
-        font-weight: 300;
-        font-size: 1.8rem;
-        line-height: 26px;
-        letter-spacing: 0.1em;
-      }
-
-      h2 {
-        margin-left: 2.5rem;
-        line-height: 51px;
-        letter-spacing: 0.1em;
-      }
+    h2 {
+      margin-left: 2.5rem;
+      line-height: 51px;
+      letter-spacing: 0.1em;
     }
 
-    .doencas-cabelo {
-      margin-top: 4.8rem;
-      display: flex;
-      align-items: center;
-
-      div {
-        margin-left: 3.7rem;
-        display: flex;
-        align-items: center;
-      }
-
-      h6 {
-        font-weight: 700;
-        line-height: 1.7rem;
-      }
-
-      p {
-        font-size: 1.4rem;
-        font-weight: 300;
-        margin-left: 0.5rem;
-      }
-    }
-
-    .informacoes-cabelo {
-      margin-top: 13rem;
+    .right-side {
       display: flex;
       flex-direction: column;
-      width: 90%;
+      align-items: flex-end;
+      max-width: 34%;
 
-      h2 {
-        max-width: 56rem;
-        font-weight: 500;
-        line-height: 51px;
-        letter-spacing: 0.1em;
-        margin-bottom: 15px;
+      > div {
+        display: flex;
+        margin-top: 5rem;
+      }
+
+      a {
+        font-weight: 700;
+        line-height: 1.7rem;
+        margin-left: 2rem;
+        color: $white;
       }
 
       p {
-        font-size: 1.8rem;
-        font-weight: 300;
-        line-height: 26px;
-        text-align: justify;
-        margin-top: 20px;
+        line-height: 2.6rem;
+        text-align: right;
       }
     }
   }
 }
 
-.tratamentos {
-  margin-top: 22.9rem;
+.tecnicas {
+  margin-top: 23rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 12rem;
 
-  .texto-tratamentos {
+  .texto-tecnicas {
     display: flex;
     flex-direction: column;
     max-width: 65.1rem;
+    text-align: right;
 
     h2 {
       color: $roxo_800;
@@ -141,59 +112,6 @@
 
       a:hover {
         border-bottom: 1px solid $roxo_800;
-      }
-    }
-  }
-
-  img {
-    margin-left: 2rem;
-  }
-}
-
-.container-verde {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  height: 36.8rem;
-  background-color: $verde_400;
-  position: relative;
-  margin-top: 248px;
-  align-items: center;
-  padding: 0 5.7rem 0 24.4rem;
-  color: #ffffff;
-
-  h2 {
-    max-width: 36.9rem;
-    font-weight: 500;
-    line-height: 51px;
-    letter-spacing: 0.1em;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  .texto-tratamento-associados {
-    max-width: 40.5rem;
-    display: flex;
-    flex-direction: column;
-    p {
-      line-height: 26px;
-      text-align: right;
-      margin-bottom: 3.5rem;
-    }
-    ul {
-      display: flex;
-      justify-content: end;
-      > li {
-        margin-left: 2.9rem;
-      }
-      a {
-        font-weight: 600;
-        font-size: 1.8rem;
-        line-height: 22px;
-        color: #ffffff;
-        padding-bottom: 5px;
-      }
-      a:hover {
-        border-bottom: 1px solid #ffffff;
       }
     }
   }
