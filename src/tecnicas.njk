@@ -1,0 +1,83 @@
+---
+title: Técnicas
+layout: "base.njk"
+cssPath: "/css/build/tecnicas.css"
+---
+
+<section class="tecnicas-banner">
+  <img src="/img/banner-tecnicas.jpg" alt="">
+  <h1>TÉCNICAS</h1>
+  <h4>Estamos sempre aprimorando a nossa metodologia de Transplante Capilar. Confira as principais <br> técnicas
+    utilizadas por nossos cirurgiões especialistas e referências em restauração capilar:</h4>
+</section>
+
+<div class="banner-nav">
+  <button onClick="pickTab('megasessoes')" id="megasessoesBtn" class="active">MEGASESSÕES</button>
+  <button onClick="pickTab('fue')" id="fueBtn">FUE</button>
+  <button onClick="pickTab('correcoes')" id="correcoesBtn">CORREÇÕES</button>
+  <button onClick="pickTab('outras-tecnicas')" id="outras-tecnicasBtn">OUTRAS TÉCNICAS</button>
+  <button onClick="pickTab('body-hair')" id="body-hairBtn">body hair</button>
+</div>
+
+{% include 'megasessoes.njk' %}
+{% include 'fue.njk' %}
+{% include 'correcoes.njk' %}
+{% include 'outrastecnicas.njk' %}
+{% include 'bodyhair.njk' %}
+
+<script>
+  const megasessoesButton = document.getElementById(`megasessoesBtn`);
+  const fueButton = document.getElementById(`fueBtn`);
+  const correcoesButton = document.getElementById(`correcoesBtn`);
+  const outrastecnicasButton = document.getElementById(`outras-tecnicasBtn`);
+  const bodyhairButton = document.getElementById(`body-hairBtn`);
+
+  const megaSessoes = document.getElementById(`mega-sessoes`);
+  const fue = document.getElementById(`fue`);
+  const correcoes = document.getElementById(`correcoes`);
+  const outrasTecnicas = document.getElementById(`outras-tecnicas`);
+  const bodyHair = document.getElementById(`body-hair`);
+
+  function pickTab(id) {
+    megaSessoes.style.display = 'none';
+    fue.style.display = 'none';
+    correcoes.style.display = 'none';
+    outrasTecnicas.style.display = 'none';
+    bodyHair.style.display = 'none';
+
+    megasessoesButton.classList.remove("active");
+    fueButton.classList.remove("active");
+    correcoesButton.classList.remove("active");
+    outrastecnicasButton.classList.remove("active");
+    bodyhairButton.classList.remove("active");
+
+    switch (id) {
+      case 'megasessoes':
+        megaSessoes.style.display = 'flex';
+        megasessoesButton.classList.add("active");
+        break;
+      case 'fue':
+        fue.style.display = 'flex';
+        fueButton.classList.add("active");
+        break;
+      case 'correcoes':
+        correcoes.style.display = 'flex';
+        correcoesButton.classList.add("active");
+        break;
+      case 'outras-tecnicas':
+        outrasTecnicas.style.display = 'flex';
+        outrastecnicasButton.classList.add("active");
+        break;
+      case 'body-hair':
+        bodyHair.style.display = 'flex';
+        bodyhairButton.classList.add("active");
+        break;
+
+      default:
+        break;
+    }
+
+
+
+  }
+</script>

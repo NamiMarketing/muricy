@@ -1,0 +1,76 @@
+---
+title: Tratamentos
+layout: "base.njk"
+cssPath: "/css/build/tratamento-clinico.css"
+---
+
+<section class="orientacoes-banner">
+  <img src="/img/banner-tratamentoc.jpg" alt="">
+  <h1>tratamentos</h1>
+  <h4>A tecnologia pode ser uma grande aliada no seu tratamento capilar. Em nossa clínica contamos com profissionais
+    experientes e equipamentos especializados para cuidar da saúde do seu couro cabeludo e das hastes dos seus fios de
+    cabelo. Confira: </h4>
+</section>
+
+<div class="banner-nav">
+  <button onClick="pickTab('mmp')" id="mmpBtn" class="active">mmp</button>
+  <button onClick="pickTab('medicamentos')" id="medicamentosBtn">medicamentos</button>
+  <button onClick="pickTab('micropigmentacao')" id="micropigmentacaoBtn">micropigmentação</button>
+  <button onClick="pickTab('laser')" id="laserBtn">laser</button>
+</div>
+
+
+{% include 'mmp.njk' %}
+
+{% include 'medicamentos.njk' %}
+
+{% include 'micropigmentacao.njk' %}
+
+{% include 'laser.njk' %}
+
+
+<script>
+  const mmpBtn = document.getElementById(`mmpBtn`);
+  const medicamentosBtn = document.getElementById(`medicamentosBtn`);
+  const micropigmentacaoBtn = document.getElementById(`micropigmentacaoBtn`);
+  const laserBtn = document.getElementById(`laserBtn`);
+
+  const mmp = document.getElementById(`mmp`);
+  const medicamentos = document.getElementById(`medicamentos`);
+  const micropigmentacao = document.getElementById(`micropigmentacao`);
+  const laser = document.getElementById(`laser`);
+
+  function pickTab(id) {
+    mmp.style.display = 'none';
+    medicamentos.style.display = 'none';
+    micropigmentacao.style.display = 'none';
+    laser.style.display = 'none';
+
+    mmpBtn.classList.remove("active");
+    medicamentosBtn.classList.remove("active");
+    micropigmentacaoBtn.classList.remove("active");
+    laserBtn.classList.remove("active");
+
+    switch (id) {
+      case 'mmp':
+        mmp.style.display = 'flex';
+        mmpBtn.classList.add("active");
+        break;
+      case 'medicamentos':
+        medicamentos.style.display = 'flex';
+        medicamentosBtn.classList.add("active");
+        break;
+      case 'micropigmentacao':
+        micropigmentacao.style.display = 'flex';
+        micropigmentacaoBtn.classList.add("active");
+        break;
+      case 'laser':
+        laser.style.display = 'flex';
+        laserBtn.classList.add("active");
+        break;
+
+      default:
+        break;
+    }
+  }
+</script>
