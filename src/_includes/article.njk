@@ -23,7 +23,7 @@ cssPath: "/css/build/article.css"
   </div>
 </article>
 
-{%- for item in pagination.items | reverse -%}
+<!-- {%- for item in pagination.items | reverse -%}
 <ul class="posts-container">
   <li>
     <img src="{{ item.data.thumbnail }}" alt="" />
@@ -40,13 +40,13 @@ cssPath: "/css/build/article.css"
     </a>
   </li>
   {%- endfor %}
-</ul>
+</ul> -->
 
 <img class="article-lines" src="/img/blog/article-lines.svg" alt="" />
 
 <div class="artigos-relacionados">
   <h5>Artigos relacionados</h5>
-  {% set postsFiltered = collections.post | reverse | limit(3)  %} 
+  {% set postsFiltered = collections.post | limit(3)  %} 
   <ul>
     {%- for post in postsFiltered -%}
       <li>
