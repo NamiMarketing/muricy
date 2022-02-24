@@ -404,9 +404,13 @@
 
     .greenTextTwo {
       width: 70vw;
-      text-align: justify;
       color: $white;
       line-height: 26px;
+      text-align: justify;
+
+      p {
+        text-align: justify;
+      }
 
       .greenTitle {
         display: flex;
@@ -574,9 +578,13 @@
 
     .greenTextTwo {
       width: 70vw;
-      text-align: justify;
       color: $white;
       line-height: 26px;
+      text-align: justify;
+
+      p {
+        text-align: justify;
+      }
 
       .greenTitle {
         display: flex;
