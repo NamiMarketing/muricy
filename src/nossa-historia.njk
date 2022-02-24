@@ -51,26 +51,115 @@ cssPath: "/css/build/nossa-historia.css"
 
   <div class="equipeNossaHistoria">
     <div class="gallery">
-        <figure class=”gallery__item gallery__item--1">
-            <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
-        </figure>
-        <figure class="gallery__item gallery__item--2">
-            <img src="/img/drraffaele.jpg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
-        </figure>
-        <figure class="gallery__item gallery__item--3">
-            <img src="/img/drapriscila.jpg" class="gallery__img drapriscila" alt="Dra. Priscila Rebellato">
-        </figure>
+      <figure class=”gallery__item gallery__item--1">
+        <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img src="/img/drraffaele.jpg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img src="/img/drapriscila.jpg" class="gallery__img drapriscila" alt="Dra. Priscila Rebellato">
+      </figure>
     </div>
 
     <div class="equipeText">
-        <h2>EQUIPE</h2>
-        <p>
-        A sede em Curitiba -PR conta com grandes profissionais para cuidar da sua autoestima realizando a avaliação do seu caso com precisão e expertise nos melhores tratamentos e procedimentos para o seu caso.
+      <h2>EQUIPE</h2>
+      <p>
+        A sede em Curitiba -PR conta com grandes profissionais para cuidar da sua autoestima realizando a avaliação do
+        seu caso com precisão e expertise nos melhores tratamentos e procedimentos para o seu caso.
         <br><br>
         Conheça os nossos profissionais:
-        </p>
+      </p>
     </div>
-</div>
+  </div>
 </section>
 
 {% include 'includecontato.njk' %}
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".institucionalFlex", {
+    x: 200,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".purpleBox", {
+    scrollTrigger: {
+      trigger: ".purpleBox",
+      start: "-50px bottom",
+      end: "0%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: 200,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".estrutura", {
+    scrollTrigger: {
+      trigger: ".estrutura",
+      start: "-50px bottom",
+      end: "10%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: -150,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".gallery", {
+    scrollTrigger: {
+      trigger: ".gallery",
+      start: "-50px bottom",
+      end: "10%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: -150,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".equipeText", {
+    scrollTrigger: {
+      trigger: ".equipeText",
+      start: "-50px bottom",
+      end: "0%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: 200,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".flexContato", {
+    scrollTrigger: {
+      trigger: ".flexContato",
+      start: "-50px bottom",
+      end: "10%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: -150,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".detalhes-contatos", {
+    scrollTrigger: {
+      trigger: ".detalhes-contatos",
+      start: "-50px bottom",
+      end: "0%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: 200,
+    opacity: 0,
+    duration: 2,
+  })
+</script>

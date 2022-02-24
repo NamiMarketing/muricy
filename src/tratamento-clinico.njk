@@ -75,6 +75,6 @@ cssPath: "/css/build/tratamento-clinico.css"
   }
 
   const params = new URLSearchParams(window.location.search);
-
-  params.has('test');
+  
+  pickTab(params.get('tratamento').toString());
 </script>

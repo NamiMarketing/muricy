@@ -81,7 +81,7 @@
       margin-left: 7rem;
     }
 
-    .draandrea {
+    .dra {
       margin-top: 8rem;
     }
   }
@@ -190,7 +190,7 @@
 
 @media (orientation: portrait) and (max-width: 500px) {
   .bannerFlex {
-    padding: 10rem 0 0 7rem;
+    padding: 10rem 0 0 6rem;
 
     h1 {
       font-size: 4.5rem;
@@ -224,7 +224,7 @@
         margin: 0;
       }
 
-      .draandrea {
+      .dra {
         margin: 0;
       }
     }
@@ -249,6 +249,38 @@
     h2 {
       font-size: 3rem;
       margin-bottom: 2rem;
+    }
+  }
+
+  .servicosHome {
+    margin: auto;
+    flex-direction: column;
+
+    .servicosText {
+      width: unset;
+    }
+
+    .servicosBelowText {
+      gap: 2rem;
+
+      h4 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .contato-muricy {
+    flex-direction: column;
+
+    .flexContato {
+      width: 80vw;
+      margin: auto;
+    }
+
+    .detalhes-contatos {
+      margin-left: 0;
+      width: unset;
+      margin-top: 3rem;
     }
   }
 }

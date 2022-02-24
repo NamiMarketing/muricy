@@ -4,64 +4,163 @@ layout: "base.njk"
 cssPath: "/css/build/home.css"
 ---
 
-    <div class="bannerHome">
-        <img src="/img/bannerbg.jpg" class="bannerbg" alt="">
-            <div class="degrade">
-                <img src="/img/bannerdgd.svg" class="bannerdgd" alt="">
-            </div>
-        <img src="/img/linhasbanner.png" class="linhasbanner" alt="">
-        <div class="bannerFlex">
-            <h1>CLÍNICA MURICY</h1>
-            <h4>São 30 anos de experiência e mais de 7 mil transplantes capilares, melhorando a autoestima de todos os nossos pacientes operados
-            </h4>
-        </div>
+<div class="bannerHome">
+  <img src="/img/bannerbg.jpg" class="bannerbg" alt="">
+  <div class="degrade">
+    <img src="/img/bannerdgd.svg" class="bannerdgd" alt="">
+  </div>
+  <img src="/img/linhasbanner.png" class="linhasbanner" alt="">
+  <div class="bannerFlex">
+    <h1>CLÍNICA MURICY</h1>
+    <h4>São 30 anos de experiência e mais de 7 mil transplantes capilares, melhorando a autoestima de todos os nossos
+      pacientes operados
+    </h4>
+  </div>
+</div>
+
+<div class="equipeHome">
+  <img src="linhasequipe.png" class="linhasequipe" alt="">
+  <div class="gallery">
+    <figure class=”gallery__item gallery__item--1">
+      <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+      <img src="/img/drraffaele.jpg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+      <img src="/img/drapriscila.jpg" class="gallery__img dra" alt="Dra. Priscila Rebellato">
+    </figure>
+  </div>
+
+  <div class="equipeText">
+    <h2>EQUIPE</h2>
+    <p>
+      A sede em Curitiba - PR conta com grandes profissionais para cuidar da sua autoestima realizando a avaliação do seu
+      caso com precisão e expertise nos melhores tratamentos e procedimentos para o seu caso.
+      <br><br>
+      Conheça os nossos profissionais:
+    </p>
+  </div>
+</div>
+
+<div class="brownboxHome">
+  <h2>A SAÚDE E BELEZA PARA VOCÊ E SEUS CABELOS COM SERVIÇOS ESPECIALIZADOS
+  </h2>
+  <p>Atendimentos Clínicos para avaliar, investigar, tratar, cuidar e prevenir alopecias e eflúvios capilares
+    acompanhados ou não de procedimentos cirúrgicos.
+    <br><br>
+    Cirurgias de Transplante Capilar com uma equipe especialista em técnicas inovadoras, tecnológicas e de alta precisão
+    para um resultado mais natural (FUE). Realizamos megassessões utilizando a técnica BODY HAIR (com pelos do couro
+    cabeludo e do corpo).
+  </p>
+</div>
+
+<div class="servicosHome">
+  <div class="servicosText">
+    <div class="servicosTextbox">
+      <h2>SERVIÇOS</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nisl leo. Vestibulum id tellus id
+        tortor finibus viverra quis vel massa. Morbi quis lectus a orci condimentum nec ac purus.</p>
     </div>
-
-    <div class="equipeHome">
-        <img src="linhasequipe.png" class="linhasequipe" alt="">
-        <div class="gallery">
-            <figure class=”gallery__item gallery__item--1">
-                <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
-            </figure>
-            <figure class="gallery__item gallery__item--2">
-                <img src="/img/drraffaele.jpg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
-            </figure>
-            <figure class="gallery__item gallery__item--3">
-                <img src="/img/drapriscila.jpg" class="gallery__img draandrea" alt="Dra. Priscila Rebellato">
-            </figure>
-        </div>
-
-        <div class="equipeText">
-            <h2>EQUIPE</h2>
-            <p>
-            A sede em Curitiba -PR conta com grandes profissionais para cuidar da sua autoestima realizando a avaliação do seu caso com precisão e expertise nos melhores tratamentos e procedimentos para o seu caso.
-            <br><br>
-            Conheça os nossos profissionais:
-            </p>
-        </div>
+    <div class="servicosBelowText">
+      <a href="/tratamentos">
+        <h4>ATENDIMENTO<br>CLÍNICO</h4>
+      </a>
+      <a href="/transplante-capilar">
+        <h4>CIRURGIAS DE<br>TRANSPLANTE CAPILAR</h4>
+      </a>
     </div>
+  </div>
+  <img src="/img/servicoshome.jpg" alt="">
+</div>
 
-    <div class="brownboxHome">
-        <h2>A SAÚDE E BELEZA PARA VOCÊ E SEUS CABELOS COM SERVIÇOS ESPECIALIZADOS
-        </h2>
-        <p>Atendimentos Clínicos para avaliar, investigar, tratar, cuidar e prevenir alopecias e eflúvios capilares acompanhados ou não de procedimentos cirúrgicos.
-        <br><br>
-        Cirurgias de Transplante Capilar com uma equipe especialista em técnicas inovadoras, tecnológicas e de alta precisão para um resultado mais natural (FUE). Realizamos megassessões utilizando a técnica BODY HAIR (com pelos do couro cabeludo e do corpo).
-        </p>
-    </div>
+{% include 'includecontato.njk' %}
 
-    <div class="servicosHome">
-        <div class="servicosText">
-            <div class="servicosTextbox">
-                <h2>SERVIÇOS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit nisl leo. Vestibulum id tellus id tortor finibus viverra quis vel massa. Morbi quis lectus a orci condimentum  nec ac purus.</p>
-            </div>
-            <div class="servicosBelowText">
-                <a href="/tratamentos"><h4>ATENDIMENTO<br>CLÍNICO</h4></a>
-                <a href="/transplante-capilar"><h4>CIRURGIAS DE<br>TRANSPLANTE CAPILAR</h4></a>
-            </div>
-        </div>
-        <img src="/img/servicoshome.jpg" alt="">
-    </div>
 
-  {% include 'includecontato.njk' %}
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".bannerFlex", {
+    x: -150,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".gallery", {
+    scrollTrigger: {
+      trigger: ".gallery",
+      start: "-50px bottom",
+      end: "10%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: -150,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".equipeText", {
+    scrollTrigger: {
+      trigger: ".equipeText",
+      start: "-50px bottom",
+      end: "0%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: 200,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".brownboxHome", {
+    scrollTrigger: {
+      trigger: ".brownboxHome",
+      start: "-50px bottom",
+      end: "10%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: -150,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".servicosText", {
+    scrollTrigger: {
+      trigger: ".servicosText",
+      start: "-50px bottom",
+      end: "10%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: -150,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".flexContato", {
+    scrollTrigger: {
+      trigger: ".flexContato",
+      start: "-50px bottom",
+      end: "10%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: -150,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".detalhes-contatos", {
+    scrollTrigger: {
+      trigger: ".detalhes-contatos",
+      start: "-50px bottom",
+      end: "0%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: 200,
+    opacity: 0,
+    duration: 2,
+  })
+</script>
