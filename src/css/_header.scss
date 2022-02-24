@@ -23,7 +23,7 @@ nav {
 
     li a {
       list-style: none;
-      margin-right: 7rem;
+      margin-right: 5rem;
       font-weight: 400;
       transition: all 0.3s;
       cursor: pointer;
@@ -121,7 +121,6 @@ nav {
   top: 64px;
   opacity: 0;
   transition: opacity 0.5s;
- 
 
   span {
     background: linear-gradient(to right, $roxo_800, transparent);

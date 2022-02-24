@@ -14,15 +14,22 @@
     <li class="dropdown">
       <button class="dropbtn">CLÍNICO</button>  
       <div class="dropdown-content">
-        <a href="/diagnostico">DIAGNÓSTICO</a>
+        <a href="/tratamentos">DIAGNÓSTICO</a>
         <span></span>
         <a href="/tratamentos">TRATAMENTOS</a>
         <span></span>
         <a href="/tratamentos-associados">TRATAMENTOS ASSOCIADOS</a>
       </div>
     </li>
-    <li>
-      <a class="{{ 'active' if '/cirurgico' in page.url }}" href="/cirurgico">CIRÚRGICO</a>
+    <li class="dropdown">
+      <button class="dropbtn">CIRÚRGICO</button>  
+      <div class="dropdown-content">
+        <a href="/orientacoes">ORIENTAÇÕES</a>
+        <span></span>
+        <a href="/tecnicas">TÉCNICAS</a>
+        <span></span>
+        <a href="/avaliacao">AVALIAÇÃO</a>
+      </div>
     </li>
     <li>
       <a class="{{ 'active' if '/blog' in page.url }}" href="/blog">BLOG E NOTÍCIAS</a>
