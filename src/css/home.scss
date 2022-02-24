@@ -172,6 +172,13 @@
       align-items: center;
       justify-content: space-around;
 
+      a {
+
+        &:hover {
+          border-bottom: 1px solid $roxo_800;
+        }
+      }
+
       h4 {
         color: $roxo_800;
         font-weight: 500;
