@@ -1,16 +1,91 @@
 footer {
-  background-color: #01051e;
+  background-color: $bege;
   height: 408px;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   place-items: center;
   margin: auto;
   padding: 0 5rem;
   width: 100vw;
-  place-items: center;
-  margin: auto;
-  padding: 2rem 0;
-  position: relative;
+  justify-content: center;
+  margin-top: 10rem;
+
+  .top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+
+    .infos {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-left: 7rem;
+
+      p {
+        font-weight: 500;
+      }
+    }
+
+    .social {
+      margin-left: 14rem;
+      margin-left: 14rem;
+      display: flex;
+      flex-direction: column;
+
+      h6 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .icons {
+        display: flex;
+        gap: 4rem;
+        margin-top: 1.2rem;
+        margin-bottom: 2.7rem;
+      }
+
+      .apps {
+        margin-top: 2.7rem;
+      }
+    }
+  }
+
+  .bottom {
+    margin-top: 8rem;
+    border-top: 1px solid $roxo_800;
+    padding-top: 2rem;
+    width: 80vw;
+
+    h6 {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+
+    .top {
+      flex-direction: column;
+
+      .infos {
+        margin-left: 0;
+        margin-top: 4rem;
+      }
+
+      .social {
+        margin-left: 0;
+        margin-top: 4rem;
+        place-items: center;
+      }
+    }
+
+    .bottom {
+      margin: 4rem;
+    }
+  }
 }
