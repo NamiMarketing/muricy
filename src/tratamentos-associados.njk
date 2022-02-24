@@ -38,4 +38,8 @@ function pickTab(id){
     posButton.classList.add("active");
   }
 }
+
+const params = new URLSearchParams(window.location.search);
+  
+  pickTab(params.get('associado').toString());
 </script>

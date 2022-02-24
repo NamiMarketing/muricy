@@ -73,4 +73,8 @@ cssPath: "/css/build/tratamento-clinico.css"
         break;
     }
   }
+
+  const params = new URLSearchParams(window.location.search);
+  
+  pickTab(params.get('tratamento').toString());
 </script>
