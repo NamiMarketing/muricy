@@ -1,0 +1,41 @@
+---
+title: Tratamentos Associados
+layout: "base.njk"
+cssPath: "/css/build/home.css"
+---
+
+<section class="orientacoes-banner">
+  <img src="/img/tabanner.jpg" alt="">
+  <h1>TRATAMENTOS<br>ASSOCIADOS</h1>
+  <h4>Conheça os produtos e o nosso setor exclusivo para<br> tratamentos clínicos em Curitiba:</h4>
+</section>
+
+<div class="banner-nav">
+  <button onClick="pickTab('pre')" id="pre"  class="active">medical hair</button>
+  <button onClick="pickTab('pos')" id="pos">hair care</button>
+</div>
+
+{% include 'medicalhair.njk' %}
+
+{% include 'haircare.njk' %}
+
+<script>
+  const medicalhair = document.getElementById(`medicalhair`);
+  const haircare = document.getElementById(`haircare`);
+  const preButton = document.getElementById(`pre`);
+  const posButton = document.getElementById(`pos`);
+
+function pickTab(id){
+  if(id === 'pre'){
+    medicalhair.style.display = 'flex';
+    haircare.style.display = 'none';
+    preButton.classList.add("active");
+    posButton.classList.remove("active");
+  } else {
+    medicalhair.style.display = 'none';
+    haircare.style.display = 'flex';
+    preButton.classList.remove("active");
+    posButton.classList.add("active");
+  }
+}
+</script>
