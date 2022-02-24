@@ -2,8 +2,6 @@
 @import "header";
 @import "footer";
 @import "includecontato";
-@import "nossahistoria";
-@import "tratamentos-associados";
 
 .bannerHome {
   object-fit: cover;
@@ -174,11 +172,79 @@
       align-items: center;
       justify-content: space-around;
 
+      a {
+
+        &:hover {
+          border-bottom: 1px solid $roxo_800;
+        }
+      }
+
       h4 {
         color: $roxo_800;
         font-weight: 500;
         line-height: 2.6rem;
       }
+    }
+  }
+}
+
+@media (orientation: portrait) and (max-width: 500px) {
+  .bannerFlex {
+    padding: 10rem 0 0 7rem;
+
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    h4 {
+      margin-top: 2rem;
+      width: 75vw;
+    }
+  }
+
+  .equipeHome {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 15rem;
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: unset;
+      width: 88vw;
+      margin-top: 4rem;
+      margin-left: 2.5rem;
+      gap: 3rem;
+
+      .drraffaele {
+        margin: 0;
+      }
+
+      .draandrea {
+        margin: 0;
+      }
+    }
+
+    .equipeText {
+      width: 85vw;
+      margin-top: 26rem;
+      margin-left: 3rem;
+    }
+  }
+
+  .brownboxHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    background-color: #95937f;
+    padding: 3rem;
+    margin-bottom: 15rem;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
     }
   }
 }
