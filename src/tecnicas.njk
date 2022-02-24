@@ -17,9 +17,7 @@ cssPath: "/css/build/tecnicas.css"
   <button onClick="pickTab('correcoes')" id="correcoesBtn">CORREÇÕES</button>
   <button onClick="pickTab('outras-tecnicas')" id="outras-tecnicasBtn">OUTRAS TÉCNICAS</button>
   <button onClick="pickTab('body-hair')" id="body-hairBtn">body hair</button>
-
 </div>
-
 
 {% include 'megasessoes.njk' %}
 {% include 'fue.njk' %}
@@ -52,8 +50,6 @@ cssPath: "/css/build/tecnicas.css"
     correcoesButton.classList.remove("active");
     outrastecnicasButton.classList.remove("active");
     bodyhairButton.classList.remove("active");
-
-    console.log(id)
 
     switch (id) {
       case 'megasessoes':
