@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
   <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -42,7 +43,7 @@
       <a class="" href="/nossa-historia">NOSSA HISTÓRIA</a>
     </li>
     <li class="dropdown">
-      <button class="dropbtn">CLÍNICO</button>  
+      <button class="dropbtn">CLÍNICO</button>
       <div class="dropdown-content">
         <a href="/tratamentos">DIAGNÓSTICO</a>
         <span></span>
@@ -52,7 +53,7 @@
       </div>
     </li>
     <li class="dropdown">
-      <button class="dropbtn">CIRÚRGICO</button>  
+      <button class="dropbtn">CIRÚRGICO</button>
       <div class="dropdown-content">
         <a href="/orientacoes">ORIENTAÇÕES</a>
         <span></span>
@@ -65,9 +66,7 @@
       <a class="active" href="/blog">BLOG E NOTÍCIAS</a>
     </li>
     <li>
-      <a class="" href="/contato"
-        >CONTATO</a
-      >
+      <a class="" href="/contato">CONTATO</a>
     </li>
     <li class="dropdown">
       <button class="dropbtn">CURITIBA</button>
@@ -79,6 +78,83 @@
   </ul>
 </nav>
 
+<div class="topnav" id="myTopnav">
+  <a class="home" href="/" class="active">HOME</a>
+  <a href="/nossa-historia">NOSSA HISTÓRIA</a>
+  <div class="dropdown">
+    <button class="dropbtn">CLÍNICO
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/tratamentos">DIAGNÓSTICO</a>
+      <a href="/tratamento-clinico">TRATAMENTOS</a>
+      <a href="/tratamentos-associados">TRATAMENTOS ASSOCIADOS</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">CIRÚRGICO
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/orientacoes">ORIENTAÇÕES</a>
+      <a href="/tecnicas">TÉCNICAS</a>
+      <a href="/avaliacao">AVALIAÇÃO</a>
+    </div>
+  </div>
+  <a href="/blog">BLOG E NOTÍCIAS</a>
+  <div class="dropdown">
+    <button class="dropbtn">CURITIBA
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://www.clinicamuricy.com.br/sp/">SÃO PAULO</a>
+    </div>
+  </div>
+  <a href="javascript:void(0);" style="font-size: 30px; margin-top: -1rem;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+<!-- <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script> -->
 
   <main>
     
