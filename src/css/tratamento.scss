@@ -23,7 +23,7 @@
     }
 
     img {
-      opacity: 0.3;
+      opacity: 1;
       overflow: hidden;
     }
   }
@@ -38,6 +38,7 @@
     .diagnostico {
       display: flex;
       align-items: center;
+      gap: 9rem;
 
       p {
         max-width: 71.5rem;
@@ -218,6 +219,13 @@
     align-items: center;
     justify-content: center;
     color: $roxo_800;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $white;
+      border: 2px solid $roxo_800;
+      background-color: $roxo_800;
+    }
   }
   img {
     z-index: -1;
