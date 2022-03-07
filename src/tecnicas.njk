@@ -14,16 +14,16 @@ cssPath: "/css/build/tecnicas.css"
 <div class="banner-nav">
   <button onClick="pickTab('megasessoes')" id="megasessoesBtn" class="active">MEGASESSÕES</button>
   <button onClick="pickTab('fue')" id="fueBtn">FUE</button>
+  <button onClick="pickTab('body-hair')" id="body-hairBtn">body hair</button>
   <button onClick="pickTab('correcoes')" id="correcoesBtn">CORREÇÕES</button>
   <button onClick="pickTab('outras-tecnicas')" id="outras-tecnicasBtn">OUTRAS TÉCNICAS</button>
-  <button onClick="pickTab('body-hair')" id="body-hairBtn">body hair</button>
 </div>
 
 {% include 'megasessoes.njk' %}
 {% include 'fue.njk' %}
+{% include 'bodyhair.njk' %}
 {% include 'correcoes.njk' %}
 {% include 'outrastecnicas.njk' %}
-{% include 'bodyhair.njk' %}
 
 <script>
   const megasessoesButton = document.getElementById(`megasessoesBtn`);

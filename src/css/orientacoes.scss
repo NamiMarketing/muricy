@@ -85,6 +85,7 @@
     flex-direction: column;
     max-width: 70vw;
     margin-top: 10rem;
+    text-align: justify;
 
     > div {
       display: flex;
@@ -188,6 +189,7 @@
     flex-direction: column;
     max-width: 70vw;
     margin-top: 10rem;
+    text-align: justify;
 
     > div {
       display: flex;
@@ -201,6 +203,7 @@
 
     .text-bottom {
       margin-top: 6rem;
+      margin-right: 6rem;
       line-height: 2.6rem;
     }
   }
@@ -238,6 +241,7 @@
       display: flex;
       justify-content: center;
       place-items: center;
+      text-align: justify;
 
       p {
         max-width: 636px;
@@ -270,6 +274,7 @@
 
     p {
       line-height: 2.6rem;
+      text-align: justify;
     }
   }
 }
