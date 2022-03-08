@@ -1,0 +1,83 @@
+@import "global";
+@import "header";
+@import "footer";
+@import "contato";
+@import "colors";
+
+.LPFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17rem;
+
+    .landingPageTitle {
+        color: $roxo_800;
+        font-weight: 800;
+        line-height: 61px;
+        font-size: 5rem;
+    }
+
+    span {
+        width: 604px;
+        height: 23px;
+        background-color: $roxo_400;
+        opacity: 0.2;
+        margin-top: -3.6rem;
+    }
+}
+
+.LPCidadesFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    gap: 8rem;
+    margin-bottom: 10rem;
+
+    .cwb {
+        position: relative;
+
+        h2 {
+            font-weight: 500;
+            line-height: 51px;
+            letter-spacing: 0.2em;
+            color: $white;
+            position: absolute;
+            top: 68px;
+            right: 118px;
+        }
+
+        a {
+            opacity: 1;
+            transition: 0.2s;
+
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+    }
+
+    .sao {
+        position: relative;
+
+        h2 {
+            font-weight: 500;
+            line-height: 51px;
+            letter-spacing: 0.2em;
+            color: $white;
+            position: absolute;
+            top: 68px;
+            right: 77px;
+        }
+
+        a {
+            opacity: 1;
+            transition: 0.2s;
+
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+    }
+}
