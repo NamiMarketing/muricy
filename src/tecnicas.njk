@@ -76,8 +76,9 @@ cssPath: "/css/build/tecnicas.css"
       default:
         break;
     }
-
-
-
   }
+
+  const params = new URLSearchParams(window.location.search);
+
+  pickTab(params.get('tratamento').toString());
 </script>

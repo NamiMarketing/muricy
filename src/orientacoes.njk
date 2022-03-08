@@ -38,6 +38,9 @@ cssPath: "/css/build/orientacoes.css"
       preButton.classList.remove("active");
       posButton.classList.add("active");
     }
-
   }
+
+  const params = new URLSearchParams(window.location.search);
+  
+  pickTab(params.get('tratamento').toString());
 </script>
