@@ -9,8 +9,8 @@ section {
 }
 
 .institucionalFlexbox {
-    width: 85vw;
-    margin-left: auto;
+  width: 85vw;
+  margin-left: auto;
 
   .institucionalFlex {
     display: flex;
@@ -46,90 +46,292 @@ section {
 }
 
 .estrutura {
-    width: 100%;
-    margin-bottom: 23rem;
+  width: 100%;
+  margin-bottom: 23rem;
 
-    h2 {
-        color: $roxo_800;
-        line-height: 51px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        margin: 9rem 0;
-    }
+  h2 {
+    color: $roxo_800;
+    line-height: 51px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 9rem 0;
+  }
 
-    .estruturaBanner {
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-
-        .estrutura1, .estrutura2, .estrutura3 {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            img {
-                width: 100%;
-            }
-
-            h4 {
-                font-weight: 500;
-                color: $white;
-                margin-top: -10rem;
-            }
-        }
-    }
-}
-
-.equipeNossaHistoria {
+  .estruturaBanner {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10rem;
-  
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 22vw);
-      grid-gap: 25px;
-      width: 39vw;
-      margin-top: 5rem;
-      margin-left: 25rem;
-  
-      .gallery__img {
+    width: 100vw;
+
+    .estrutura1,
+    .estrutura2,
+    .estrutura3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
       }
-  
-      .drraffaele {
-        margin-top: 22rem;
-        margin-left: 7rem;
-      }
-  
-      .drapriscila {
-        margin-top: 8rem;
-      }
-    }
-  
-    .equipeText {
-      width: 30vw;
-  
-      h2 {
-        color: $roxo_800;
+
+      h4 {
         font-weight: 500;
-        font-size: 42px;
-        line-height: 51px;
-        text-align: right;
-        letter-spacing: 0.1em;
-        margin-bottom: 2rem;
-      }
-  
-      p {
-        color: $cinza_800;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: right;
+        color: $white;
+        margin-top: -10rem;
       }
     }
   }
+}
+
+.equipeHome {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25rem;
+
+  .modalBtn {
+    border: none;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 22vw);
+    grid-gap: 25px;
+    width: 39vw;
+    margin-top: 5rem;
+    margin-left: 23rem;
+    z-index: 5;
+
+    .gallery__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.2s;
+      -webkit-filter: brightness(100%);
+
+      &:hover {
+        -webkit-filter: brightness(70%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+      }
+    }
+
+    .btn2 {
+      margin-top: 22rem;
+      margin-left: 7rem;
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn3 {
+      margin-top: 8rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .equipeText {
+    width: 30vw;
+
+    h2 {
+      color: $roxo_800;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 51px;
+      text-align: right;
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      color: $cinza_800;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: right;
+    }
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 6;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalEquipe {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 8rem 4rem;
+  border: 1px solid #888;
+  width: 54vw;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+
+  h2 {
+    color: $roxo_800;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    line-height: 26px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal2-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal3-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -6rem;
+  margin-right: -2rem;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1201px) {
+  .equipeHome {
+    .modalBtn {
+      background-color: unset;
+    }
+  }
+
+  .modalEquipe {
+    width: 79vw;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      line-height: 23px;
+    }
+  }
+
+  #myModal2 {
+    .modalEquipe {
+      width: 90vw;
+    }
+  }
+
+  @media (orientation: portrait) and (max-width: 500px) {
+    .institucionalFlexbox {
+      width: unset;
+      margin-left: unset;
+
+      .institucionalFlex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+
+        img {
+          width: 100vw;
+        }
+      }
+
+      .purpleBox {
+        padding: 5rem 5rem;
+      }
+    }
+
+    .equipeHome {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 15rem;
+
+      .linhasequipe {
+        z-index: 3;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: unset;
+        width: 88vw;
+        margin-top: 4rem;
+        margin-left: 2.5rem;
+        gap: 3rem;
+
+        .btn2,
+        .btn3 {
+          margin: 0;
+        }
+
+        .drraffaele {
+          margin: 0;
+        }
+
+        .dra {
+          margin: 0;
+        }
+      }
+
+      .equipeText {
+        width: 85vw;
+        margin-top: 5rem;
+        margin-left: 3rem;
+      }
+    }
+
+    .modalEquipe {
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+
+      .modalText {
+        h2 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          width: unset;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

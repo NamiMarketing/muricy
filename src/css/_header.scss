@@ -362,3 +362,23 @@ nav {
     text-align: left;
   }
 }
+
+@media screen and (max-width: 1201px) {
+  nav {
+    ul {
+      margin-left: 3rem;
+      margin-right: -1rem;
+
+      li {
+        a {
+          margin-right: 5rem;
+          font-size: 1.3rem;
+        }
+      }
+      
+      .dropbtn {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

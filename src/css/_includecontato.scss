@@ -187,3 +187,28 @@
     }
   }
 }
+
+@media (orientation: portrait) and (max-width: 500px) {
+  .contato-muricy {
+    display: flex;
+    flex-direction: column;
+
+    .flexContato {
+      width: 82vw;
+      margin-left: 3rem;
+      margin-bottom: 5rem;
+    }
+
+    .detalhes-contatos {
+      margin-left: unset;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .contato-muricy {
+    margin-top: 13rem;
+    margin-left: 10rem;
+  }
+}
