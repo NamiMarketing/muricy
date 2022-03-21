@@ -36,52 +36,52 @@ cssPath: "/css/build/nossa-historia.css"
 
   <div class="row">
     <div class="column">
-      <img src="/img/estrutura1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      <img src="/img/estrutura1.jpg" onclick="openModal('myModalNH1');currentSlide(1, 'myModalNH1')" class="hover-shadow">
       <h4>CLÍNICA MURICY</h4>
     </div>
     <div class="column">
-      <img src="/img/estrutura2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      <img src="/img/estrutura2.jpg" onclick="openModal('myModalNH2');currentSlide(1, 'myModalNH2')" class="hover-shadow">
       <h4>HAIR CARE</h4>
     </div>
     <div class="column">
-      <img src="/img/estrutura3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      <img src="/img/estrutura3.jpg" onclick="openModal('myModalNH3');currentSlide(1, 'myModalNH3')" class="hover-shadow">
       <h4>HOSPITAL DR MURICY</h4>
     </div>
   </div>
 
   <!-- The Modal/Lightbox -->
-  <div id="myModalNH" class="modal">
-    <span class="close cursor" onclick="closeModal('myModalNH')">&times;</span>
+  <div id="myModalNH1" class="modal">
+    <span class="close cursor" onclick="closeModal('myModalNH1')">&times;</span>
 
     <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1, 'myModalNH1')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'myModalNH1')">&#10095;</a>
 
     <div class="modal-content">
 
       <div class="mySlides">
         <div class="numbertext">1 / 5</div>
-        <img src="/img/clinica1.jpg" style="width:100%">
+        <img src="/img/clinica1.jpg" style="width: auto">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">2 / 5</div>
-        <img src="/img/clinica2.jpg" style="width:100%">
+        <img src="/img/clinica2.jpg" style="width: auto">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">3 / 5</div>
-        <img src="/img/clinica3.jpg" style="width:100%">
+        <img src="/img/clinica3.jpg" style="width: auto">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">4 / 5</div>
-        <img src="/img/clinica4.jpg" style="width:100%">
+        <img src="/img/clinica4.jpg" style="width: auto">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">5 / 5</div>
-        <img src="/img/clinica5.jpg" style="width:100%">
+        <img src="/img/clinica5.jpg" style="width: auto">
       </div>
 
       <!-- Caption text -->
@@ -92,23 +92,151 @@ cssPath: "/css/build/nossa-historia.css"
       <!-- Thumbnail image controls -->
       <div class="columnRow">
         <div class="column">
-          <img class="demo" src="/img/clinica1.jpg" onclick="currentSlide(1)" alt="Clínica Muricy">
+          <img class="demo" src="/img/clinica1.jpg" onclick="currentSlide(1, 'myModalNH1')" alt="Clínica Muricy">
         </div>
 
         <div class="column">
-          <img class="demo" src="/img/clinica2.jpg" onclick="currentSlide(2)" alt="Clínica Muricy">
+          <img class="demo" src="/img/clinica2.jpg" onclick="currentSlide(2, 'myModalNH1')" alt="Clínica Muricy">
         </div>
 
         <div class="column">
-          <img class="demo" src="/img/clinica3.jpg" onclick="currentSlide(3)" alt="Clínica Muricy">
+          <img class="demo" src="/img/clinica3.jpg" onclick="currentSlide(3, 'myModalNH1')" alt="Clínica Muricy">
         </div>
 
         <div class="column">
-          <img class="demo" src="/img/clinica4.jpg" onclick="currentSlide(4)" alt="Clínica Muricy">
+          <img class="demo" src="/img/clinica4.jpg" onclick="currentSlide(4, 'myModalNH1')" alt="Clínica Muricy">
         </div>
 
         <div class="column">
-          <img class="demo" src="/img/clinica5.jpg" onclick="currentSlide(5)" alt="Clínica Muricy">
+          <img class="demo" src="/img/clinica5.jpg" onclick="currentSlide(5, 'myModalNH1')" alt="Clínica Muricy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModalNH2" class="modal">
+    <span class="close cursor" onclick="closeModal('myModalNH2')">&times;</span>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1, 'myModalNH2')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'myModalNH2')">&#10095;</a>
+
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="/img/haircare1.jpg" style="width: auto">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="/img/haircare2.jpg" style="width: auto">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="/img/haircare3.jpg" style="width: auto">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="/img/haircare4.jpg" style="width: auto">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="/img/haircare5.jpg" style="width: auto">
+      </div>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="columnRow">
+        <div class="column">
+          <img class="demo" src="/img/haircare1.jpg" onclick="currentSlide(1, 'myModalNH2')" alt="Hair Care">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/haircare2.jpg" onclick="currentSlide(2, 'myModalNH2')" alt="Hair Care">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/haircare3.jpg" onclick="currentSlide(3, 'myModalNH2')" alt="Hair Care">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/haircare4.jpg" onclick="currentSlide(4, 'myModalNH2')" alt="Hair Care">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/haircare5.jpg" onclick="currentSlide(5, 'myModalNH2')" alt="Hair Care">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModalNH3" class="modal">
+    <span class="close cursor" onclick="closeModal('myModalNH3')">&times;</span>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1, 'myModalNH3')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'myModalNH3')">&#10095;</a>
+
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="/img/hospital1.jpg" style="width: 55vw; object-fit: contain;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="/img/hospital2.jpg" style="width: 55vw; object-fit: contain;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="/img/hospital3.jpg" style="width: 55vw; object-fit: contain;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="/img/hospital4.jpg" style="width: auto">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="/img/hospital5.jpg" style="width: auto">
+      </div>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="columnRow">
+        <div class="column">
+          <img class="demo" src="/img/hospital1.jpg" onclick="currentSlide(1, 'myModalNH3')" alt="Hospital Dr. Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/hospital2.jpg" onclick="currentSlide(2, 'myModalNH3')" alt="Hospital Dr. Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/hospital3.jpg" onclick="currentSlide(3, 'myModalNH3')" alt="Hospital Dr. Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/hospital4.jpg" onclick="currentSlide(4, 'myModalNH3')" alt="Hospital Dr. Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/hospital5.jpg" onclick="currentSlide(5, 'myModalNH3')" alt="Hospital Dr. Muricy">
         </div>
       </div>
     </div>
@@ -179,17 +307,17 @@ cssPath: "/css/build/nossa-historia.css"
 
   <div class="equipeHome">
     <div class="gallery">
-      <button class="modalBtn">
+      <button class="modalBtn" onclick="openModal('myModal')">
         <figure class="gallery__item gallery__item--1">
           <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
         </figure>
       </button>
-      <button class="modalBtn btn2">
+      <button class="modalBtn btn2" onclick="openModal('myModal2')">
         <figure class="gallery__item gallery__item--2">
           <img src="/img/drraffaele.jpg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
         </figure>
       </button>
-      <button class="modalBtn btn3">
+      <button class="modalBtn btn3" onclick="openModal('myModal3')">
         <figure class="gallery__item gallery__item--3">
           <img src="/img/drapriscila.jpg" class="gallery__img dra" alt="Dra. Priscila Rebellato">
         </figure>
@@ -213,35 +341,36 @@ cssPath: "/css/build/nossa-historia.css"
 
 <script>
   // Open the Modal
-  function openModal() {
-    document.getElementById("myModalNH").style.display = "block";
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
   }
 
   // Close the Modal
   function closeModal(id) {
     document.getElementById(id).style.display = "none";
-
-    console.log(id);
   }
 
   var slideIndex = 1;
-  showSlides(slideIndex);
+  showSlides(slideIndex, 'modalNH1');
 
   // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+  function plusSlides(n, id) {
+    showSlides(slideIndex += n, id);
   }
 
   // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
+  function currentSlide(n, id) {
+    slideIndex = n;
+
+    showSlides(n, id);
   }
 
-  function showSlides(n) {
+  function showSlides(n, id) {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
+    var container = document.getElementById(id);
+    var slides = container.getElementsByClassName("mySlides");
+    var dots = container.getElementsByClassName("demo");
+    var captionText = container.querySelector("#caption");
     if (n > slides.length) {
       slideIndex = 1
     }
@@ -266,7 +395,7 @@ cssPath: "/css/build/nossa-historia.css"
   var btn = document.getElementsByClassName("modalBtn");
 
   // Get the <span> element that closes the modal
-  // var span = document.getElementsByClassName("close");
+  var span = document.getElementsByClassName("close");
 
   // When the user clicks the button, open the modal 
   btn[0].onclick = function () {

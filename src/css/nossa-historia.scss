@@ -149,6 +149,7 @@ section {
 .modalEquipe {
   background-color: #fefefe;
   margin: auto;
+  margin-top: 10rem;
   padding: 8rem 4rem;
   border: 1px solid #888;
   width: 54vw;
@@ -236,7 +237,9 @@ section {
 }
 
 
-#myModalNH {
+#myModalNH1,
+#myModalNH2,
+#myModalNH3 {
   display: none;
   position: fixed;
   z-index: 6;
@@ -281,10 +284,10 @@ section {
 
   /* Modal Content */
   .modal-content {
-    margin-top: 2rem;
     position: relative;
     background-color: $roxo_800;
     margin: auto;
+    margin-top: 2rem;
     padding: 0;
     width: 55%;
     max-width: 1200px;
@@ -315,6 +318,11 @@ section {
   /* Hide the slides by default */
   .mySlides {
     display: none;
+    text-align: center;
+
+    img {
+      height: 704px;
+    }
   }
 
   /* Next & previous buttons */
@@ -391,6 +399,8 @@ section {
   .column {
     img {
       width: 100%;
+      height: 133px;
+      object-fit: cover;
     }
   }
 
@@ -425,6 +435,7 @@ section {
 
   .modalEquipe {
     width: 79vw;
+    margin-top: 5rem;
 
     h2 {
       margin-bottom: 2rem;
@@ -441,84 +452,10 @@ section {
     }
   }
 
-  @media (orientation: portrait) and (max-width: 500px) {
-    .institucionalFlexbox {
-      width: unset;
-      margin-left: unset;
 
-      .institucionalFlex {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10rem;
-
-        img {
-          width: 100vw;
-        }
-      }
-
-      .purpleBox {
-        padding: 5rem 5rem;
-      }
-    }
-
-    .equipeHome {
-      display: flex;
-      flex-direction: column-reverse;
-      margin-bottom: 15rem;
-
-      .linhasequipe {
-        z-index: 3;
-      }
-
-      .gallery {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: unset;
-        width: 88vw;
-        margin-top: 4rem;
-        margin-left: 2.5rem;
-        gap: 3rem;
-
-        .btn2,
-        .btn3 {
-          margin: 0;
-        }
-
-        .drraffaele {
-          margin: 0;
-        }
-
-        .dra {
-          margin: 0;
-        }
-      }
-
-      .equipeText {
-        width: 85vw;
-        margin-top: 5rem;
-        margin-left: 3rem;
-      }
-    }
-
-    .modalEquipe {
-      display: flex;
-      flex-direction: column;
-      width: 90vw;
-
-      .modalText {
-        h2 {
-          font-size: 2.5rem;
-        }
-
-        p {
-          width: unset;
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
-
-  #myModalNH {
+  #myModalNH1,
+  #myModalNH2,
+  #myModalNH3 {
     .prev {
       height: 30px;
       width: 30px;
@@ -532,6 +469,125 @@ section {
       font-size: 20px;
       top: 37%;
       padding-left: 1px;
+    }
+
+    .mySlides {
+      img {
+        width: 55vw !important;
+        height: 530px;
+        object-fit: contain;
+      }
+    }
+
+    .column {
+      img {
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media (orientation: portrait) and (max-width: 500px) {
+  .institucionalFlexbox {
+    width: unset;
+    margin-left: unset;
+
+    .institucionalFlex {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10rem;
+
+      img {
+        width: 100vw;
+      }
+    }
+
+    .purpleBox {
+      padding: 5rem 5rem;
+    }
+  }
+
+  .equipeHome {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 15rem;
+
+    .linhasequipe {
+      z-index: 3;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: unset;
+      width: 88vw;
+      margin-top: 4rem;
+      margin-left: 2.5rem;
+      gap: 3rem;
+
+      .btn2,
+      .btn3 {
+        margin: 0;
+      }
+
+      .drraffaele {
+        margin: 0;
+      }
+
+      .dra {
+        margin: 0;
+      }
+    }
+
+    .equipeText {
+      width: 85vw;
+      margin-top: 5rem;
+      margin-left: 3rem;
+    }
+  }
+
+  .modalEquipe {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+
+    .modalText {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        width: unset;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  .prev, .next {
+    z-index: 6;
+  }
+
+  #myModalNH1, #myModalNH2, #myModalNH3 {
+    .close {
+      z-index: 1;
+    }
+
+    .modal-content {
+      width: 100%;
+      margin: unset;
+    }
+
+    .mySlides {
+      margin-top: 5rem;
+
+      img {
+        width: 100vw !important;
+      }
     }
   }
 }
