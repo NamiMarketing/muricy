@@ -48,27 +48,32 @@ cssPath: "/css/build/nossa-historia.css"
       <h4>HOSPITAL DR MURICY</h4>
     </div>
   </div>
-  
+
   <!-- The Modal/Lightbox -->
   <div id="myModalNH" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
+    <span class="close cursor" onclick="closeModal('myModalNH')">&times;</span>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     <div class="modal-content">
 
       <div class="mySlides">
         <div class="numbertext">1 / 5</div>
         <img src="/img/clinica1.jpg" style="width:100%">
       </div>
-  
+
       <div class="mySlides">
         <div class="numbertext">2 / 5</div>
         <img src="/img/clinica2.jpg" style="width:100%">
       </div>
-  
+
       <div class="mySlides">
         <div class="numbertext">3 / 5</div>
         <img src="/img/clinica3.jpg" style="width:100%">
       </div>
-  
+
       <div class="mySlides">
         <div class="numbertext">4 / 5</div>
         <img src="/img/clinica4.jpg" style="width:100%">
@@ -78,42 +83,40 @@ cssPath: "/css/build/nossa-historia.css"
         <div class="numbertext">5 / 5</div>
         <img src="/img/clinica5.jpg" style="width:100%">
       </div>
-  
-      <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
+
       <!-- Caption text -->
       <div class="caption-container">
         <p id="caption"></p>
       </div>
-  
-      <!-- Thumbnail image controls -->
-      <div class="column">
-        <img class="demo" src="/img/clinica1.jpg" onclick="currentSlide(1)" alt="Clínica Muricy">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="/img/clinica2.jpg" onclick="currentSlide(2)" alt="Clínica Muricy">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="/img/clinica3.jpg" onclick="currentSlide(3)" alt="Clínica Muricy">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="/img/clinica4.jpg" onclick="currentSlide(4)" alt="Clínica Muricy">
-      </div>
 
-      <div class="column">
-        <img class="demo" src="/img/clinica5.jpg" onclick="currentSlide(5)" alt="Clínica Muricy">
+      <!-- Thumbnail image controls -->
+      <div class="columnRow">
+        <div class="column">
+          <img class="demo" src="/img/clinica1.jpg" onclick="currentSlide(1)" alt="Clínica Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/clinica2.jpg" onclick="currentSlide(2)" alt="Clínica Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/clinica3.jpg" onclick="currentSlide(3)" alt="Clínica Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/clinica4.jpg" onclick="currentSlide(4)" alt="Clínica Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/clinica5.jpg" onclick="currentSlide(5)" alt="Clínica Muricy">
+        </div>
       </div>
     </div>
   </div>
 
   <div id="myModal" class="modalEQ">
     <div class="modalEquipe">
-      <span class="close">&times;</span>
+      <span class="close" onclick="closeModal('myModal')">&times;</span>
       <img src="/img/drmuricymodal.jpg" alt="">
       <div class="modalText">
         <h2>DR. JOSÉ<br>CANDIDO MURICY</h2>
@@ -133,7 +136,7 @@ cssPath: "/css/build/nossa-historia.css"
 
   <div id="myModal2" class="modalEQ">
     <div class="modalEquipe">
-      <span class="close">&times;</span>
+      <span class="close" onclick="closeModal('myModal2')">&times;</span>
       <img src="/img/drraffaelemodal.jpg" alt="">
       <div class="modalText">
         <h2>DR. RAFFAELE<br>MURICY MARIGLIANO</h2>
@@ -154,7 +157,7 @@ cssPath: "/css/build/nossa-historia.css"
 
   <div id="myModal3" class="modalEQ">
     <div class="modalEquipe">
-      <span class="close">&times;</span>
+      <span class="close" onclick="closeModal('myModal3')">&times;</span>
       <img src="/img/drapriscilamodal.jpg" alt="">
       <div class="modalText">
         <h2>DRA. PRISCILA REGINA<br>ORSO REBELLATO</h2>
@@ -177,7 +180,7 @@ cssPath: "/css/build/nossa-historia.css"
   <div class="equipeHome">
     <div class="gallery">
       <button class="modalBtn">
-        <figure class=”gallery__item gallery__item--1">
+        <figure class="gallery__item gallery__item--1">
           <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
         </figure>
       </button>
@@ -209,80 +212,75 @@ cssPath: "/css/build/nossa-historia.css"
 {% include 'includecontato.njk' %}
 
 <script>
-// Open the Modal
-function openModal() {
-  document.getElementById("myModalNH").style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModalNH").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  // Open the Modal
+  function openModal() {
+    document.getElementById("myModalNH").style.display = "block";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  // Close the Modal
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+
+    console.log(id);
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+  }
 
   // Get the modal
   var modal = document.getElementsByClassName('modalEQ');
-  
+
   // Get the button that opens the modal
   var btn = document.getElementsByClassName("modalBtn");
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close");
+  // var span = document.getElementsByClassName("close");
 
   // When the user clicks the button, open the modal 
   btn[0].onclick = function () {
-    modal[0].style.display = "block";
+    modal[0].style.display = "flex";
   }
 
   btn[1].onclick = function () {
-    modal[1].style.display = "block";
+    modal[1].style.display = "flex";
   }
 
   btn[2].onclick = function () {
-    modal[2].style.display = "block";
-  }
-  // When the user clicks on <span> (x), close the modal
-  span[0].onclick = function () {
-    modal[0].style.display = "none";
+    modal[2].style.display = "flex";
   }
 
-  span[1].onclick = function () {
-    modal[1].style.display = "none";
-  }
-
-  span[2].onclick = function () {
-    modal[2].style.display = "none";
-  }
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
     if (event.target == modal[0]) {
