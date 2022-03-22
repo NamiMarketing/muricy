@@ -12,7 +12,7 @@
       <a class="{{ 'active' if '/nossa-historia' in page.url }}" href="/nossa-historia">NOSSA HISTÓRIA</a>
     </li>
     <li class="dropdown">
-      <a href="/tratamentos" class="dropbtn">CLÍNICO</a>
+      <a href="/tratamentos" class="dropbtn {{ 'active' if '/tratamentos' in page.url }}">CLÍNICO</a>
       <div class="dropdown-content">
         <a href="/tratamentos">DIAGNÓSTICO</a>
         <span></span>
@@ -22,7 +22,7 @@
       </div>
     </li>
     <li class="dropdown">
-      <a href="/transplante-capilar" class="dropbtn">CIRÚRGICO</a>
+      <a href="/transplante-capilar" class="dropbtn {{ 'active' if '/transplante-capilar' in page.url }}">CIRÚRGICO</a>
       <div class="dropdown-content">
         <a href="/orientacoes">ORIENTAÇÕES</a>
         <span></span>
