@@ -32,41 +32,304 @@ cssPath: "/css/build/nossa-historia.css"
 
   <div class="estrutura">
     <h2>ESTRUTURA</h2>
+  </div>
 
-    <div class="estruturaBanner">
-      <div class="estrutura1">
-        <img src="/img/estrutura1.jpg" alt="">
-        <h4>CLÍNICA MURICY</h4>
+  <div class="row">
+    <div class="column">
+      <img src="/img/estrutura1.jpg" onclick="openModal('myModalNH1');currentSlide(1, 'myModalNH1')" class="hover-shadow">
+      <h4>CLÍNICA MURICY</h4>
+    </div>
+    <div class="column">
+      <img src="/img/estrutura2.jpg" onclick="openModal('myModalNH2');currentSlide(1, 'myModalNH2')" class="hover-shadow">
+      <h4>HAIR CARE</h4>
+    </div>
+    <div class="column">
+      <img src="/img/estrutura3.jpg" onclick="openModal('myModalNH3');currentSlide(1, 'myModalNH3')" class="hover-shadow">
+      <h4>HOSPITAL DR MURICY</h4>
+    </div>
+  </div>
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModalNH1" class="modal">
+    <span class="close cursor" onclick="closeModal('myModalNH1')">&times;</span>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1, 'myModalNH1')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'myModalNH1')">&#10095;</a>
+
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="/img/clinica1.webp" style="width: auto">
       </div>
-      <div class="estrutura2">
-        <img src="/img/estrutura2.jpg" alt="">
-        <h4>HAIR CARE</h4>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="/img/clinica2.webp" style="width: auto">
       </div>
-      <div class="estrutura3">
-        <img src="/img/estrutura3.jpg" alt="">
-        <h4>HOSPITAL DR MURICY</h4>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="/img/clinica3.webp" style="width: auto">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="/img/clinica4.webp" style="width: auto">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="/img/clinica5.webp" style="width: auto">
+      </div>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="columnRow">
+        <div class="column">
+          <img class="demo" src="/img/clinica1.webp" onclick="currentSlide(1, 'myModalNH1')" alt="Clínica Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/clinica2.webp" onclick="currentSlide(2, 'myModalNH1')" alt="Clínica Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/clinica3.webp" onclick="currentSlide(3, 'myModalNH1')" alt="Clínica Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/clinica4.webp" onclick="currentSlide(4, 'myModalNH1')" alt="Clínica Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/clinica5.webp" onclick="currentSlide(5, 'myModalNH1')" alt="Clínica Muricy">
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="equipeNossaHistoria">
+  <div id="myModalNH2" class="modal">
+    <span class="close cursor" onclick="closeModal('myModalNH2')">&times;</span>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1, 'myModalNH2')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'myModalNH2')">&#10095;</a>
+
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="/img/haircare1.webp" style="width: auto">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="/img/haircare2.webp" style="width: auto">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="/img/haircare3.webp" style="width: auto">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="/img/haircare4.webp" style="width: auto">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="/img/haircare5.webp" style="width: auto">
+      </div>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="columnRow">
+        <div class="column">
+          <img class="demo" src="/img/haircare1.webp" onclick="currentSlide(1, 'myModalNH2')" alt="Hair Care">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/haircare2.webp" onclick="currentSlide(2, 'myModalNH2')" alt="Hair Care">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/haircare3.webp" onclick="currentSlide(3, 'myModalNH2')" alt="Hair Care">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/haircare4.webp" onclick="currentSlide(4, 'myModalNH2')" alt="Hair Care">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/haircare5.webp" onclick="currentSlide(5, 'myModalNH2')" alt="Hair Care">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModalNH3" class="modal">
+    <span class="close cursor" onclick="closeModal('myModalNH3')">&times;</span>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1, 'myModalNH3')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'myModalNH3')">&#10095;</a>
+
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+        <img src="/img/hospital1.webp" style="width: 55vw; object-fit: contain;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+        <img src="/img/hospital2.webp" style="width: 55vw; object-fit: contain;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+        <img src="/img/hospital3.webp" style="width: 55vw; object-fit: contain;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="/img/hospital4.webp" style="width: auto">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+        <img src="/img/hospital5.webp" style="width: auto">
+      </div>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="columnRow">
+        <div class="column">
+          <img class="demo" src="/img/hospital1.webp" onclick="currentSlide(1, 'myModalNH3')" alt="Hospital Dr. Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/hospital2.webp" onclick="currentSlide(2, 'myModalNH3')" alt="Hospital Dr. Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/hospital3.webp" onclick="currentSlide(3, 'myModalNH3')" alt="Hospital Dr. Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/hospital4.webp" onclick="currentSlide(4, 'myModalNH3')" alt="Hospital Dr. Muricy">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="/img/hospital5.webp" onclick="currentSlide(5, 'myModalNH3')" alt="Hospital Dr. Muricy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modalEQ">
+    <div class="modalEquipe">
+      <span class="close" onclick="closeModal('myModal')">&times;</span>
+      <img src="/img/drmuricymodal.jpg" alt="">
+      <div class="modalText">
+        <h2>DR. JOSÉ<br>CANDIDO MURICY</h2>
+        <p>
+          Médico formado na faculdade de medicina da UFPR, é um dos maiores e mais conceituado especialista em cirurgia
+          corretiva da calvície do Brasil. No início da década de 80, então cirurgião geral, o Dr. Muricy iniciou sua
+          especialização em cirurgia plástica com estágios junto a cirurgiões renomados mundialmente dentre os quais
+          estão
+          o Dr. Antonio Costa Estima, de Porto Alegre, RS, Dr. Jaime Planas, de Barcelona, Espanha e o Dr. José Guerrero
+          Santos, de Guadalajara, México. Nesta área, participou de mais de uma centena de cursos, congressos e eventos.
+          Presidiu Instituições como o Centro de Estudos Dr. Costa Estima (Porto Alegre) e a Sociedade Brasileira de
+          Cirurgia Plástica Regional do Paraná.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal2" class="modalEQ">
+    <div class="modalEquipe">
+      <span class="close" onclick="closeModal('myModal2')">&times;</span>
+      <img src="/img/drraffaelemodal.jpg" alt="">
+      <div class="modalText">
+        <h2>DR. RAFFAELE<br>MURICY MARIGLIANO</h2>
+        <p>
+          Cirurgião Plástico, formado pela Pontifícia Universidade Católica do Paraná em 1987, CRM 10961.<br>
+          Graduado em Cirurgia geral pelo Hospital da Cruz Vermelha Brasileira filial Paraná;<br>
+          Graduado em Cirurgia Plástica pelo serviço do Dr. José Candido Muricy em Curitiba;<br>
+          Graduado em Cirurgia Plástica pelo serviço do Dr. Antônio Costa Estima em Porto Alegre;<br>
+          Membro especialista em Cirurgia Plástica pela sociedade Brasileira de Cirurgia Plástica em 1993 e titular em
+          1995;<br>
+          Especialista em Cirurgia Plástica pelo Conselho Regional de Medicina do Paraná;<br>
+          Membro da Associação Brasileira da Cirurgia de Restauração Capilar;<br>
+          Diretor proprietário da Clínica Marigliano de Cirurgia Plástica.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal3" class="modalEQ">
+    <div class="modalEquipe">
+      <span class="close" onclick="closeModal('myModal3')">&times;</span>
+      <img src="/img/drapriscilamodal.jpg" alt="">
+      <div class="modalText">
+        <h2>DRA. PRISCILA REGINA<br>ORSO REBELLATO</h2>
+        <p>
+          <strong>Dermatologista Tricologista</strong><br>
+          Graduada em Medicina pela Pontifícia Universidade Católica do Paraná (2010), residência médica em Clínica
+          Médica
+          pelo Hospital Regional Hans Dieter Schmidt (2014), especialização em Dermatologia pelo Hospital Universitário
+          Evangélico de Curitiba (2016) e subespecialização em Tricologia, Cosmiatria e Laser pelo Serviço de
+          Dermatologia
+          do Hospital Universitário Evangélico Mackenzie de Curitiba (2017). Atualmente é colaboradora dos Ambulatórios
+          de
+          Dermatologia Pediátrica do Hospital Infantil Pequeno Príncipe e de Tricologia do Hospital Universitário
+          Evangélico Mackenzie e faz atendimento em consultório particular.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="equipeHome">
     <div class="gallery">
-      <figure class=”gallery__item gallery__item--1">
-        <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
-      </figure>
-      <figure class="gallery__item gallery__item--2">
-        <img src="/img/drraffaele.jpg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
-      </figure>
-      <figure class="gallery__item gallery__item--3">
-        <img src="/img/drapriscila.jpg" class="gallery__img drapriscila" alt="Dra. Priscila Rebellato">
-      </figure>
+      <button class="modalBtn" onclick="openModal('myModal')">
+        <figure class="gallery__item gallery__item--1">
+          <img src="/img/drmuricy.jpg" class="gallery__img" alt="Dr. José Candido Muricy">
+        </figure>
+      </button>
+      <button class="modalBtn btn2" onclick="openModal('myModal2')">
+        <figure class="gallery__item gallery__item--2">
+          <img src="/img/drraffaele.jpg" class="gallery__img drraffaele" alt="Dr. Raffaele Muricy Marigliano">
+        </figure>
+      </button>
+      <button class="modalBtn btn3" onclick="openModal('myModal3')">
+        <figure class="gallery__item gallery__item--3">
+          <img src="/img/drapriscila.jpg" class="gallery__img dra" alt="Dra. Priscila Rebellato">
+        </figure>
+      </button>
     </div>
 
     <div class="equipeText">
       <h2>EQUIPE</h2>
       <p>
         A sede em Curitiba - PR conta com grandes profissionais para cuidar da sua autoestima realizando a avaliação do
-        seu caso com precisão e expertise nos melhores tratamentos e procedimentos para o seu caso.
+        seu
+        caso com precisão e expertise nos melhores tratamentos e procedimentos para o seu caso.
         <br><br>
         Conheça os nossos profissionais:
       </p>
@@ -77,6 +340,89 @@ cssPath: "/css/build/nossa-historia.css"
 {% include 'includecontato.njk' %}
 
 <script>
+  // Open the Modal
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  // Close the Modal
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  var slideIndex = 1;
+  showSlides(slideIndex, 'modalNH1');
+
+  // Next/previous controls
+  function plusSlides(n, id) {
+    showSlides(slideIndex += n, id);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n, id) {
+    slideIndex = n;
+
+    showSlides(n, id);
+  }
+
+  function showSlides(n, id) {
+    var i;
+    var container = document.getElementById(id);
+    var slides = container.getElementsByClassName("mySlides");
+    var dots = container.getElementsByClassName("demo");
+    var captionText = container.querySelector("#caption");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+  }
+
+  // Get the modal
+  var modal = document.getElementsByClassName('modalEQ');
+
+  // Get the button that opens the modal
+  var btn = document.getElementsByClassName("modalBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close");
+
+  // When the user clicks the button, open the modal 
+  btn[0].onclick = function () {
+    modal[0].style.display = "flex";
+  }
+
+  btn[1].onclick = function () {
+    modal[1].style.display = "flex";
+  }
+
+  btn[2].onclick = function () {
+    modal[2].style.display = "flex";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal[0]) {
+      modal[0].style.display = "none";
+    }
+    if (event.target == modal[1]) {
+      modal[1].style.display = "none";
+    }
+    if (event.target == modal[2]) {
+      modal[2].style.display = "none";
+    }
+  }
+
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.from(".institucionalFlex", {
@@ -101,6 +447,19 @@ cssPath: "/css/build/nossa-historia.css"
   gsap.from(".estrutura", {
     scrollTrigger: {
       trigger: ".estrutura",
+      start: "-50px bottom",
+      end: "10%",
+      toggleActions: "restart none reverse none",
+      scrub: 1,
+    },
+    x: -150,
+    opacity: 0,
+    duration: 2,
+  })
+
+  gsap.from(".row", {
+    scrollTrigger: {
+      trigger: ".row",
       start: "-50px bottom",
       end: "10%",
       toggleActions: "restart none reverse none",

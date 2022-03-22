@@ -4,6 +4,36 @@
 @import "includecontato";
 @import "colors";
 
+.orientacoes-banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 90vh;
+  justify-content: center;
+  place-items: center;
+
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: 300;
+    color: $cinza_800;
+    text-align: center;
+    margin-top: 9rem;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
+
 .blog-container {
   width: 80vw;
   margin: auto;

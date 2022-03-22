@@ -4,6 +4,39 @@
 @import "contato";
 @import "colors";
 
+.orientacoes-banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 80vh;
+  justify-content: center;
+  place-items: center;
+  margin-bottom: 10rem;
+
+  h1 {
+    padding-top: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: 300;
+    color: $cinza_800;
+    text-align: center;
+    margin-top: 9rem;
+    width: 60vw;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
+
 .informacoes-iniciais {
   display: flex;
   flex-direction: column;
@@ -60,21 +93,10 @@
       display: flex;
       align-items: center;
 
-      div {
-        margin-left: 3.7rem;
-        display: flex;
-        align-items: center;
-      }
-
-      h6 {
+      a {
+        color: $white;
         font-weight: 700;
         line-height: 1.7rem;
-      }
-
-      p {
-        font-size: 1.4rem;
-        font-weight: 300;
-        margin-left: 0.5rem;
       }
     }
 
@@ -175,17 +197,21 @@
     max-width: 40.5rem;
     display: flex;
     flex-direction: column;
+
     p {
       line-height: 26px;
       text-align: right;
       margin-bottom: 3.5rem;
     }
+
     ul {
       display: flex;
       justify-content: end;
-      > li {
+
+      >li {
         margin-left: 2.9rem;
       }
+
       a {
         font-weight: 600;
         font-size: 1.8rem;
@@ -193,6 +219,7 @@
         color: #ffffff;
         padding-bottom: 5px;
       }
+
       a:hover {
         border-bottom: 1px solid #ffffff;
       }
@@ -204,6 +231,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+
   a {
     margin-top: 12.7rem;
     margin-bottom: 26.2rem;
@@ -227,6 +255,7 @@
       background-color: $roxo_800;
     }
   }
+
   img {
     z-index: -1;
     top: -100px;
@@ -240,16 +269,19 @@
 @media screen and (max-width: 600px) {
   html {
     font-size: 55%;
+
     .informacoes-iniciais {
       margin-left: 0;
 
       .atendimento-clinico {
         justify-content: center;
+
         .atendimento-titulo {
           font-size: 4.5rem;
           text-align: center;
           margin: 11rem 0;
         }
+
         img {
           display: none;
         }
@@ -260,10 +292,12 @@
 
         .diagnostico {
           flex-direction: column-reverse;
+
           p {
             margin-top: 20px;
           }
         }
+
         .doencas-cabelo {
           div {
             flex-direction: column;
@@ -273,6 +307,7 @@
         .informacoes-cabelo {
           margin-top: 10rem;
           width: 100%;
+
           h2 {
             font-size: 3.4rem;
           }
@@ -303,16 +338,19 @@
           text-align: justify;
         }
       }
+
       img {
         margin-top: 2rem;
       }
     }
+
     .container-verde {
       margin-top: 9rem;
       width: 100%;
       padding: 2rem;
       flex-direction: column;
       justify-content: center;
+
       h2 {
         text-align: center;
         margin-bottom: 2rem;
@@ -323,14 +361,17 @@
           text-align: center;
           margin-bottom: 2rem;
         }
+
         ul {
           justify-content: space-around;
+
           li {
             margin: 0;
           }
         }
       }
     }
+
     .agende-consulta {
       a {
         width: 80%;
