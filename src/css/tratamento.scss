@@ -73,6 +73,12 @@
       align-items: center;
       gap: 9rem;
 
+      h2 {
+        margin-left: 2.5rem;
+        line-height: 51px;
+        letter-spacing: 0.1em;
+      }
+
       p {
         max-width: 71.5rem;
         font-weight: 300;
@@ -81,22 +87,17 @@
         letter-spacing: 0.1em;
       }
 
-      h2 {
-        margin-left: 2.5rem;
-        line-height: 51px;
-        letter-spacing: 0.1em;
-      }
-    }
+      .diagnosticoFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 
-    .doencas-cabelo {
-      margin-top: 4.8rem;
-      display: flex;
-      align-items: center;
-
-      a {
-        color: $white;
-        font-weight: 700;
-        line-height: 1.7rem;
+        a {
+          margin-top: 3rem;
+          color: $white;
+          font-weight: 700;
+          line-height: 1.7rem;
+        }
       }
     }
 
