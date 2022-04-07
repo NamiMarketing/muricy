@@ -97,6 +97,12 @@
           color: $white;
           font-weight: 700;
           line-height: 1.7rem;
+          width: fit-content;
+        }
+
+        a:hover {
+          text-decoration: underline;
+          text-underline-offset: 3px;
         }
       }
     }
@@ -170,7 +176,7 @@
   }
 
   img {
-    margin-left: 2rem;
+    margin-left: 10rem;
   }
 }
 
