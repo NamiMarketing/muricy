@@ -588,3 +588,63 @@ section {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  #myModalNH1,
+  #myModalNH2,
+  #myModalNH3 {
+    .prev {
+      height: 30px;
+      width: 30px;
+      font-size: 20px;
+      top: 46%;
+    }
+
+    .next {
+      height: 30px;
+      width: 30px;
+      font-size: 20px;
+      top: 46%;
+      padding-left: 1px;
+    }
+
+    .mySlides {
+      img {
+        width: 55vw !important;
+        height: 440px;
+        object-fit: contain;
+      }
+    }
+
+    .column {
+      img {
+        height: 80px;
+      }
+    }
+  }
+
+  .equipeHome {
+    margin-top: 7rem;
+
+    .equipeText {
+      width: 42vw;
+
+      h2 {
+        font-size: 4rem;
+      }
+    }
+
+    .gallery {
+      margin-left: 10rem;
+
+      .btn2 {
+        margin-top: 15rem;
+        margin-left: 4rem;
+      }
+
+      .btn3 {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
