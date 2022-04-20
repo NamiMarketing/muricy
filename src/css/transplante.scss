@@ -315,3 +315,52 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .orientacoes-banner {
+    h1 {
+      font-size: 5rem;
+    }
+
+    h4 {
+      margin-top: 5rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  .informacoes-iniciais {
+    margin-left: 75px;
+
+    .container-bege {
+      padding: 0 3rem;
+
+      .right-side {
+        max-width: 50%;
+
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .tecnicas {
+    margin-right: 7rem;
+
+    img {
+      width: 35%;
+    }
+
+    .texto-tecnicas {
+      p {
+        width: 55vw;
+      }
+    }
+  }
+
+  .agende-consulta {
+    a {
+      margin-top: 20rem;
+    }
+  }
+}

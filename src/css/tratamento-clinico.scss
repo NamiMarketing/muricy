@@ -716,3 +716,104 @@
     height: 73px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .orientacoes-banner {
+    h1 {
+      font-size: 5rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+      margin-top: 5rem;
+    }
+  }
+
+  #mmp {
+    .whiteTratamento {
+      .greenFlex {
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .purpleContainer {
+      width: 90vw;
+      padding: 6rem;
+
+      .purpleContent {
+        h4 {
+          width: unset;
+        }
+      }
+    }
+  }
+
+  #medicamentos {
+    .greenTratamento {
+      .greenFlex {
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .whiteContainer {
+      .greenFlex {
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  #micropigmentacao {
+    .greenTratamento {
+      .greenFlex {
+        padding: 1rem 0;
+
+        .greenTextTwo {
+          .minoFlex {
+            gap: 12rem;
+
+            span {
+              height: 160px;
+            }
+
+            p {
+              max-width: 420px;
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #laser {
+    .medicalHair2 {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+
+    .flexboxTextTA {
+      .flexBeneficios {
+        .flexBenSmall {
+          p {
+            line-height: 20px;
+          }
+        }
+      }
+    }
+
+    .flexboxTextLaser {
+      .flexBeneficios {
+        .flexBenSmall {
+          width: 27vw;
+        }
+      }
+    }
+  }
+}

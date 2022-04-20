@@ -46,7 +46,7 @@
   position: relative;
   z-index: -1;
 
-  > div {
+  >div {
     max-width: 400px;
     z-index: 2;
     margin-left: 10vw;
@@ -103,7 +103,7 @@
     max-width: 512px;
   }
 
-  > div {
+  >div {
     margin-left: 4.8rem;
 
     p {
@@ -345,5 +345,36 @@
     line-height: 2.6rem;
     margin-bottom: 2rem;
     text-align: justify;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .orientacoes-banner {
+    h1 {
+      font-size: 5rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+  }
+
+  .nav-blog {
+    gap: 50px;
+    margin-bottom: 10rem;
+
+    a {
+      font-size: 1.5rem;
+    }
+  }
+
+  .first-blog {
+    img {
+      width: 50%;
+    }
+
+    h3 {
+      font-size: 3.4rem;
+    }
   }
 }

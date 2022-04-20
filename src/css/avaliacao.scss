@@ -186,3 +186,18 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .info-container {
+    justify-content: space-between;
+    padding: 5rem 3rem;
+  }
+
+  .avaliacao-form {
+    width: 90vw;
+  }
+
+  .orientacoes {
+    width: 85vw;
+  }
+}
