@@ -118,6 +118,10 @@
       margin-top: 15px;
     }
 
+    .telefone-contato1 {
+      margin-top: 0;
+    }
+
     h5 {
       font-size: 1.6rem;
       font-weight: 300;
@@ -210,5 +214,17 @@
   .contato-muricy {
     margin-top: 13rem;
     margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contato-muricy {
+    margin-left: 4rem;
+
+    .flexContato {
+      h1 {
+        font-size: 4rem;
+      }
+    }
   }
 }

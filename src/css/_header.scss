@@ -369,9 +369,26 @@ nav {
           font-size: 1.3rem;
         }
       }
-      
+
       .dropbtn {
         font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    ul {
+      .dropbtn {
+        font-size: 1.2rem;
+      }
+
+      li {
+        a {
+          margin-right: 3.9rem;
+          font-size: 1.2rem;
+        }
       }
     }
   }

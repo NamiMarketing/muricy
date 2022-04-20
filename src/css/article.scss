@@ -103,3 +103,9 @@
     margin-bottom: 4.5rem;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .article-lines {
+    margin-top: -70px;
+  }
+}

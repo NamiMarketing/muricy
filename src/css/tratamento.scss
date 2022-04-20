@@ -387,3 +387,69 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .orientacoes-banner {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+
+  .informacoes-iniciais {
+    margin-left: 105px;
+
+    .container-rosa {
+      padding: 15rem 5rem 10rem 7rem;
+
+      .diagnostico {
+        gap: 5rem;
+
+        h2 {
+          font-size: 4rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      .informacoes-cabelo {
+        width: 93%;
+
+        h2 {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .tratamentos {
+    gap: 6rem;
+
+    img {
+      margin-left: 0;
+      width: 45%;
+    }
+
+    .texto-tratamentos {
+      ul {
+        gap: 2rem;
+
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .container-verde {
+    padding: 0 5.7rem 0 10rem;
+    gap: 5rem;
+  }
+
+  .agende-consulta {
+    a {
+      margin-bottom: 4rem;
+    }
+  }
+}

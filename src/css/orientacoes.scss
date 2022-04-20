@@ -278,3 +278,45 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .orientacoes-banner {
+    h1 {
+      font-size: 5rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+  }
+
+  .pre-operatorio {
+    .conteudo {
+      max-width: 85vw;
+      margin-top: 5rem;
+
+      img {
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+
+  .pos-operatorio {
+    .conteudo {
+      margin-top: 5rem;
+    }
+
+    .gray-box {
+      place-items: flex-start;
+
+      .right-side {
+        place-items: flex-start;
+
+        p {
+          margin-top: 0rem;
+        }
+      }
+    }
+  }
+}

@@ -684,3 +684,56 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .tecnicas-banner {
+    h1 {
+      font-size: 5rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+  }
+
+  #fue {
+    .importante {
+      align-items: center;
+      width: 90vw;
+      padding: 6rem;
+      gap: 4rem;
+
+      img {
+        width: 50%;
+        height: 50%;
+      }
+
+      p {
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+  #body-hair {
+    p {
+      max-width: 75vw;
+    }
+
+    .megaImg,
+    .megaImg2 {
+      img {
+        max-height: 150px;
+      }
+    }
+
+    .megaImgUFS {
+      img {
+        width: 76vw;
+      }
+    }
+
+    .importante {
+      width: 90vw;
+    }
+  }
+}
