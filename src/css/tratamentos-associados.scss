@@ -447,6 +447,7 @@
         }
       }
     }
+
     .whiteFlexTwo {
       width: 50vw;
 
@@ -618,6 +619,97 @@
 
         .greenStrong {
           font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .orientacoes-banner {
+    h1 {
+      font-size: 5rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+  }
+
+  .medicalHair {
+    margin: 0 10rem;
+    margin-top: 14rem;
+  }
+
+  .fotoLocaoCapilar {
+    margin-left: 10rem;
+
+    .flexFLC {
+      gap: 5rem;
+
+      img {
+        width: 45%;
+        margin-right: 10rem;
+      }
+    }
+  }
+
+  .greenContainer {
+    .shampooFlex {
+      width: 73vw;
+      justify-content: space-between;
+      gap: 2rem;
+
+      .shampooTitle {
+        h4 {
+          font-size: 2rem;
+          width: 42vw;
+        }
+      }
+
+      .shampooTitle2 {
+        h4 {
+          width: 33vw;
+        }
+      }
+    }
+  }
+
+  .whiteContainer {
+    justify-content: space-between;
+
+    .whiteFlex {
+      width: 75vw;
+
+      .whiteText {
+        width: 55vw;
+      }
+    }
+  }
+
+  #haircare {
+    .greenTratamento {
+      .greenFlex {
+        img {
+          width: 45%;
+        }
+
+        .greenText {
+          line-height: 22px;
+
+          .greenTitle {
+            h4 {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    .whiteTratamento {
+      .greenFlex {
+        img {
+          width: 50%;
         }
       }
     }

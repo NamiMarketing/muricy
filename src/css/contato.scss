@@ -106,3 +106,40 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .contatoBanner {
+    h2 {
+      font-size: 3.8rem;
+    }
+
+    h4 {
+      font-size: 1.8rem;
+    }
+
+    .contatoButtons {
+      .btn {
+        width: 370px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .perguntasFlex {
+    width: 88vw;
+    gap: 6rem;
+
+    h2 {
+      width: 290px;
+      font-size: 3.8rem;
+    }
+
+    .pfsidebox {
+      .pftextbox {
+        .collapsible {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
