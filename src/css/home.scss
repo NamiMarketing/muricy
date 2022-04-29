@@ -303,126 +303,6 @@
   cursor: pointer;
 }
 
-@media (orientation: portrait) and (max-width: 500px) {
-  .bannerFlex {
-    padding: 10rem 0 0 6rem;
-
-    h1 {
-      font-size: 4.5rem;
-    }
-
-    h4 {
-      margin-top: 2rem;
-      width: 75vw;
-    }
-  }
-
-  .modalEquipe {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-
-    .modalText {
-      h2 {
-        font-size: 2.5rem;
-      }
-
-      p {
-        width: unset;
-        font-size: 1.5rem;
-      }
-    }
-  }
-
-  .equipeHome {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 15rem;
-
-    .linhasequipe {
-      z-index: 3;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: unset;
-      width: 88vw;
-      margin-top: 4rem;
-      margin-left: 2.5rem;
-      gap: 3rem;
-
-      .btn2,
-      .btn3 {
-        margin: 0;
-      }
-
-      .drraffaele {
-        margin: 0;
-      }
-
-      .dra {
-        margin: 0;
-      }
-    }
-
-    .equipeText {
-      width: 85vw;
-      margin-top: 26rem;
-      margin-left: 3rem;
-    }
-  }
-
-  .brownboxHome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 90vw;
-    background-color: #95937f;
-    padding: 3rem;
-    margin-bottom: 15rem;
-
-    h2 {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-    }
-  }
-
-  .servicosHome {
-    margin: auto;
-    flex-direction: column;
-    gap: 3rem;
-
-    .servicosText {
-      width: unset;
-    }
-
-    .servicosBelowText {
-      gap: 2rem;
-
-      h4 {
-        font-size: 1.7rem;
-      }
-    }
-  }
-
-  .contato-muricy {
-    flex-direction: column;
-
-    .flexContato {
-      width: 80vw;
-      margin: auto;
-    }
-
-    .detalhes-contatos {
-      margin-left: 0;
-      width: unset;
-      margin-top: 3rem;
-    }
-  }
-}
-
 @media (orientation: landscape) and (max-width: 1537px) {
   .bannerFlex {
     padding: 16rem 0 0 19rem;
@@ -570,6 +450,156 @@
 
     img {
       width: 49%;
+    }
+  }
+}
+
+@media (orientation: portrait) and (max-width: 500px) {
+  .bannerFlex {
+    padding: 10rem 0 0 6rem;
+
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    h4 {
+      margin-top: 2rem;
+      width: 75vw;
+    }
+  }
+
+  .modalEquipe {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+
+    .modalText {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        width: unset;
+        font-size: 1.5rem;
+        text-align: justify;
+      }
+    }
+  }
+
+  #myModal {
+    .modalEquipe {
+      padding: 7rem 4rem 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  #myModal2 {
+    .modalEquipe {
+      padding: 7rem 4rem 3rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  #myModal3 {
+    .modalEquipe {
+      padding: 7rem 4rem 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .equipeHome {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 15rem;
+
+    .linhasequipe {
+      z-index: 3;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: unset;
+      width: 88vw;
+      margin-top: 4rem;
+      margin-left: 2.5rem;
+      gap: 3rem;
+
+      .btn2,
+      .btn3 {
+        margin: 0;
+      }
+
+      .drraffaele {
+        margin: 0;
+      }
+
+      .dra {
+        margin: 0;
+      }
+    }
+
+    .equipeText {
+      width: 85vw;
+      margin-top: 26rem;
+      margin-left: 3rem;
+    }
+  }
+
+  .brownboxHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    background-color: #95937f;
+    padding: 3rem;
+    margin-bottom: 15rem;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .servicosHome {
+    margin: auto;
+    flex-direction: column;
+    gap: 3rem;
+
+    .servicosText {
+      width: unset;
+
+      .servicosBelowText {
+        justify-content: space-between;
+        gap: 0rem;
+  
+        h4 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    img {
+      width: 100vw;
+    }
+  }
+
+  .contato-muricy {
+    flex-direction: column;
+
+    .flexContato {
+      width: 80vw;
+      margin: auto;
+    }
+
+    .detalhes-contatos {
+      margin-left: 0;
+      width: unset;
+      margin-top: 3rem;
     }
   }
 }
