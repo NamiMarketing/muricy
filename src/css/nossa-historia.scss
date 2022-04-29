@@ -484,112 +484,8 @@ section {
   }
 }
 
-@media (orientation: portrait) and (max-width: 500px) {
-  .institucionalFlexbox {
-    width: unset;
-    margin-left: unset;
-
-    .institucionalFlex {
-      display: flex;
-      flex-direction: column;
-      margin-top: 10rem;
-
-      img {
-        width: 100vw;
-      }
-    }
-
-    .purpleBox {
-      padding: 5rem 5rem;
-    }
-  }
-
-  .equipeHome {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 15rem;
-
-    .linhasequipe {
-      z-index: 3;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: unset;
-      width: 88vw;
-      margin-top: 4rem;
-      margin-left: 2.5rem;
-      gap: 3rem;
-
-      .btn2,
-      .btn3 {
-        margin: 0;
-      }
-
-      .drraffaele {
-        margin: 0;
-      }
-
-      .dra {
-        margin: 0;
-      }
-    }
-
-    .equipeText {
-      width: 85vw;
-      margin-top: 5rem;
-      margin-left: 3rem;
-    }
-  }
-
-  .modalEquipe {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-
-    .modalText {
-      h2 {
-        font-size: 2.5rem;
-      }
-
-      p {
-        width: unset;
-        font-size: 1.5rem;
-      }
-    }
-  }
-
-  .row {
-    flex-direction: column;
-    gap: 10rem;
-  }
-
-  .prev, .next {
-    z-index: 6;
-  }
-
-  #myModalNH1, #myModalNH2, #myModalNH3 {
-    .close {
-      z-index: 1;
-    }
-
-    .modal-content {
-      width: 100%;
-      margin: unset;
-    }
-
-    .mySlides {
-      margin-top: 5rem;
-
-      img {
-        width: 100vw !important;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 1024px) {
+
   #myModalNH1,
   #myModalNH2,
   #myModalNH3 {
@@ -675,6 +571,159 @@ section {
   #myModal2 {
     .modalEquipe {
       padding: 7rem 4rem 4rem;
+    }
+  }
+}
+
+@media (orientation: portrait) and (max-width: 500px) {
+  .institucionalFlexbox {
+    width: unset;
+    margin-left: unset;
+
+    .institucionalFlex {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10rem;
+
+      img {
+        width: 100vw;
+      }
+    }
+
+    .purpleBox {
+      padding: 5rem 5rem;
+    }
+  }
+
+  .equipeHome {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 15rem;
+
+    .linhasequipe {
+      z-index: 3;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: unset;
+      width: 88vw;
+      margin-top: 4rem;
+      margin-left: 2.5rem;
+      gap: 3rem;
+
+      .btn2,
+      .btn3 {
+        margin: 0;
+      }
+
+      .drraffaele {
+        margin: 0;
+      }
+
+      .dra {
+        margin: 0;
+      }
+    }
+
+    .equipeText {
+      width: 85vw;
+      margin-top: 5rem;
+      margin-left: 3rem;
+    }
+  }
+
+  .modalEquipe {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+
+    .modalText {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        width: unset;
+        font-size: 1.5rem;
+        text-align: justify;
+      }
+    }
+  }
+
+  #myModal {
+    .modalEquipe {
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+      padding: 5rem 4rem 3rem;
+      margin-top: 13rem;
+      margin-bottom: 2rem;
+
+      .modalText {
+        h2 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          width: unset;
+          font-size: 1.5rem;
+          text-align: justify;
+        }
+      }
+
+      .close {
+        margin-top: -3rem;
+      }
+    }
+  }
+
+  #myModal2 {
+    .modalEquipe {
+      margin-top: 20rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  #myModal3 {
+    .modalEquipe {
+      margin-top: 13rem;
+      margin-bottom: 2rem;
+      padding: 7rem 4rem 3rem;
+  
+    }
+  }
+
+
+  .row {
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  .prev,
+  .next {
+    z-index: 6;
+  }
+
+  #myModalNH1,
+  #myModalNH2,
+  #myModalNH3 {
+    .close {
+      z-index: 1;
+    }
+
+    .modal-content {
+      width: 100%;
+      margin: unset;
+    }
+
+    .mySlides {
+      margin-top: 5rem;
+
+      img {
+        width: 100vw !important;
+      }
     }
   }
 }

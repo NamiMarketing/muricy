@@ -81,3 +81,48 @@
         }
     }
 }
+
+@media (orientation: portrait) and (max-width: 500px) {
+    .LPFlex {
+        margin-top: 4rem;
+
+        .landingPageTitle {
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        span {
+            width: 330px;
+        }
+    }
+
+    .LPCidadesFlex {
+        flex-direction: column;
+        margin-top: 5rem;
+        gap: 4rem;
+
+        .cwb {
+            img {
+                width: 90vw;
+            }
+
+            h2 {
+                font-size: 4rem;
+                top: 45px;
+                right: 54px;
+            }
+        }
+
+        .sao {
+            img {
+                width: 90vw;
+            }
+
+            h2 {
+                font-size: 4rem;
+                top: 45px;
+                right: 26px;
+            }
+        }
+    }
+}
