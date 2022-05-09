@@ -19,7 +19,7 @@ cssPath: "/css/build/avaliacao.css"
   </div>
 </section>
 
-<form class="avaliacao-form" name="avaliacao" action="https://formsubmit.co/financeiro@namiconsultoria.com.br" method="POST" enctype="multipart/form-data">
+<form class="avaliacao-form" name="avaliacao" action="https://formsubmit.co/drmuricy@clinicamuricy.com.br" method="POST" enctype="multipart/form-data">
   <div class="half">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_subject" value="Nova avaliação pelo site.">
@@ -136,7 +136,17 @@ cssPath: "/css/build/avaliacao.css"
     <input type="text" name="parentesco" placeholder="Se afirmativo, qual o parentesco?" />
   </div>
   <h5>Anexar fotos</h5>
-  <input type="file" name="arquivos1"/>
+  <br/>
+  <p>Foto 1</p>
+  <input type="file" name="foto1"/>
+  <p>Foto 2</p>
+  <input type="file" name="foto2"/>
+  <p>Foto 3</p>
+  <input type="file" name="foto3"/>
+  <p>Foto 4</p>
+  <input type="file" name="foto4"/>
+  <p>Foto 5</p>
+  <input type="file" name="foto5"/>
   
   <input type="submit" value="ENVIAR" class="enviar" /> 
 </form>
@@ -178,41 +188,56 @@ cssPath: "/css/build/avaliacao.css"
 
 <script>  
 
-  let inputQuantity = {
-    qtd:  1
-  };
-
-var targetProxy = new Proxy(inputQuantity, {
-  set: function (target, key, value) {
-      target[key] = value;
-      createNewInput(value)
-      return true;
-  }
-});
-
-createNewInput(0);
-
-const sendButton = document.querySelector('input[type="submit"]')
-
-function createNewInput(value){
-  document.querySelector(`input[name="arquivos${value + 1}"]`).addEventListener('change', (e) => {
+for(var i = 0; i <=5 ; i++){
+  const inputFile = document.querySelector(`input[name="foto${i}"]`);
+  console.log(inputFile);
+  inputFile?.addEventListener('change', (e) => {
     const file = e.target.files[0];
     
     if(file){
-      var inputFile = document.createElement('input');
-
       var img = document.createElement('img');
       img.src =   URL.createObjectURL(e.target.files[0]);;
       img.style.width = '100px' 
-
-      inputFile.type = "file";
-      inputFile.name = `arquivos${value + 2}`
-      sendButton.insertAdjacentElement('beforebegin',inputFile)
       inputFile.insertAdjacentElement('beforebegin',img)
-      targetProxy.qtd = value + 1;
     }
   });
 }
+
+//   let inputQuantity = {
+//     qtd:  1
+//   };
+
+// var targetProxy = new Proxy(inputQuantity, {
+//   set: function (target, key, value) {
+//       target[key] = value;
+//       createNewInput(value)
+//       return true;
+//   }
+// });
+
+
+// const sendButton = document.querySelector('input[type="submit"]')
+
+// function createNewInput(value){
+//   const inputFile = document.querySelector(`input[name="foto${value + 1}"]`)
+//   inputFile.addEventListener('change', (e) => {
+//     const file = e.target.files[0];
+    
+//     if(file){
+//       var inputFile = document.createElement('input');
+
+//       var img = document.createElement('img');
+//       img.src =   URL.createObjectURL(e.target.files[0]);;
+//       img.style.width = '100px' 
+
+//       inputFile.type = "file";
+//       inputFile.name = `arquivos${value + 2}`
+//       sendButton.insertAdjacentElement('beforebegin',inputFile)
+//       inputFile.insertAdjacentElement('beforebegin',img)
+//       targetProxy.qtd = value + 1;
+//     }
+//   });
+// }
 
 
 </script>
