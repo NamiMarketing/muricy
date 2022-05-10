@@ -1,6 +1,8 @@
-const { DateTime } = require("luxon");
+const {
+  DateTime
+} = require("luxon");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/css/build");
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/admin");
@@ -12,6 +14,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) =>
     arr?.slice(0, limit)
   );
+
+  eleventyConfig.addCollection("semVideos", function (collectionApi) {
+    return collectionApi.getFilteredByTags("Capilar", "Geral", "Tratamentos")
+  });
+
+  
 
   return {
     dir: {
