@@ -106,9 +106,12 @@
   >div {
     margin-left: 4.8rem;
 
+    .blogData {
+      padding-top: 10rem;
+    }
+
     p {
       color: $cinza_500;
-      padding-top: 10rem;
     }
 
     h3 {
