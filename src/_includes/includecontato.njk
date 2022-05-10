@@ -5,15 +5,17 @@
       Envie sua mensagem ou acesse os nossos canais de comunicação para conhecer mais sobre a nossa estrutura, os nossos
       serviços e a nossa história!
     </h5>
-    <form name="contato" method="POST"  data-netlify="true">
+    <form name="contato" action="https://formsubmit.co/drmuricy@clinicamuricy.com.br" method="POST">
       <input type="text" name="nome" class="dados" id="form-nome" placeholder="Nome" required />
       <br />
       <input type="email" name="email" class="dados" id="form-nome" placeholder="E-mail" required />
       <br />
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="Novo contato pelo site.">
       <textarea type="text" name="ajuda" class="dados" id="form-ajuda" placeholder="Como podemos te ajudar?" cols="50"
         rows="5" required></textarea>
       <br />
-      <div data-netlify-recaptcha="true"></div>
+
       <br />
       <input type="submit" value="ENVIAR" class="enviar" />
       <span class="linha2"></span>

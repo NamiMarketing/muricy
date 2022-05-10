@@ -19,8 +19,10 @@ cssPath: "/css/build/avaliacao.css"
   </div>
 </section>
 
-<form class="avaliacao-form" name="avaliacao" method="POST" data-netlify="true">
+<form class="avaliacao-form" name="avaliacao" action="https://formsubmit.co/drmuricy@clinicamuricy.com.br" method="POST" enctype="multipart/form-data">
   <div class="half">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="Nova avaliação pelo site.">
     <input type="text" name="nome" placeholder="Em qual cidade você reside?" required />
     <div class="radio-container">
       <p>Em qual cidade fará a avaliação?</p>
@@ -41,12 +43,12 @@ cssPath: "/css/build/avaliacao.css"
 
   <div class="half">
     <input type="email" name="email" placeholder="E-mail para contato:" required />
-    <input type="date" name="nascimento" placeholder="Data de nascimento:" required />
+    <input type="text" name="nascimento" placeholder="Data de nascimento:" required onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"/>
   </div>
 
   <div class="half">
     <input type="phone" name="celphone" placeholder="Telefone Celular:" required />
-    <input type="phone" name="phone" placeholder="Telefone Fixo:" required />
+    <input type="phone" name="phone" placeholder="Telefone Fixo:"/>
   </div>
 
   <div class="half">
@@ -134,7 +136,17 @@ cssPath: "/css/build/avaliacao.css"
     <input type="text" name="parentesco" placeholder="Se afirmativo, qual o parentesco?" />
   </div>
   <h5>Anexar fotos</h5>
-  <input type="file" name="arquivos" multiple/>
+  <br/>
+  <p>Foto 1</p>
+  <input type="file" name="foto1"/>
+  <p>Foto 2</p>
+  <input type="file" name="foto2"/>
+  <p>Foto 3</p>
+  <input type="file" name="foto3"/>
+  <p>Foto 4</p>
+  <input type="file" name="foto4"/>
+  <p>Foto 5</p>
+  <input type="file" name="foto5"/>
   
   <input type="submit" value="ENVIAR" class="enviar" /> 
 </form>
@@ -173,3 +185,59 @@ cssPath: "/css/build/avaliacao.css"
     </div>
   </div>
 </section>
+
+<script>  
+
+for(var i = 0; i <=5 ; i++){
+  const inputFile = document.querySelector(`input[name="foto${i}"]`);
+  console.log(inputFile);
+  inputFile?.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    
+    if(file){
+      var img = document.createElement('img');
+      img.src =   URL.createObjectURL(e.target.files[0]);;
+      img.style.width = '100px' 
+      inputFile.insertAdjacentElement('beforebegin',img)
+    }
+  });
+}
+
+//   let inputQuantity = {
+//     qtd:  1
+//   };
+
+// var targetProxy = new Proxy(inputQuantity, {
+//   set: function (target, key, value) {
+//       target[key] = value;
+//       createNewInput(value)
+//       return true;
+//   }
+// });
+
+
+// const sendButton = document.querySelector('input[type="submit"]')
+
+// function createNewInput(value){
+//   const inputFile = document.querySelector(`input[name="foto${value + 1}"]`)
+//   inputFile.addEventListener('change', (e) => {
+//     const file = e.target.files[0];
+    
+//     if(file){
+//       var inputFile = document.createElement('input');
+
+//       var img = document.createElement('img');
+//       img.src =   URL.createObjectURL(e.target.files[0]);;
+//       img.style.width = '100px' 
+
+//       inputFile.type = "file";
+//       inputFile.name = `arquivos${value + 2}`
+//       sendButton.insertAdjacentElement('beforebegin',inputFile)
+//       inputFile.insertAdjacentElement('beforebegin',img)
+//       targetProxy.qtd = value + 1;
+//     }
+//   });
+// }
+
+
+</script>
