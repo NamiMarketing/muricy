@@ -1,5 +1,5 @@
 ---
-title: História da Clínica | Clínica Muricy
+title: História da Clínica
 description: Sem descrição?
 date: 2022-02-07T14:27:36.279Z
 tags:
