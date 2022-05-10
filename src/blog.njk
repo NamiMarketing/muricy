@@ -3,8 +3,8 @@ title: Blog
 layout: "base.njk"
 cssPath: "/css/build/blog.css"
 pagination:
-  data: collections.post
-  size: 7
+  data: collections.semVideos
+  size: 9
 ---
 
 <section class="orientacoes-banner">
@@ -26,13 +26,17 @@ pagination:
       <section class="first-blog">
         <img src="{{ item.data.thumbnail }}" alt="">
         <div>
+          <p class="blogData">
+            {{ item.data.date | postDate }}
+          </p>
           <p>
             {% for tag in item.data.tags -%}
               {% if tag !== 'post' %}
-                {{ tag }},  
+                {{ tag }}
+              {% if loop.index !== item.data.tags.length %}|
+              {% endif %}
               {% endif %}
             {%- endfor %}
-            {{ item.data.date | postDate }}
           </p>
           <a href="{{ item.url }}">
             <h3>{{ item.data.title }}</h3>
@@ -45,11 +49,6 @@ pagination:
         <li>
           <img src="{{ item.data.thumbnail }}" alt="">
           <p>
-            {% for tag in item.data.tags -%}
-              {% if tag !== 'post' %}
-                {{ tag }},  
-              {% endif %}
-            {%- endfor %}
             {{ item.data.date | postDate }}
           </p>
           <a href="{{ item.url }}">
