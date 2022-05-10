@@ -303,6 +303,44 @@
   cursor: pointer;
 }
 
+.agende-consulta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin-top: 17rem;
+    display: flex;
+    width: 42.2rem;
+    height: 4.3rem;
+    border: 2px solid $roxo_800;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    color: $roxo_800;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $white;
+      border: 2px solid $roxo_800;
+      background-color: $roxo_800;
+    }
+  }
+
+  img {
+    z-index: -1;
+    top: -100px;
+    width: 100%;
+    position: absolute;
+    opacity: 0.3;
+    transform: rotate(3.24deg);
+  }
+}
+
 @media (orientation: landscape) and (max-width: 1537px) {
   .bannerFlex {
     padding: 16rem 0 0 19rem;
@@ -602,4 +640,10 @@
       margin-top: 3rem;
     }
   }
+
+.agende-consulta {
+  a {
+    width: 70vw;
+  }
+}
 }

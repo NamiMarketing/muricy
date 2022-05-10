@@ -1,0 +1,20 @@
+@import "global";
+@import "header";
+@import "footer";
+@import "includecontato";
+
+.thanksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+
+    img {
+        margin-top: 3rem;
+    }
+
+    h4 {
+        margin-top: 3rem;
+    }
+}
