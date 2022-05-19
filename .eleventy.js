@@ -15,8 +15,12 @@ module.exports = function (eleventyConfig) {
     arr?.slice(0, limit)
   );
 
-  eleventyConfig.addCollection("semVideos", function (collectionApi) {
-    return collectionApi.getFilteredByTags("Capilar", "Geral", "Tratamentos")
+  eleventyConfig.addCollection("semVideos", (collectionApi) => {
+    return  collectionApi.getAll().filter((item) => {
+      if(item.data.layout == 'article.njk' && !item.data.tags?.some((el) => el === 'Vídeos'  )) {
+        return item.data;
+      }
+    });    
   });
 
   
