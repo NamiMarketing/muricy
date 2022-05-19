@@ -132,8 +132,8 @@
   width: 100%;
 
   li {
-    width: 300px;
-    padding-bottom: 7rem;
+    width: 275px;
+    padding-bottom: 2rem;
     border-bottom: 1px solid $cinza_400;
 
     img {
@@ -144,6 +144,10 @@
       font-size: 1.8rem;
       color: $roxo_800;
       font-weight: 500;
+    }
+
+    p {
+      margin-bottom: 0.4rem;
     }
   }
 }
