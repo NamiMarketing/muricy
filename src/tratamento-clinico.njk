@@ -16,7 +16,7 @@ cssPath: "/css/build/tratamento-clinico.css"
   <button onClick="pickTab('mmp')" id="mmpBtn" class="active">mmp</button>
   <button onClick="pickTab('medicamentos')" id="medicamentosBtn">medicamentos</button>
   <button onClick="pickTab('micropigmentacao')" id="micropigmentacaoBtn">micropigmentação</button>
-  <button onClick="pickTab('laser')" id="laserBtn">laser</button>
+  <!-- <button onClick="pickTab('laser')" id="laserBtn">laser</button> -->
 </div>
 
 
@@ -26,30 +26,30 @@ cssPath: "/css/build/tratamento-clinico.css"
 
 {% include 'micropigmentacao.njk' %}
 
-{% include 'laser.njk' %}
+<!-- {% include 'laser.njk' %} -->
 
 
 <script>
   const mmpBtn = document.getElementById(`mmpBtn`);
   const medicamentosBtn = document.getElementById(`medicamentosBtn`);
   const micropigmentacaoBtn = document.getElementById(`micropigmentacaoBtn`);
-  const laserBtn = document.getElementById(`laserBtn`);
+  // const laserBtn = document.getElementById(`laserBtn`);
 
   const mmp = document.getElementById(`mmp`);
   const medicamentos = document.getElementById(`medicamentos`);
   const micropigmentacao = document.getElementById(`micropigmentacao`);
-  const laser = document.getElementById(`laser`);
+  // const laser = document.getElementById(`laser`);
 
   function pickTab(id) {
     mmp.style.display = 'none';
     medicamentos.style.display = 'none';
     micropigmentacao.style.display = 'none';
-    laser.style.display = 'none';
+    // laser.style.display = 'none';
 
     mmpBtn.classList.remove("active");
     medicamentosBtn.classList.remove("active");
     micropigmentacaoBtn.classList.remove("active");
-    laserBtn.classList.remove("active");
+    // laserBtn.classList.remove("active");
 
     switch (id) {
       case 'mmp':
@@ -64,10 +64,10 @@ cssPath: "/css/build/tratamento-clinico.css"
         micropigmentacao.style.display = 'flex';
         micropigmentacaoBtn.classList.add("active");
         break;
-      case 'laser':
-        laser.style.display = 'flex';
-        laserBtn.classList.add("active");
-        break;
+      // case 'laser':
+      //   laser.style.display = 'flex';
+      //   laserBtn.classList.add("active");
+      //   break;
 
       default:
         break;
