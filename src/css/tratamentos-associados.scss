@@ -5,12 +5,12 @@
 @import "colors";
 
 #haircare {
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 
 #medicalhair {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -310,7 +310,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75vw;
+  width: 70vw;
   margin: auto;
   gap: 6rem;
 
@@ -337,6 +337,66 @@
     }
   }
 }
+
+.flexboxTextHC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0 10rem;
+  gap: 6rem;
+
+  .flexBeneficios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8rem;
+
+    .flexBenSmall {
+      display: flex;
+      flex-direction: column;
+      width: 20vw;
+
+      p {
+        text-align: justify;
+        line-height: 26px;
+      }
+
+      span {
+        border: 0.5px solid $roxo_400;
+        width: 0px;
+        height: 26px;
+        transform: rotate(90deg);
+        margin-left: 12px;
+        margin-bottom: -7px;
+      }
+    }
+
+    .flexBenSmallTitle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+      width: 20vw;
+
+      h5 {
+        color: $roxo_800;
+        font-weight: 500;
+        position: relative;
+
+        span {
+          position: absolute;
+          width: 44vw;
+          top: 9px;
+          left: 105%;
+          border: 0.5px solid #7f6678;
+        }
+      }
+    }
+  }
+}
+
 
 .whiteTratamento {
   background-color: $white;
@@ -449,7 +509,7 @@
     }
 
     .whiteFlexTwo {
-      width: 50vw;
+      // width: 50vw;
 
       .whiteTextTwo {
         text-align: justify;
