@@ -20,9 +20,11 @@ cssPath: "/css/build/avaliacao.css"
 </section>
 
 <form class="avaliacao-form" name="avaliacao" action="https://formsubmit.co/drmuricy@clinicamuricy.com.br" method="POST" enctype="multipart/form-data">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_subject" value="Nova avaliação pelo site.">
+  <input type="hidden" name="_next" value="https://clinicamuricy.com.br/agradecimento/">
+  
   <div class="half">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_subject" value="Nova avaliação pelo site.">
     <input type="text" name="nome" placeholder="Em qual cidade você reside?" required />
     <div class="radio-container">
       <p>Em qual cidade fará a avaliação?</p>
@@ -147,6 +149,12 @@ cssPath: "/css/build/avaliacao.css"
   <input type="file" name="foto4"/>
   <p>Foto 5</p>
   <input type="file" name="foto5"/>
+  <p>Foto 6</p>
+  <input type="file" name="foto6"/>
+  <p>Foto 7</p>
+  <input type="file" name="foto7"/>
+  <p>Foto 8</p>
+  <input type="file" name="foto8"/>
   
   <input type="submit" value="ENVIAR" class="enviar" /> 
 </form>
@@ -195,7 +203,6 @@ cssPath: "/css/build/avaliacao.css"
 
 for(var i = 0; i <=5 ; i++){
   const inputFile = document.querySelector(`input[name="foto${i}"]`);
-  console.log(inputFile);
   inputFile?.addEventListener('change', (e) => {
     const file = e.target.files[0];
     
