@@ -1,18 +1,18 @@
 ---
-title: Técnicas
+title: Técnica
 layout: "base.njk"
-cssPath: "/css/build/tecnicas.css"
+cssPath: "/css/build/tecnica.css"
 ---
 
 <section class="tecnicas-banner">
   <img src="/img/banner-tecnicas.jpg" alt="">
-  <h1>TÉCNICAS CIRÚRGICAS</h1>
+  <h1>TÉCNICA CIRÚRGICA</h1>
   <h4>Somos referência em cirurgia de Transplante Capilar. Estamos na vanguarda de inovações e contínuo aprimoramento
     com as mais novas e modernas técnicas cirúrgicas.</h4>
   <p>
-    Existem duas técnicas cirúrgicas de transplante capilar conhecidas atualmente: FUT e FUE.<br>
+    Existem duas técnicas cirúrgicas de transplante capilar conhecidas atualmente: FUT e FUE.<br><br>
     FUT é a técnica convencional da extração das unidades foliculares através da retirada de uma faixa do couro
-    cabeludo.<br>
+    cabeludo.<br><br>
     FUE é a extração folículo a folículo. Mais moderna, menos invasiva, sem cicatriz linear.<br>
     É a especialidade da Clínica Muricy, associada ou não com body hair (pelos retirados de várias partes do corpo e do
     couro cabeludo).<br>
@@ -22,39 +22,29 @@ cssPath: "/css/build/tecnicas.css"
 <div class="banner-nav">
   <button onClick="pickTab('fue')" id="fueBtn" class="active">FUE</button>
   <button onClick="pickTab('body-hair')" id="body-hairBtn">body hair</button>
-  <button onClick="pickTab('outras-tecnicas')" id="outras-tecnicasBtn">FUT</button>
 </div>
 
 {% include 'bodyhair.njk' %}
-{% include 'outrastecnicas.njk' %}
 {% include 'fue.njk' %}
 
 <script>
   const fueButton = document.getElementById(`fueBtn`);
-  const outrastecnicasButton = document.getElementById(`outras-tecnicasBtn`);
   const bodyhairButton = document.getElementById(`body-hairBtn`);
 
   const fue = document.getElementById(`fue`);
-  const outrasTecnicas = document.getElementById(`outras-tecnicas`);
   const bodyHair = document.getElementById(`body-hair`);
 
   function pickTab(id) {
     fue.style.display = 'none';
-    outrasTecnicas.style.display = 'none';
     bodyHair.style.display = 'none';
 
     fueButton.classList.remove("active");
-    outrastecnicasButton.classList.remove("active");
     bodyhairButton.classList.remove("active");
 
     switch (id) {
       case 'fue':
         fue.style.display = 'flex';
         fueButton.classList.add("active");
-        break;
-      case 'outras-tecnicas':
-        outrasTecnicas.style.display = 'flex';
-        outrastecnicasButton.classList.add("active");
         break;
       case 'body-hair':
         bodyHair.style.display = 'flex';
