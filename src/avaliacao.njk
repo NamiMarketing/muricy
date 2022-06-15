@@ -19,38 +19,43 @@ cssPath: "/css/build/avaliacao.css"
   </div>
 </section>
 
-<form class="avaliacao-form" name="avaliacao" action="https://formsubmit.co/drmuricy@clinicamuricy.com.br" method="POST" enctype="multipart/form-data">
+<form class="avaliacao-form" name="avaliacao" action="https://submit-form.com/mqEKq32G"  enctype="multipart/form-data">
   <input type="hidden" name="_template" value="table">
   <input type="hidden" name="_subject" value="Nova avaliação pelo site.">
-  <input type="hidden" name="_next" value="https://clinicamuricy.com.br/agradecimento/">
+
+  <input
+  type="hidden"
+  name="_redirect"
+  value="https://clinicamuricy.com.br/agradecimento"
+  />
   
   <div class="half">
-    <input type="text" name="nome" placeholder="Em qual cidade você reside?" required />
+    <input type="text" name="Cidade atual" placeholder="Em qual cidade você reside?" required />
     <div class="radio-container">
       <p>Em qual cidade fará a avaliação?</p>
       <div>
         <div>
-          <input type="radio" id="curitiba" name="cidade" value="curitiba">
+          <input type="radio" id="curitiba" name="Cidade avaliação" value="curitiba">
           <label for="curitiba">Curitiba</label>
         </div>
         <div>
-          <input type="radio" id="sp" name="cidade" value="sp">
+          <input type="radio" id="sp" name="Cidade avaliação" value="sp">
           <label for="sp">São Paulo</label>
         </div>
       </div>
     </div>
   </div>
 
-  <input type="text" name="nome" placeholder="Qual seu nome completo?" required />
+  <input type="text" name="Nome completo" placeholder="Qual seu nome completo?" required />
 
   <div class="half">
-    <input type="email" name="email" placeholder="E-mail para contato:" required />
-    <input type="text" name="nascimento" placeholder="Data de nascimento:" required onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"/>
+    <input type="email" name="Email" placeholder="E-mail para contato:" required />
+    <input type="text" name="Data de nascimento" placeholder="Data de nascimento:" required onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"/>
   </div>
 
   <div class="half">
-    <input type="phone" name="celphone" placeholder="Telefone Celular:" required />
-    <input type="phone" name="phone" placeholder="Telefone Fixo:"/>
+    <input type="phone" name="Celular" placeholder="Telefone Celular:" required />
+    <input type="phone" name="Telefone fixo" placeholder="Telefone Fixo:"/>
   </div>
 
   <div class="half">
@@ -58,16 +63,16 @@ cssPath: "/css/build/avaliacao.css"
       <p>Já fez cirurgia de transplante capilar?</p>
       <div>
         <div>
-          <input type="radio" id="yes" name="transplante-capilar" value="yes">
+          <input type="radio" id="yes" name="Já fez transplante capilar?" value="Sim">
           <label for="yes">Sim</label>
         </div>
         <div>
-          <input type="radio" id="no" name="transplante-capilar" value="no">
+          <input type="radio" id="no" name="Já fez transplante capilar?" value="Não">
           <label for="no">Não</label>
         </div>
       </div>
     </div>
-    <input type="text" name="tc-tempo" placeholder="Se afirmativo, há quanto tempo?"  />
+    <input type="text" name="Há quanto tempo fez cirurgia capilar" placeholder="Se afirmativo, há quanto tempo?"  />
   </div>
 
   <div class="half">
@@ -75,11 +80,11 @@ cssPath: "/css/build/avaliacao.css"
       <p>Já fez ou ainda faz tratamento para a queda de cabelo?</p>
       <div>
         <div>
-          <input type="radio" id="yes" name="queda-cabelo" value="yes">
+          <input type="radio" id="yes" name="Tem queda de cabelo?" value="Sim">
           <label for="yes">Sim</label>
         </div>
         <div>
-          <input type="radio" id="no" name="queda-cabelo" value="no">
+          <input type="radio" id="no" name="Tem queda de cabelo?" value="Não">
           <label for="no">Não</label>
         </div>
       </div>
@@ -89,11 +94,11 @@ cssPath: "/css/build/avaliacao.css"
       <p>Faz uso de algum medicamento para a queda de cabelo?</p>
       <div>
         <div>
-          <input type="radio" id="yes" name="med-queda-cabelo" value="yes">
+          <input type="radio" id="yes" name="Usa algum medicamento para queda de cabelo?" value="Sim">
           <label for="yes">Sim</label>
         </div>
         <div>
-          <input type="radio" id="no" name="med-queda-cabelo" value="no">
+          <input type="radio" id="no" name="Usa algum medicamento para queda de cabelo?" value="Não">
           <label for="no">Não</label>
         </div>
       </div>
@@ -101,20 +106,20 @@ cssPath: "/css/build/avaliacao.css"
   </div>
 
   <div class="half">
-    <input type="text" name="tempo-medicamento" placeholder="Se afirmativo, há quanto tempo e qual é o medicamento?"/>
+    <input type="text" name="Tempo de uso da medicação:" placeholder="Se afirmativo, há quanto tempo e qual é o medicamento?"/>
     <div class="radio-container">
       <p>Como descreveria o seu cabelo?</p>
       <div>
         <div>
-          <input type="radio" id="fino" name="tipo-cabelo" value="fino">
+          <input type="radio" id="fino" name="Qual o seu tipo de cabelo" value="Fino">
           <label for="fino">Fino</label>
         </div>
         <div>
-          <input type="radio" id="medio" name="tipo-cabelo" value="medio">
+          <input type="radio" id="medio" name="Qual o seu tipo de cabelo" value="Médio">
           <label for="medio">Médio</label>
         </div>
         <div>
-          <input type="radio" id="grosso" name="tipo-cabelo" value="grosso">
+          <input type="radio" id="grosso" name="Qual o seu tipo de cabelo" value="Grosso">
           <label for="grosso">Grosso</label>
         </div>
       </div>
@@ -126,35 +131,25 @@ cssPath: "/css/build/avaliacao.css"
       <p>Tem histórico de calvície na família? </p>
       <div>
         <div>
-          <input type="radio" id="yes" name="historico-familiar" value="yes">
+          <input type="radio" id="yes" name="Tem histórico familar?" value="Sim">
           <label for="yes">Sim</label>
         </div>
         <div>
-          <input type="radio" id="no" name="historico-familiar" value="no">
+          <input type="radio" id="no" name="Tem histórico familar?" value="Não">
           <label for="no">Não</label>
         </div>
       </div>
     </div>
-    <input type="text" name="parentesco" placeholder="Se afirmativo, qual o parentesco?" />
+    <input type="text" name="Qual parentesco?" placeholder="Se afirmativo, qual o parentesco?" />
   </div>
   <h5>Anexar fotos</h5>
   <br/>
-  <p>Foto 1</p>
-  <input type="file" name="foto1"/>
-  <p>Foto 2</p>
-  <input type="file" name="foto2"/>
-  <p>Foto 3</p>
-  <input type="file" name="foto3"/>
-  <p>Foto 4</p>
-  <input type="file" name="foto4"/>
-  <p>Foto 5</p>
-  <input type="file" name="foto5"/>
-  <p>Foto 6</p>
-  <input type="file" name="foto6"/>
-  <p>Foto 7</p>
-  <input type="file" name="foto7"/>
-  <p>Foto 8</p>
-  <input type="file" name="foto8"/>
+  <input 
+    name="Fotos" 
+    type="hidden" 
+    role="uploadcare-uploader"   
+    data-multiple data-public-key="17905a4b9490e5ef0aea"
+  />
   
   <input type="submit" value="ENVIAR" class="enviar" /> 
 </form>
