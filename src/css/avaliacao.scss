@@ -118,6 +118,25 @@
       font-size: 1.4rem;
     }
   }
+
+  .uploadcare--widget__button{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .uploadcare--widget__button_type_open{
+    background-color: $roxo_800;
+    height: 29px;
+    width: 112px;
+    font-size: 11px;
+    cursor: pointer;
+    
+    &:hover, &:focus{
+      background-color:  $roxo_800;
+      font-size: 11px;
+      filter: brightness(0.8);
+    }
+  }
 }
 
 .radio-container {
@@ -149,24 +168,6 @@
   }
 }
 
-.uploadcare--widget__button{
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.uploadcare--widget__button_type_open{
-  background-color: $roxo_800;
-  height: 29px;
-  width: 112px;
-  font-size: 11px;
-  cursor: pointer;
-  
-  &:hover, &:focus{
-    background-color:  $roxo_800;
-    font-size: 11px;
-    filter: brightness(0.8);
-  }
-}
 
 
 .orientacoes {
