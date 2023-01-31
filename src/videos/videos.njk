@@ -4,7 +4,7 @@ layout: "base.njk"
 cssPath: "/css/build/blog.css"
 pagination:
   data: collections.Vídeos
-  size: 7
+  size: 9
 ---
 
 <section class="banner">
@@ -24,7 +24,7 @@ pagination:
 </section>
 
 <div class="blog-container" id="video-blog-container">  
-  {%- for item  in pagination.items | reverse -%}
+  {%- for item  in pagination.items   -%}
     {% if loop.index == 1 %}
       <section class="first-blog">
         <iframe width="545" height="303" src="https://www.youtube.com/embed/{{ item.data.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
