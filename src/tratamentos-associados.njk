@@ -1,7 +1,7 @@
 ---
 title: Tratamentos Associados
 layout: "base.njk"
-cssPath: "/css/build/tratamentos-associados.css"
+cssPath: "/css/tratamentos-associados.css"
 ---
 
 <section class="orientacoes-banner">
@@ -25,21 +25,21 @@ cssPath: "/css/build/tratamentos-associados.css"
   const preButton = document.getElementById(`pre`);
   const posButton = document.getElementById(`pos`);
 
-function pickTab(id){
-  if(id === 'pre'){
-    haircare.style.display = 'flex';
-    medicalhair.style.display = 'none';
-    preButton.classList.add("active");
-    posButton.classList.remove("active");
-  } else {
-    haircare.style.display = 'none';
-    medicalhair.style.display = 'flex';
-    preButton.classList.remove("active");
-    posButton.classList.add("active");
+  function pickTab(id) {
+    if (id === 'pre') {
+      haircare.style.display = 'flex';
+      medicalhair.style.display = 'none';
+      preButton.classList.add("active");
+      posButton.classList.remove("active");
+    } else {
+      haircare.style.display = 'none';
+      medicalhair.style.display = 'flex';
+      preButton.classList.remove("active");
+      posButton.classList.add("active");
+    }
   }
-}
 
-const params = new URLSearchParams(window.location.search);
-  
+  const params = new URLSearchParams(window.location.search);
+
   pickTab(params.get('associado').toString());
 </script>

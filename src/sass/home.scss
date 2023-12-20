@@ -196,7 +196,6 @@
       margin-top: 3rem;
 
       a {
-
         &:hover {
           border-bottom: 1px solid $roxo_800;
         }
@@ -614,7 +613,7 @@
       .servicosBelowText {
         justify-content: space-between;
         gap: 0rem;
-  
+
         h4 {
           font-size: 1.7rem;
         }
@@ -641,9 +640,9 @@
     }
   }
 
-.agende-consulta {
-  a {
-    width: 70vw;
+  .agende-consulta {
+    a {
+      width: 70vw;
+    }
   }
-}
 }

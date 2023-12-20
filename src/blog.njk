@@ -1,7 +1,7 @@
 ---
 title: Blog
 layout: "base.njk"
-cssPath: "/css/build/blog.css"
+cssPath: "/css/blog.css"
 pagination:
   data: collections.semVideos
   size: 9
@@ -10,7 +10,8 @@ pagination:
 <section class="orientacoes-banner">
   <img src="/img/bannerBlog.jpg" alt="">
   <h1>BLOG E<br>NOTÍCIAS</h1>
-  <h4>Confira as últimas atualizações sobre os cuidados, dicas, curiosidades,<br>informações e orientações a respeito de saúde capilar.</h4>
+  <h4>Confira as últimas atualizações sobre os cuidados, dicas, curiosidades,<br>informações e orientações a respeito de
+    saúde capilar.</h4>
 </section>
 
 <section class="nav-blog">
@@ -20,66 +21,66 @@ pagination:
   <a href="/videos">VÍDEOS</a>
 </section>
 
-<div class="blog-container">  
-  {%- for item  in pagination.items | reverse -%}
-    {% if loop.index == 1 %}
-      <section class="first-blog">
-        <img src="{{ item.data.thumbnail }}" alt="">
-        <div>
-          <p class="blogData">
-            {{ item.data.date | postDate }}
-          </p>
-          <p>
-            {% for tag in item.data.tags -%}
-              {% if tag !== 'post' %}
-                {{ tag }}
-              {% if loop.index !== item.data.tags.length %}|
-              {% endif %}
-              {% endif %}
-            {%- endfor %}
-          </p>
-          <a href="{{ item.url }}">
-            <h3>{{ item.data.title }}</h3>
-          </a>
-        </div>
-      </section>
-    
-    <ul class="posts-container">
-      {% else %}
-        <li>
-          <img src="{{ item.data.thumbnail }}" alt="">
-          <p>
-            {{ item.data.date | postDate }}
-          </p>
-          <a href="{{ item.url }}">
-            {{item.data.title}}
-          </a>
-        </li>
-      {% endif %}
-    {%- endfor %}    
-    </ul>  
-
-    <div class="pagination-container">
-      <ul class="pagination">
-          <li>{% if pagination.href.previous %}
-            <a href="{{ pagination.href.previous }}">
-              <img src="/img/svg/left-arrow.svg" alt="">
-            </a>{% endif %}
-          </li>
-          {%- for pageEntry in pagination.pages %}
-              <li>
-                <a href="{{ pagination.hrefs[ loop.index0 ] }}">
-                  {{ loop.index }}
-                </a>
-              </li>
-          {%- endfor %}
-          <li>
-            {% if pagination.href.next %}
-              <a href="{{ pagination.href.next }}">
-                <img src="/img/svg/right-arrow.svg" alt="">
-              </a>
-            {% endif %}
-          </li>
-      </ul>
+<div class="blog-container">
+  {%- for item in pagination.items | reverse -%}
+  {% if loop.index == 1 %}
+  <section class="first-blog">
+    <img src="{{ item.data.thumbnail }}" alt="">
+    <div>
+      <p class="blogData">
+        {{ item.data.date | postDate }}
+      </p>
+      <p>
+        {% for tag in item.data.tags -%}
+        {% if tag !== 'post' %}
+        {{ tag }}
+        {% if loop.index !== item.data.tags.length %}|
+        {% endif %}
+        {% endif %}
+        {%- endfor %}
+      </p>
+      <a href="{{ item.url }}">
+        <h3>{{ item.data.title }}</h3>
+      </a>
     </div>
+  </section>
+
+  <ul class="posts-container">
+    {% else %}
+    <li>
+      <img src="{{ item.data.thumbnail }}" alt="">
+      <p>
+        {{ item.data.date | postDate }}
+      </p>
+      <a href="{{ item.url }}">
+        {{item.data.title}}
+      </a>
+    </li>
+    {% endif %}
+    {%- endfor %}
+  </ul>
+
+  <div class="pagination-container">
+    <ul class="pagination">
+      <li>{% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}">
+          <img src="/img/svg/left-arrow.svg" alt="">
+        </a>{% endif %}
+      </li>
+      {%- for pageEntry in pagination.pages %}
+      <li>
+        <a href="{{ pagination.hrefs[ loop.index0 ] }}">
+          {{ loop.index }}
+        </a>
+      </li>
+      {%- endfor %}
+      <li>
+        {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}">
+          <img src="/img/svg/right-arrow.svg" alt="">
+        </a>
+        {% endif %}
+      </li>
+    </ul>
+  </div>
 </div>

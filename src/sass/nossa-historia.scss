@@ -3,8 +3,6 @@
 @import "footer";
 @import "includecontato";
 
-
-
 section {
   display: flex;
   flex-direction: column;
@@ -232,7 +230,6 @@ section {
   }
 }
 
-
 #myModalNH1,
 #myModalNH2,
 #myModalNH3 {
@@ -246,7 +243,7 @@ section {
   overflow: auto;
   background-color: $roxo_800;
 
-  .row>.column {
+  .row > .column {
     padding: 0 8px;
   }
 
@@ -418,7 +415,9 @@ section {
     transition: 0.3s;
 
     &:hover {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   }
 }
@@ -448,7 +447,6 @@ section {
       width: 90vw;
     }
   }
-
 
   #myModalNH1,
   #myModalNH2,
@@ -485,7 +483,6 @@ section {
 }
 
 @media screen and (max-width: 1024px) {
-
   #myModalNH1,
   #myModalNH2,
   #myModalNH3 {
@@ -691,10 +688,8 @@ section {
       margin-top: 13rem;
       margin-bottom: 2rem;
       padding: 7rem 4rem 3rem;
-  
     }
   }
-
 
   .row {
     flex-direction: column;

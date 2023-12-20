@@ -3,7 +3,7 @@ const {
 } = require("luxon");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./src/css/build");
+  eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/admin");
 
@@ -16,14 +16,12 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addCollection("semVideos", (collectionApi) => {
-    return  collectionApi.getAll().filter((item) => {
-      if(item.data.layout == 'article.njk' && !item.data.tags?.some((el) => el === 'Vídeos'  )) {
+    return collectionApi.getAll().filter((item) => {
+      if (item.data.layout == 'article.njk' && !item.data.tags?.some((el) => el === 'Vídeos')) {
         return item.data;
       }
-    });    
+    });
   });
-
-  
 
   return {
     dir: {

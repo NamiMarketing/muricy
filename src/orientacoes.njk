@@ -1,17 +1,18 @@
 ---
 title: Orientações
 layout: "base.njk"
-cssPath: "/css/build/orientacoes.css"
+cssPath: "/css/orientacoes.css"
 ---
 
 <section class="orientacoes-banner">
   <img src="/img/banner-orientacoes.jpg" alt="">
   <h1>orientações</h1>
-  <h4>Conheça todas as etapas para que a sua cirurgia de Transplante <br/> Capilar seja ainda mais segura e tranquila:  </h4>
+  <h4>Conheça todas as etapas para que a sua cirurgia de Transplante <br /> Capilar seja ainda mais segura e tranquila:
+  </h4>
 </section>
 
 <div class="banner-nav">
-  <button onClick="pickTab('pre')" id="pre"  class="active">pré-operatório</button>
+  <button onClick="pickTab('pre')" id="pre" class="active">pré-operatório</button>
   <button onClick="pickTab('pos')" id="pos">pós-operatório</button>
 </div>
 
@@ -21,13 +22,13 @@ cssPath: "/css/build/orientacoes.css"
 {% include 'pos-operatorio.njk' %}
 
 <script>
-    const preOp = document.getElementsByClassName(`pre-operatorio`);
-    const posOp = document.getElementsByClassName(`pos-operatorio`);
-    const preButton = document.getElementById(`pre`);
-    const posButton = document.getElementById(`pos`);
+  const preOp = document.getElementsByClassName(`pre-operatorio`);
+  const posOp = document.getElementsByClassName(`pos-operatorio`);
+  const preButton = document.getElementById(`pre`);
+  const posButton = document.getElementById(`pos`);
 
-  function pickTab(id){
-    if(id === 'pre'){
+  function pickTab(id) {
+    if (id === 'pre') {
       preOp[0].style.display = 'flex';
       posOp[0].style.display = 'none';
       preButton.classList.add("active");
@@ -41,6 +42,6 @@ cssPath: "/css/build/orientacoes.css"
   }
 
   const params = new URLSearchParams(window.location.search);
-  
+
   pickTab(params.get('tratamento').toString());
 </script>

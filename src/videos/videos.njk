@@ -1,7 +1,7 @@
 ---
 title: Blog
 layout: "base.njk"
-cssPath: "/css/build/blog.css"
+cssPath: "/css/blog.css"
 pagination:
   data: collections.Vídeos
   size: 9
@@ -20,64 +20,70 @@ pagination:
   <a href="/efluvio">QUEDA <p>(Eflúvio)</p></a>
   <a href="/alopecia">CALVÍCIE <p>(Alopécia)</p></a>
   <a href="/tratamentos-procedimentos">TRATAMENTOS E PROCEDIMENTOS</a>
-  <a href="/videos"  class="nav-blog__active">VÍDEOS</a>
+  <a href="/videos" class="nav-blog__active">VÍDEOS</a>
 </section>
 
-<div class="blog-container" id="video-blog-container">  
-  {%- for item  in pagination.items   -%}
-    {% if loop.index == 1 %}
-      <section class="first-blog">
-        <iframe width="545" height="303" src="https://www.youtube.com/embed/{{ item.data.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="blog-container" id="video-blog-container">
+  {%- for item in pagination.items -%}
+  {% if loop.index == 1 %}
+  <section class="first-blog">
+    <iframe width="545" height="303" src="https://www.youtube.com/embed/{{ item.data.video }}"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
 
-        <div>
-          <p>
-            {{ item.data.date | postDate }}
-          </p>
-          <a href="{{ item.url }}">
-            <h3>{{ item.data.title }}</h3>
-          </a>
-        </div>
-      </section>
-    
-
-    <ul class="posts-container">
-      {% else %}
-        <li>
-          <iframe width="300" height="170" src="https://www.youtube.com/embed/{{ item.data.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          <p>
-            {{ item.data.date | postDate }}
-          </p>
-          <a href="{{ item.url }}">
-            {{item.data.title}}
-          </a>
-        </li>
-      {% endif %}
-    {%- endfor %}    
-    </ul> 
- 
-
-    <div class="pagination-container">
-      <ul class="pagination">
-          <li>{% if pagination.href.previous %}
-            <a href="{{ pagination.href.previous }}">
-              <img src="/img/svg/left-arrow.svg" alt="">
-            </a>{% endif %}
-          </li>
-          {%- for pageEntry in pagination.pages %}
-              <li>
-                <a href="{{ pagination.hrefs[ loop.index0 ] }}">
-                  {{ loop.index }}
-                </a>
-              </li>
-          {%- endfor %}
-          <li>
-            {% if pagination.href.next %}
-              <a href="{{ pagination.href.next }}">
-                <img src="/img/svg/right-arrow.svg" alt="">
-              </a>
-            {% endif %}
-          </li>
-      </ul>
+    <div>
+      <p>
+        {{ item.data.date | postDate }}
+      </p>
+      <a href="{{ item.url }}">
+        <h3>{{ item.data.title }}</h3>
+      </a>
     </div>
+  </section>
+
+
+  <ul class="posts-container">
+    {% else %}
+    <li>
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/{{ item.data.video }}"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <p>
+        {{ item.data.date | postDate }}
+      </p>
+      <a href="{{ item.url }}">
+        {{item.data.title}}
+      </a>
+    </li>
+    {% endif %}
+    {%- endfor %}
+  </ul>
+
+
+  <div class="pagination-container">
+    <ul class="pagination">
+      <li>{% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}">
+          <img src="/img/svg/left-arrow.svg" alt="">
+        </a>{% endif %}
+      </li>
+      {%- for pageEntry in pagination.pages %}
+      <li>
+        <a href="{{ pagination.hrefs[ loop.index0 ] }}">
+          {{ loop.index }}
+        </a>
+      </li>
+      {%- endfor %}
+      <li>
+        {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}">
+          <img src="/img/svg/right-arrow.svg" alt="">
+        </a>
+        {% endif %}
+      </li>
+    </ul>
+  </div>
 </div>

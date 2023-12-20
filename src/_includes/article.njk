@@ -1,7 +1,7 @@
 ---
 title: Blog
 layout: "base.njk"
-cssPath: "/css/build/article.css"
+cssPath: "/css/article.css"
 ---
 
 <article>
@@ -54,7 +54,7 @@ cssPath: "/css/build/article.css"
 
 <div class="artigos-relacionados">
   <h5>Artigos relacionados</h5>
-  {% set postsFiltered = collections.semVideos | limit(3)  %}
+  {% set postsFiltered = collections.semVideos | limit(3) %}
   <ul>
     {%- for post in postsFiltered -%}
     <li>

@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "npm-run-all build:css build:html",
-    "build:css": "node-sass --include-path scss src/css/ -o public/css/build/ --output-style compressed",
+    "build:css": "node-sass --include-path scss src/sass/ -o public/css --output-style compressed",
     "build:html": "eleventy",
     "dev": "npm-run-all --parallel watch:css watch:html",
-    "watch:css": "node-sass --watch src/css/   -o src/css/build/ --output-style compressed",
+    "watch:css": "node-sass -w src/sass   -o src/css --output-style compressed",
     "watch:html": "eleventy --serve"
   },
   "keywords": [],
@@ -20,8 +20,8 @@
     "sass": "^1.69.5"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "prettier": "^1.19.1"
+    "@11ty/eleventy": "^2.0.1",
+    "prettier": "^3.1.1"
   },
   "repository": "git@github.com:NamiSites/muricy.git"
 }
