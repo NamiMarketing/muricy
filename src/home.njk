@@ -148,6 +148,30 @@ cssPath: "/css/home.css"
 
 {% include 'includecontato.njk' %}
 
+<div class="popup" id="popup" onclick="closePopup()">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <img src="../img/pop-up-banner.png" alt="Popup Image">
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var currentDate = new Date();
+    var targetDate = new Date("2024-01-10");
+
+    console.log(currentDate < targetDate)
+    if (currentDate < targetDate) {
+      document.getElementById("popup").style.display = "block";
+    }
+  });
+
+  // Function to close the popup
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
+
 
 <script>
   // Get the modal
