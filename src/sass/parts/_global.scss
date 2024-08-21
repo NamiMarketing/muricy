@@ -1,0 +1,217 @@
+@import "./colors";
+$Didact: "Didact Gothic", sans-serif;
+
+strong {
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  // @media (max-width: 1400px) {
+  //   html,
+  //   body,
+  //   #root {
+  //     font-size: 55.5%;
+  //   }
+  // }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialised;
+  font-family: $Didact;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: $ice; 
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: $Didact;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $Didact;
+}
+
+p {
+  font-size: 1.8rem;
+  color: $cinza;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    font-size: 1.6rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.only-mobile {
+  display: none !important;
+}
+
+@media (orientation: portrait) and (max-width: 700px) {
+  .only-mobile {
+    display: flex !important;
+  }
+
+  .only-desktop {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+header {
+  height: 7.8rem;
+  z-index: 9;
+
+  .nav {
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    height: 7.8rem;
+    justify-content: space-between;
+    padding: 0 10rem;
+
+    .phone {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 1rem;
+      }
+    }
+
+    p {
+      color: white;
+      font-family: "MontSerrat";
+    }
+
+    > div {
+      display: flex;
+
+      select {
+        color: white;
+        border: none;
+        border-radius: 1.5rem;
+        margin-left: 3rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .nav {
+      padding: 0 2rem;
+    }
+  }
+}
+
+select[multiple] option {
+  white-space: normal;
+  background-color: #fff;
+}
+
+optgroup {
+  background-color: #fff;
+  border: none;
+
+  option {
+    font-family: $Didact;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    /* AZUL 02 */
+
+    color: #15527a;
+    width: 100px;
+  }
+}
+
+.whatsapp {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 50px;
+  height: 8rem;
+  img:hover {
+    filter: brightness(0.8);
+  }
+
+  @media screen and (max-width: 700px) {
+    right: 20px;
+    height: 5rem;
+  }
+  @media screen and (min-width: 701px) and (max-width: 1268px) {
+    right: 20px;
+    height: 6rem;
+  }
+}
