@@ -1,74 +1,58 @@
 <!DOCTYPE html>
-  <html lang="pt-br">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Descubra os benefícios da cirurgia plástica facial avançada com o Dr. Luciano Prestes em Curitiba. Especializado em rinoplastia, otoplastia e blefaroplastia, o Dr. Prestes oferece anos de experiência e habilidade para garantir resultados estéticos impressionantes e seguros para seus pacientes."/>
+<html lang="en">
 
-    <link rel="stylesheet" href="{{ cssPath }}" />
-    <link rel="stylesheet" href="https://use.typekit.net/kys0uml.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/ico/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/ico/favicon-16x16.png"/>
-    <link rel="icon"  type="image/png" sizes="32x32" href="./img/ico/favicon-32x32.png"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
-    <title>{{ title }}</title>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TC6JNZ4');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="{{ cssPath }}"/>
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
+  <title>{{ title }}</title>
+</head>
 
-  </head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TC6JNZ4"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {% include 'header.njk' %}
 
-  <body>
-    <main>
-      {{ content | safe }}
+  <main>
+    {{ content | safe }}
+  </main>
 
-      <div class="whatsapp">
-        <a
-          href="https://api.whatsapp.com/send?phone=5541992591500"
-          target="_blank"
-        >
-          <img src="/img/svg/float-whats.svg" class="whatsapp" alt="" />
-        </a>
-      </div>
-    </main>
+  {% include 'footer.njk' %}
 
-    <script>
-      function showContent(option) {
-          let contentElement = document.getElementById('content');
-          let imageElement = document.getElementById('contentImage');
-          let text = '';
-          let imageSrc = '';
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
 
-          document.getElementById('btnConforto').classList.remove('selected');
-            document.getElementById('btnTecnologia').classList.remove('selected');
-            document.getElementById('btnSeguranca').classList.remove('selected');
-
-          switch(option) {
-              case 'conforto':
-                  text = '<p>Nossos apartamentos seguem o conceito de máximo conforto, requinte e sofisticação, aliados ao bom gosto, modernidade e tecnologia.</p>';
-                  imageSrc = './img/conforto.jpg';
-                  document.getElementById('btnConforto').classList.add('selected'); // Adicionar classe 'selected'
-                  break;
-              case 'tecnologia':
-                  text = '<p>Nosso complexo cirúrgico possui recursos tecnológicos avançados e de última geração como os focos cirúrgicos com lâmpadas de LED que permitem movimentação de 360º e mais de dez articulações. A alta tecnologia do equipamento tem sensor de movimento que direciona a iluminação cobrindo toda a área cirúrgica com emissão zero de calor e eliminação do efeito sombra. <br /> <br /> O Hospital também está equipado com sistema de climatização e sonorização em todos os ambientes, conexão a cabo e wi-fi.</p>';
-                  imageSrc = './img/tecnologia.jpg';
-                  document.getElementById('btnTecnologia').classList.add('selected'); // Adicionar classe 'selected'
-                  break;
-              case 'seguranca':
-                  text = '<p>Nossa Unidade de Terapia Semi-intensiva é equipada com respiradores, desfibriladores e monitores cardíacos de última geração. As salas de recuperação anestésica possuem equipamentos de monitoração com acompanhamento ininterrupto aos pacientes pela equipe de enfermagem e de anestesistas atuando em sincronismo na preparação e higienização das salas, no atendimento às necessidades dos cirurgiões e na assistência aos pacientes apoiados por equipe exclusiva da Comissão de Controle da Infecção Hospitalar (CCIH), visando a segurança do seu corpo clínico e de seus clientes. <br /><br /> As salas possuem gerador próprio, eliminando qualquer risco por falta de energia, captação própria de água mineral abrandada e clorada, além do descarte dos materiais de uso único, como os utilizados em cirurgias videolaparoscópicas.</p>';
-                  imageSrc = './img/seguranca.jpg';
-                  document.getElementById('btnSeguranca').classList.add('selected'); // Adicionar classe 'selected'
-                  break;
-          }
-
-          contentElement.innerHTML = text;
-          imageElement.src = imageSrc;
-          imageElement.alt = `Imagem de ${option}`;
-      }
+    UPLOADCARE_LOCALE = 'pt';
   </script>
-  </body>
+</body>
+
 </html>
