@@ -92,3 +92,25 @@ footer {
     }
   }
 }
+
+.whatsapp {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 50px;
+  height: 7rem;
+  width: 7rem;
+
+  a {
+    img {
+      width: 70px;
+      height: 70px;
+      color: transparent;
+
+      &:hover {
+        filter: brightness(.8);
+      }
+    }
+  }
+
+}
