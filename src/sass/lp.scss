@@ -1,0 +1,182 @@
+@import "global";
+@import "colors";
+
+.purpleButton {
+    background-color: $roxo_800;
+    color: $white;
+    padding: 1.7rem 1.7rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: filter 0.2s;
+    border-radius: 25px;
+    text-transform: uppercase;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    z-index: 50;
+    width: fit-content;
+    font-family: $font-family;
+  
+    &:hover {
+      filter: brightness(0.7);
+    }
+    @media screen and (max-width: 700px){
+      padding: 1.2rem 0;
+      font-size: 1.4rem;
+      width: 20rem;
+    }
+  }
+
+header{
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 144/68;
+    position: relative;
+    .background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .logo{
+        position: absolute;
+        top: 6.6rem;
+        left: 10rem;
+        z-index: 2;
+        width: 13rem;
+        height: 10.5rem;
+    }
+    .header-text{
+        position: absolute;
+        bottom: 7rem;
+        left: 10rem;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        h3{
+            font-size: 2rem;
+            line-height: 3rem;
+            text-transform: uppercase;
+            color: $verde_600;
+            font-weight: 400;
+        }
+        h1{
+            font-size: 4.9rem;
+            line-height: 5rem;
+            letter-spacing: 4%;
+            color: $verde-600;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        p{
+            font-size: 2rem;
+            line-height: 2.6rem;
+            letter-spacing: 2%;
+            color: $white;
+            font-weight: 500;
+            margin: 2.6rem 0;
+        }
+    }
+}
+
+.antes{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 14rem 7% 3rem;
+    .antes-intro{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 9rem;
+        h3{
+            font-size: 2.9rem;
+            line-height: 100%;
+            font-weight: 400;
+            color: $bege;
+            letter-spacing: 10%;
+        }
+        h2{
+            font-size: 4rem;
+            letter-spacing: 10%;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: $bege;
+        }
+    }
+    .wrap-antes{
+        display: flex;
+        align-items: flex-end;
+        gap: 2.4rem;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+        h1{
+            font-size: 5rem;
+            line-height: 4rem;
+            letter-spacing: 2%;
+            font-weight: 600;
+            color: $roxo-800;
+        }
+        img{
+            width: 2.2rem;
+        }
+    }
+    .images{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+        position: static;
+        z-index: 2;
+    }
+    >p{
+        font-size: 2.2rem;
+        line-height: 3rem;
+        letter-spacing: 2%;
+        text-align: center;
+        margin-bottom: 4rem;
+        color: $cinza_700;
+        font-weight: 400;
+    }
+    a{
+        margin: 0 auto 7.6rem;
+    }
+    .box{
+        background-color: #ddddd6;
+        padding: 11rem 10rem 10rem 11rem;
+        border-radius: 20px;
+        position: relative;
+        margin-bottom: 12rem;
+        position: static;
+        z-index: 2;
+        img{
+            position: absolute;
+            top: 4.4rem;
+            left: 11rem;
+        }
+        p{
+            line-height: 3.1rem;
+            font-size: 2.1rem;
+            letter-spacing: 2%;
+            margin-left: 1rem;
+        }
+        h5{
+           font-size: 2rem; 
+           line-height: 3.2rem;
+           letter-spacing: 2%;
+           font-weight: 500;
+           text-align: right;
+           margin-top: 2.5rem;
+        }
+    } 
+    .linha-direita{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+    .linha-esquerda{
+        position: absolute;
+        top: 52rem;
+        left: 0;
+        z-index: 0;
+    }
+}
