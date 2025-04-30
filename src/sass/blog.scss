@@ -1,8 +1,4 @@
-@import "global";
-@import "header";
-@import "footer";
-@import "includecontato";
-@import "colors";
+@use 'index' as *;
 
 .orientacoes-banner {
   display: flex;

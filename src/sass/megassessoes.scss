@@ -1,6 +1,5 @@
-@import "global";
-@import "header";
-@import "footer";
+@use 'index' as *;
+
 
 .mega-sessoes {
   display: flex;

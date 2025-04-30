@@ -1,8 +1,4 @@
-@import "global";
-@import "header";
-@import "footer";
-@import "includecontato";
-@import "colors";
+@use 'index' as *;
 
 .info-container {
   margin-top: 7.8rem;

@@ -1,7 +1,5 @@
-@import "global";
-@import "header";
-@import "footer";
-@import "includecontato";
+@use 'index' as *;
+
 
 .thanksContainer {
     display: flex;

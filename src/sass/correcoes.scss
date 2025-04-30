@@ -1,6 +1,5 @@
-@import "global";
-@import "header";
-@import "footer";
+@use 'index' as *;
+
 
 #correcoes {
   display: flex;

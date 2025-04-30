@@ -1,8 +1,5 @@
-@import "global";
-@import "header";
-@import "footer";
-@import "contato";
-@import "colors";
+@use 'index' as *;
+
 
 .tecnicas-banner {
   display: flex;

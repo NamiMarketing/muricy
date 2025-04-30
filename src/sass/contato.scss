@@ -1,8 +1,5 @@
-@import "global";
-@import "header";
-@import "footer";
-@import "colors";
-@import "includecontato";
+@use 'index' as *;
+
 
 .contatoBanner {
   margin: 13rem 0;
