@@ -5,17 +5,29 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Clínica Muricy - Transplante Capilar" />
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="{{ cssPath }}" />
+  <link rel="icon" href="../img/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <title>{{ title }}</title>
 </head>
 
 <body>
 
+  <div class="whatsapp">
+    <a href="">
+      <img src="../img/new-lp/whatsapp-fixed.svg" alt="Icone do WhatsApp" />
+    </a>
+  </div>
   <main>
     {{ content | safe }}
   </main>
