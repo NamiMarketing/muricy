@@ -212,6 +212,24 @@ header{
         justify-content: space-between;
         margin-bottom: 7rem;
         z-index: 2;
+        .slider{
+            width: 100%;
+            position: relative;
+            height: 68rem;
+            
+            .slide {
+              opacity: 0;
+              transition: opacity 0.5s ease; 
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          
+            .slide.active {
+              opacity: 1;
+            }
+        }
     }
     >p{
         font-size: 2.2rem;
@@ -303,9 +321,28 @@ header{
             align-items: center;
             gap: 2rem;
             margin-bottom: 4rem;
-            img{
+            .slider{
                 width: 100%;
-            }
+                position: relative;
+                height: 35rem;
+                
+                .slide {
+                  opacity: 0;
+                  transition: opacity 0.5s ease; 
+                  position: absolute;
+                  top: 0;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 100%;
+                  img{
+                    width: 100%;
+                  }
+                }
+              
+                .slide.active {
+                  opacity: 1;
+                }
+              }
         }
         >p{
             font-size: 1.6rem;

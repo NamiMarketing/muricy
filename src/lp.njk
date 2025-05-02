@@ -28,14 +28,42 @@ cssPath: "/css/lp.css"
         <h1>Depois</h1>
     </div>
     <div class="images">
-        <img src="../img/new-lp/antes1.png" alt="">
-        <img src="../img/new-lp/depois1.png" alt="">
+        <div class="slider" id="slider">
+            <div class="slide">
+                <img src="../img/new-lp/antes1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="../img/new-lp/antes2.png" alt="">
+            </div>
+        </div>
+        <div class="slider" id="slider1">
+            <div class="slide">
+                <img src="../img/new-lp/depois1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="../img/new-lp/depois2.png" alt="">
+            </div>
+        </div>
     </div>
     <p>Megasessão cirúrgica (especialidade da Clínica Muricy), em que utilizamos por volta de 6 mil unidades foliculares (aproximadamente 12 mil fios).</p>
     <a href="" class="purpleButton">Agende sua transformação</a>
     <div class="images">
-        <img src="../img/new-lp/antes2.png" alt="">
-        <img src="../img/new-lp/depois2.png" alt="">
+        <div class="slider" id="slider2">
+            <div class="slide">
+                <img src="../img/new-lp/antes3.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="../img/new-lp/antes4.png" alt="">
+            </div>
+        </div>
+        <div class="slider" id="slider3">
+            <div class="slide">
+                <img src="../img/new-lp/depois3.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="../img/new-lp/depois4.png" alt="">
+            </div>
+        </div>
     </div>
     <p>Paciente operado há um ano utilizando-se a técnica FUE (follicular unit extraction) tendo como áreas doadoras o couro cabeludo, barba, pêlos do tórax e abdomen (BODY HAIR).</p>
     <a href="" class="purpleButton">Agende sua transformação</a>
@@ -537,4 +565,32 @@ cssPath: "/css/lp.css"
         button.textContent = box.classList.contains('expanded') ? 'Mostrar menos' : 'Continue lendo';
       });
     });
+  </script>
+
+<script>
+    function iniciarCarrossel(sliderId) {
+      const slider = document.getElementById(sliderId); // Seleciona o slider pelo ID
+      const slides = slider.querySelectorAll('.slide'); // Seleciona todas as imagens dentro do slider
+  
+      let currentSlideIndex = 0; // Controla o índice da imagem ativa
+  
+      // Função para mostrar a próxima imagem
+      function showNextSlide() {
+          slides[currentSlideIndex].classList.remove('active'); // Remove a classe 'active' da imagem atual
+          currentSlideIndex = (currentSlideIndex + 1) % slides.length; // Incrementa o índice da imagem
+          slides[currentSlideIndex].classList.add('active'); // Adiciona a classe 'active' à nova imagem
+      }
+  
+      // Configura o autoplay
+      setInterval(showNextSlide, 3000);
+  
+      // Inicializa a primeira imagem como ativa
+      slides[currentSlideIndex].classList.add('active');
+  }
+  
+  // Inicia o carrossel para cada slider na página
+  document.addEventListener('DOMContentLoaded', () => {
+      ['slider', 'slider1', 'slider2', 'slider3'].forEach(iniciarCarrossel);
+  });
+  
   </script>
