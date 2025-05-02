@@ -26,3 +26,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
           server-dir: ./
+          passive: true
+          dangerousCleanSlate: false
+          logLevel: verbose
