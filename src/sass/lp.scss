@@ -402,6 +402,86 @@ header{
           }
     }
 }
+.video{
+    width: 85vw;
+    margin: 7rem auto 13rem;
+    .wrap-video{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 7rem;
+    }
+    .left-video{
+        flex: 1;
+        iframe{
+            height: 85vh;
+        }
+    }
+    .right-video{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: flex-start;
+        h1{
+            font-size: 2.9rem;
+            line-height: 100%;
+            font-weight: 300;
+            letter-spacing: 8%;
+            text-transform: uppercase;
+            color: $bege;
+        }
+        h2{
+             font-size: 2.9rem;
+            line-height: 100%;
+            font-weight: 600;
+            letter-spacing: 8%;
+            text-transform: uppercase;
+            color: $bege;
+        }
+        a{
+            margin: 2rem 0;
+
+        }
+    }
+    @media screen and (max-width:700px) {
+        width: 90vw;
+        margin: 0rem auto 5rem;
+        .wrap-video{
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .left-video{
+            flex: 1;
+            iframe{
+                height: 65vh;
+                width: 100%;
+            }
+        }
+        .right-video{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                text-align: center;
+            }
+            h2{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                text-align: center;
+            }
+            a{
+                margin: 2rem 0;
+
+            }
+        }
+    }
+}
 .espaco{
     background-color: $roxo-800;
     .swiper-slide{
