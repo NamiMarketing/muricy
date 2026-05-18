@@ -27,5 +27,5 @@ jobs:
           local-dir: ./public/
           server-dir: ./
           passive: true
-          dangerousCleanSlate: false
+          dangerousCleanSlate: true
           logLevel: verbose
