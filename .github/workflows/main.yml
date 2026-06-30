@@ -1,21 +1,12 @@
 name: 🚀 Deploy website on push
 on:
   push:
-  # Botão "Run workflow" no GitHub (aba Actions) para forçar um redeploy
-  # sem precisar fazer commit "force redeploy" na mão.
+  # Botão "Run workflow" na aba Actions para disparar um deploy manual
+  # sem precisar de commit.
   workflow_dispatch:
-  # Redeploy automático: restaura o estado correto do site (incl. /lp)
-  # caso a outra empresa sobrescreva. A cada 6 horas.
-  # OBS: como usamos dangerousCleanSlate, cada execução reenvia TUDO e
-  # apaga arquivos que não fazem parte deste repositório. Se vocês
-  # dividirem a mesma pasta com a página de SP, isso pode apagar a página
-  # deles e escalar o conflito — nesse caso, aumente o intervalo ou
-  # remova o schedule e use só o botão manual acima.
-  schedule:
-    - cron: '0 */6 * * *'
 
-# Evita que dois deploys rodem ao mesmo tempo (push + agendado) e
-# corrompam o servidor no meio do envio.
+# Evita que dois deploys rodem ao mesmo tempo e corrompam o servidor
+# no meio do envio.
 concurrency:
   group: ftp-deploy
   cancel-in-progress: false
@@ -32,12 +23,12 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '18'
-      
+
     - name: 🔨 Build Project
       run: |
         npm install
         npm run build
-    
+
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
@@ -47,5 +38,4 @@ jobs:
           local-dir: ./public/
           server-dir: ./
           passive: true
-          dangerousCleanSlate: true
           logLevel: verbose
